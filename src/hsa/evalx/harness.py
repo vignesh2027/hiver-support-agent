@@ -291,6 +291,53 @@ def stage_judge(head_to_head_stratum: str = "natural", system_arm: str = "ground
     return pd.DataFrame(rows)
 
 
+# ----------------------------------------------------------------- reroute
+
+def stage_reroute(cfg: RouterConfig | None = None) -> pd.DataFrame:
+    """Recompute routing decisions over saved drafts, with no API calls.
+
+    Routing is a pure function of the customer message, the predicted intent
+    and confidence, and a handful of properties of the draft -- all of which
+    are already stored in the run log. So a change to the escalation policy
+    can be evaluated against the exact same generations, for free, instead of
+    regenerating 220 replies against a rate-limited free tier.
+
+    This is what makes the router ablations honest: every configuration is
+    scored on identical drafts, so a difference between them is the policy and
+    nothing else.
+    """
+    from ..reply.generate import Draft
+    from ..retrieve.index import Precedent
+
+    gen = pd.read_json(GEN_RUN, lines=True)
+    cfg = cfg or RouterConfig()
+    actions, reasons, rules, unresp = [], [], [], []
+
+    for r in gen.itertuples():
+        d = Draft(
+            reply=str(r.reply or ""),
+            customer_msg=str(r.customer_msg),
+            asserts_live_fact=bool(r.asserts_live_fact),
+            precedents=[Precedent(0, "", "", float(r.precedent_score), "", False)],
+        )
+        dec = route(str(r.customer_msg), str(r.pred_intent), float(r.pred_conf), d, cfg)
+        actions.append(dec.action)
+        reasons.append(dec.reason)
+        rules.append(dec.rule)
+        unresp.append(d.repeats_a_question_already_answered)
+
+    before = gen["action"].value_counts().to_dict()
+    gen["action"], gen["action_reason"], gen["action_rule"] = actions, reasons, rules
+    gen["unresponsive"] = unresp
+    _write_jsonl(GEN_RUN, gen.to_dict("records"))
+
+    after = gen["action"].value_counts().to_dict()
+    print(f"rerouted {len(gen)} rows with no API calls")
+    print(f"  before: {before}")
+    print(f"  after:  {after}")
+    return gen
+
+
 # --------------------------------------------------- judge-agreement study
 
 GRADING_SET = GOLDEN / "replies_for_grading.jsonl"
@@ -608,7 +655,8 @@ def stage_report(system_arm: str = "grounded_llm") -> dict:
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--stage", default="all",
-                    choices=["classify", "generate", "judge", "grading-set", "report", "all"])
+                    choices=["classify", "generate", "reroute", "judge",
+                             "grading-set", "report", "all"])
     ap.add_argument("--batch", type=int, default=6)
     ap.add_argument("--knn", type=int, default=0)
     ap.add_argument("--backend", default="tfidf")
@@ -620,6 +668,8 @@ def main() -> None:
         stage_classify(batch=args.batch, knn=args.knn, require_labels=args.require_labels)
     if args.stage in ("generate", "all"):
         stage_generate(backend=args.backend)
+    if args.stage == "reroute":
+        stage_reroute()
     if args.stage in ("judge", "all"):
         stage_judge()
     if args.stage in ("grading-set", "all"):

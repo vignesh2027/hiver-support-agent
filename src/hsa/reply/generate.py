@@ -106,6 +106,56 @@ def _norm_claim(s: str) -> str:
     return re.sub(r"[^0-9a-z]", "", s.lower())
 
 
+# A draft asking the customer for something they already wrote. Added after a
+# reply got past every safety guard and was still unsendable:
+#
+#   customer: "I left my hat on one your trains, it was 16:29 Swansea to Cardiff"
+#   draft:    "Which service was this on? Please let us know the train number."
+#
+# The judge scored it factual_safety 2 and not catastrophic, because nothing in
+# it is false. It is simply not listening. Every guard in the router is about
+# truthfulness and none of them noticed. See REPORT.md F0.
+_ASKS_FOR_SERVICE = re.compile(
+    r"("
+    r"\b(which|what)\s+(service|train|time)\b|"
+    r"\blet us know\b[^.?!]{0,40}\b(service|train|time|number)\b|"
+    r"\b(could|can) you\s+(tell|let|confirm|provide|share)\b|"
+    r"\bplease\s+(provide|share|confirm|let us know|send)\b"
+    r")",
+    re.I,
+)
+# Something that identifies a specific service. A clock time or a four-digit
+# departure ("16:29", "06.24", "1927"), or a named route between two places.
+#
+# The first version accepted any "<word> to <word>", which matched ordinary
+# English ("only leave when we got to the station") and fired the guard on
+# messages that named no service at all. Requiring capitalised words either
+# side, or a CRS-style code pair like WSM-PAD, keeps the genuine catches
+# ("the 8.19 from Paddington to Newbury", where the draft then asks for the
+# departure time) and drops the noise.
+_GIVES_SERVICE = re.compile(
+    r"("
+    r"\b\d{1,2}[:.]\d{2}\b|"                   # 16:29, 06.24
+    r"\b[01]\d{3}\b|\b2[0-3]\d{2}\b|"          # 1927, 0624
+    r"\b[A-Z][a-z]{2,}\s+to\s+[A-Z][a-z]{2,}\b|"  # Swansea to Cardiff
+    r"\b[A-Z]{3}\s*[-–]\s*[A-Z]{3}\b"          # WSM-PAD
+    r")"
+)
+
+
+def asks_for_already_given(reply: str, customer_msg: str) -> bool:
+    """True when the draft requests service details the customer already gave.
+
+    Deliberately narrow. It only fires when the reply asks for a service or
+    time *and* the message already identifies one, because the expensive
+    mistake is asking a customer to repeat themselves, not asking a genuinely
+    under-specified question.
+    """
+    if not reply or not customer_msg:
+        return False
+    return bool(_ASKS_FOR_SERVICE.search(reply) and _GIVES_SERVICE.search(customer_msg))
+
+
 @dataclass
 class Draft:
     reply: str
@@ -154,6 +204,11 @@ class Draft:
     def regex_flags_live_claim(self) -> bool:
         """Independent check on the model's self-report."""
         return bool(self.novel_live_claims)
+
+    @property
+    def repeats_a_question_already_answered(self) -> bool:
+        """The draft asks for service details the customer already supplied."""
+        return asks_for_already_given(self.reply, self.customer_msg)
 
     @property
     def self_report_disagrees(self) -> bool:

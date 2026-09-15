@@ -93,28 +93,28 @@ Scales are 0–2 per dimension.
 
 | system | n | acceptable to send | catastrophic | factual safety | addresses need | actionability | tone |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| fixed apology (trivial baseline) | 54 | 70.4% [57.2–80.9] | 0.0% [0.0–6.6] | 2.00 | 0.83 | 1.00 | 1.06 |
-| replay nearest historical reply (simple baseline) | 53 | 26.4% [16.4–39.6] | 35.9% [24.3–49.3] | 0.96 | 0.62 | 0.51 | 1.04 |
-| grounded generator (system) | 53 | 84.9% [73.0–92.2] | 1.9% [0.3–9.9] | 1.83 | 1.17 | 1.55 | 1.51 |
+| fixed apology (trivial baseline) | 60 | 70.0% [57.5–80.1] | 0.0% [0.0–6.0] | 2.00 | 0.82 | 1.00 | 1.05 |
+| replay nearest historical reply (simple baseline) | 60 | 25.0% [15.8–37.2] | 35.0% [24.2–47.6] | 0.98 | 0.57 | 0.47 | 1.00 |
+| grounded generator (system) | 60 | 86.7% [75.8–93.1] | 1.7% [0.3–8.9] | 1.85 | 1.17 | 1.55 | 1.53 |
 
-Judge self-consistency: 0/160 verdicts (0.0%) contradicted the judge's own dimension scores and were corrected in code. A high rate here is a reason to discount the judge, not a reason to celebrate the correction.
+Judge self-consistency: 0/180 verdicts (0.0%) contradicted the judge's own dimension scores and were corrected in code. A high rate here is a reason to discount the judge, not a reason to celebrate the correction.
 
 ## The headline: quality at a stated coverage
 
 A system allowed to abstain has no single quality number. These two must
 always be quoted together.
 
-- **Auto-handled coverage: 5.7%** of messages
-- **Acceptable-reply rate on auto-handled: 66.7%** [20.8–93.8]
-- Catastrophic replies among auto-sent: 0.0% [0.0–56.1] (0 escapes)
-- Drafted for a human: 56.6%; escalated: 37.7%
-- If every reply were sent unfiltered, acceptable rate would be 84.9% — the gap is what the router buys.
+- **Auto-handled coverage: 3.3%** of messages
+- **Acceptable-reply rate on auto-handled: 100.0%** [34.2–100.0]
+- Catastrophic replies among auto-sent: 0.0% [0.0–65.8] (0 escapes)
+- Drafted for a human: 60.0%; escalated: 36.7%
+- If every reply were sent unfiltered, acceptable rate would be 86.7% — the gap is what the router buys.
 
 ### By stratum
 
 | stratum | auto coverage | quality on auto | escalate rate | catastrophic on auto |
 | --- | --- | --- | --- | --- |
-| `natural` | 5.7% | 66.7% | 37.7% | 0.0% |
+| `natural` | 3.3% | 100.0% | 36.7% | 0.0% |
 
 ### Router ablations
 
@@ -123,62 +123,64 @@ anything, the guard is not earning its place.
 
 | config | auto coverage | quality on auto | catastrophic escapes |
 | --- | --- | --- | --- |
-| `ablate_all_guards` | 7.5% | 75.0% | 0 |
-| `ablate_intent_policy` | 5.7% | 66.7% | 0 |
-| `ablate_live_claim` | 5.7% | 66.7% | 0 |
-| `ablate_money` | 5.7% | 66.7% | 0 |
-| `ablate_none` | 5.7% | 66.7% | 0 |
-| `ablate_safety` | 5.7% | 66.7% | 0 |
+| `ablate_all_guards` | 8.3% | 80.0% | 0 |
+| `ablate_intent_policy` | 6.7% | 75.0% | 0 |
+| `ablate_live_claim` | 6.7% | 75.0% | 0 |
+| `ablate_money` | 6.7% | 75.0% | 0 |
+| `ablate_none` | 6.7% | 75.0% | 0 |
+| `ablate_safety` | 6.7% | 75.0% | 0 |
+| `ablate_unresponsive` | 6.7% | 75.0% | 0 |
 
 Threshold sweep (the risk–coverage trade-off):
 
 | config | auto coverage | quality on auto |
 | --- | --- | --- |
-| `conf0.35_ret0.20` | 7.5% | 75.0% |
-| `conf0.35_ret0.28` | 3.8% | 50.0% |
-| `conf0.35_ret0.36` | 0.0% | n/a |
-| `conf0.45_ret0.20` | 7.5% | 75.0% |
-| `conf0.45_ret0.28` | 3.8% | 50.0% |
-| `conf0.45_ret0.36` | 0.0% | n/a |
-| `conf0.55_ret0.20` | 7.5% | 75.0% |
-| `conf0.55_ret0.28` | 3.8% | 50.0% |
-| `conf0.55_ret0.36` | 0.0% | n/a |
-| `conf0.65_ret0.20` | 7.5% | 75.0% |
-| `conf0.65_ret0.28` | 3.8% | 50.0% |
-| `conf0.65_ret0.36` | 0.0% | n/a |
-| `conf0.75_ret0.20` | 7.5% | 75.0% |
-| `conf0.75_ret0.28` | 3.8% | 50.0% |
-| `conf0.75_ret0.36` | 0.0% | n/a |
-| `conf0.85_ret0.20` | 7.5% | 75.0% |
-| `conf0.85_ret0.28` | 3.8% | 50.0% |
-| `conf0.85_ret0.36` | 0.0% | n/a |
+| `conf0.35_ret0.20` | 8.3% | 80.0% |
+| `conf0.35_ret0.28` | 5.0% | 66.7% |
+| `conf0.35_ret0.36` | 1.7% | 100.0% |
+| `conf0.45_ret0.20` | 8.3% | 80.0% |
+| `conf0.45_ret0.28` | 5.0% | 66.7% |
+| `conf0.45_ret0.36` | 1.7% | 100.0% |
+| `conf0.55_ret0.20` | 8.3% | 80.0% |
+| `conf0.55_ret0.28` | 5.0% | 66.7% |
+| `conf0.55_ret0.36` | 1.7% | 100.0% |
+| `conf0.65_ret0.20` | 8.3% | 80.0% |
+| `conf0.65_ret0.28` | 5.0% | 66.7% |
+| `conf0.65_ret0.36` | 1.7% | 100.0% |
+| `conf0.75_ret0.20` | 8.3% | 80.0% |
+| `conf0.75_ret0.28` | 5.0% | 66.7% |
+| `conf0.75_ret0.36` | 1.7% | 100.0% |
+| `conf0.85_ret0.20` | 8.3% | 80.0% |
+| `conf0.85_ret0.28` | 5.0% | 66.7% |
+| `conf0.85_ret0.36` | 1.7% | 100.0% |
 
 ## Which rule decided each message
 
 | rule | count |
 | --- | --- |
-| `R13-default-assist` | 96 |
-| `R10-weak-grounding` | 37 |
+| `R13-default-assist` | 78 |
 | `R6-intent-policy` | 35 |
-| `R12-auto-eligible` | 8 |
-| `R3-money` | 7 |
-| `R5-unreadable` | 6 |
-| `R1-safety` | 4 |
-| `R4-existing-case` | 3 |
+| `R9b-unresponsive` | 31 |
+| `R10-weak-grounding` | 29 |
+| `R3-money` | 9 |
+| `R5-unreadable` | 7 |
+| `R1-safety` | 6 |
+| `R12-auto-eligible` | 6 |
+| `R4-existing-case` | 5 |
 | `R9-live-claim` | 2 |
 | `R2-legal` | 2 |
 
-The generator's self-report disagreed with the independent regex check on **1.5%** of drafts — i.e. it asserted a concrete time, platform or amount while reporting that it had not. This is why the router cross-checks rather than trusting the model's own declaration.
+The generator's self-report disagreed with the independent regex check on **1.4%** of drafts — i.e. it asserted a concrete time, platform or amount while reporting that it had not. This is why the router cross-checks rather than trusting the model's own declaration.
 
 ## What this cost to produce
 
-591 LLM calls, 770,427 tokens, 93 minutes spent waiting on the free-tier rate limit.
+613 LLM calls, 794,475 tokens, 94 minutes spent waiting on the free-tier rate limit.
 
 | stage | calls | tokens |
 | --- | --- | --- |
+| `judge` | 181 | 222,960 |
 | `prelabel` | 103 | 217,180 |
-| `judge` | 171 | 210,682 |
-| `generate` | 203 | 202,103 |
+| `generate` | 215 | 213,873 |
 | `adjudicate` | 35 | 53,987 |
 | `classify` | 38 | 49,021 |
 | `taxonomy` | 39 | 37,269 |

@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi there. Sorry to hear about the facilities. Did you book a seat on this train? If not, we can try to help you find one.\",\"grounded_in\":[3],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"seat reservation details\",\"confidence\":0.85}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 846,
+ "completion_tokens": 96,
+ "tag": "generate"
+}

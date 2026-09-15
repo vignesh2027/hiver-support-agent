@@ -56,6 +56,9 @@ class RouterConfig:
     block_on_existing_case: bool = True
     block_on_image_only: bool = True
     block_on_live_claim: bool = True
+    # Added after F0: a reply can pass every truthfulness guard and still be
+    # unsendable because it asks the customer to repeat themselves.
+    block_on_unresponsive: bool = True
     # If False, intents whose taxonomy default is "escalate" can still be
     # auto-handled when every other signal is clean. Used for ablation only.
     respect_intent_default: bool = True
@@ -96,6 +99,7 @@ def route(
         "risk_flags": flags,
         "precedent_score": round(draft.max_precedent_score, 3) if draft else None,
         "draft_claims_live_fact": bool(draft.asserts_live_fact) if draft else None,
+        "draft_unresponsive": bool(draft.repeats_a_question_already_answered) if draft else None,
         "regex_live_claim": bool(draft.regex_flags_live_claim) if draft else None,
         "self_report_disagrees": bool(draft.self_report_disagrees) if draft else None,
     }
@@ -144,6 +148,11 @@ def route(
         return D("escalate", "R9-live-claim",
                  f"The draft asserts a time-sensitive fact ({which} it) that cannot be verified.")
 
+    if cfg.block_on_unresponsive and draft.repeats_a_question_already_answered:
+        return D("assist", "R9b-unresponsive",
+                 "The draft asks the customer for service details they already gave; "
+                 "sending it would read as not having read the message.")
+
     if draft.max_precedent_score < cfg.min_precedent_score:
         return D("assist", "R10-weak-grounding",
                  f"Best precedent similarity {draft.max_precedent_score:.2f} is below "
@@ -174,13 +183,15 @@ def sweep_configs() -> list[tuple[str, RouterConfig]]:
     out += [
         ("ablate_none", RouterConfig()),
         ("ablate_live_claim", RouterConfig(block_on_live_claim=False)),
+        ("ablate_unresponsive", RouterConfig(block_on_unresponsive=False)),
         ("ablate_money", RouterConfig(block_on_money_amount=False)),
         ("ablate_safety", RouterConfig(block_on_safety=False)),
         ("ablate_intent_policy", RouterConfig(respect_intent_default=False)),
         ("ablate_all_guards", RouterConfig(
             block_on_safety=False, block_on_legal=False, block_on_money_amount=False,
             block_on_existing_case=False, block_on_image_only=False,
-            block_on_live_claim=False, respect_intent_default=False,
+            block_on_live_claim=False, block_on_unresponsive=False,
+            respect_intent_default=False,
             min_intent_confidence=0.0, min_precedent_score=0.0)),
     ]
     return out

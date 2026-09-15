@@ -468,724 +468,717 @@
   },
   "reply_quality_natural_stratum": {
     "canned": {
-      "n": 54,
-      "acceptable_rate": 0.7037,
+      "n": 60,
+      "acceptable_rate": 0.7,
       "acceptable_ci": [
-        0.5717,
-        0.8086
+        0.5749,
+        0.801
       ],
       "catastrophic_rate": 0.0,
       "catastrophic_ci": [
         0.0,
-        0.0664
+        0.0602
       ],
       "mean_factual_safety": 2.0,
-      "mean_addresses_need": 0.833,
+      "mean_addresses_need": 0.817,
       "mean_actionability": 1.0,
-      "mean_tone_fit": 1.056,
-      "mean_composite": 0.611,
+      "mean_tone_fit": 1.05,
+      "mean_composite": 0.608,
       "judge_consistency_overrides": 0,
       "judge_errors": 0
     },
     "grounded_llm": {
-      "n": 53,
-      "acceptable_rate": 0.8491,
+      "n": 60,
+      "acceptable_rate": 0.8667,
       "acceptable_ci": [
-        0.7295,
-        0.9215
+        0.7583,
+        0.9309
       ],
-      "catastrophic_rate": 0.0189,
+      "catastrophic_rate": 0.0167,
       "catastrophic_ci": [
-        0.0033,
-        0.0994
+        0.0029,
+        0.0886
       ],
-      "mean_factual_safety": 1.83,
-      "mean_addresses_need": 1.17,
-      "mean_actionability": 1.547,
-      "mean_tone_fit": 1.509,
-      "mean_composite": 0.757,
+      "mean_factual_safety": 1.85,
+      "mean_addresses_need": 1.167,
+      "mean_actionability": 1.55,
+      "mean_tone_fit": 1.533,
+      "mean_composite": 0.762,
       "judge_consistency_overrides": 0,
       "judge_errors": 0
     },
     "nearest_neighbour": {
-      "n": 53,
-      "acceptable_rate": 0.2642,
+      "n": 60,
+      "acceptable_rate": 0.25,
       "acceptable_ci": [
-        0.1644,
-        0.3958
+        0.1578,
+        0.3723
       ],
-      "catastrophic_rate": 0.3585,
+      "catastrophic_rate": 0.35,
       "catastrophic_ci": [
-        0.243,
-        0.4931
+        0.2417,
+        0.4764
       ],
-      "mean_factual_safety": 0.962,
-      "mean_addresses_need": 0.623,
-      "mean_actionability": 0.509,
-      "mean_tone_fit": 1.038,
-      "mean_composite": 0.392,
+      "mean_factual_safety": 0.983,
+      "mean_addresses_need": 0.567,
+      "mean_actionability": 0.467,
+      "mean_tone_fit": 1.0,
+      "mean_composite": 0.377,
       "judge_consistency_overrides": 0,
       "judge_errors": 0
     }
   },
   "selective": {
     "operating_point": {
-      "n": 53,
-      "auto_coverage": 0.0566,
-      "assist_rate": 0.566,
-      "escalate_rate": 0.3774,
-      "quality_on_auto": 0.6667,
+      "n": 60,
+      "auto_coverage": 0.0333,
+      "assist_rate": 0.6,
+      "escalate_rate": 0.3667,
+      "quality_on_auto": 1.0,
       "quality_on_auto_ci": [
-        0.2077,
-        0.9385
+        0.3424,
+        1.0
       ],
       "quality_on_assist": 0.8333,
-      "quality_overall_if_all_sent": 0.8491,
+      "quality_overall_if_all_sent": 0.8667,
       "catastrophic_rate_on_auto": 0.0,
       "catastrophic_rate_on_auto_ci": [
         0.0,
-        0.5615
+        0.6576
       ],
-      "catastrophic_rate_overall": 0.0189,
+      "catastrophic_rate_overall": 0.0167,
       "catastrophic_escapes": 0
     },
     "by_stratum": {
       "natural": {
-        "n": 53,
-        "auto_coverage": 0.0566,
-        "assist_rate": 0.566,
-        "escalate_rate": 0.3774,
-        "quality_on_auto": 0.6667,
+        "n": 60,
+        "auto_coverage": 0.0333,
+        "assist_rate": 0.6,
+        "escalate_rate": 0.3667,
+        "quality_on_auto": 1.0,
         "quality_on_auto_ci": [
-          0.2077,
-          0.9385
+          0.3424,
+          1.0
         ],
         "quality_on_assist": 0.8333,
-        "quality_overall_if_all_sent": 0.8491,
+        "quality_overall_if_all_sent": 0.8667,
         "catastrophic_rate_on_auto": 0.0,
         "catastrophic_rate_on_auto_ci": [
           0.0,
-          0.5615
+          0.6576
         ],
-        "catastrophic_rate_overall": 0.0189,
+        "catastrophic_rate_overall": 0.0167,
         "catastrophic_escapes": 0
       }
     },
     "risk_coverage": {
-      "aurc": 0.1923,
+      "aurc": 0.1743,
       "points": [
         {
-          "coverage": 0.019,
+          "coverage": 0.017,
           "error": 1.0
         },
         {
-          "coverage": 0.057,
-          "error": 0.3333
+          "coverage": 0.067,
+          "error": 0.25
         },
         {
-          "coverage": 0.094,
+          "coverage": 0.117,
+          "error": 0.1429
+        },
+        {
+          "coverage": 0.167,
+          "error": 0.205
+        },
+        {
+          "coverage": 0.217,
+          "error": 0.2038
+        },
+        {
+          "coverage": 0.267,
           "error": 0.2
         },
         {
-          "coverage": 0.132,
-          "error": 0.2071
+          "coverage": 0.317,
+          "error": 0.2105
         },
         {
-          "coverage": 0.17,
-          "error": 0.2222
+          "coverage": 0.367,
+          "error": 0.1977
         },
         {
-          "coverage": 0.208,
-          "error": 0.2318
-        },
-        {
-          "coverage": 0.245,
-          "error": 0.2269
-        },
-        {
-          "coverage": 0.283,
-          "error": 0.22
-        },
-        {
-          "coverage": 0.321,
-          "error": 0.2353
-        },
-        {
-          "coverage": 0.358,
-          "error": 0.2263
-        },
-        {
-          "coverage": 0.396,
-          "error": 0.2262
-        },
-        {
-          "coverage": 0.434,
-          "error": 0.2174
-        },
-        {
-          "coverage": 0.472,
+          "coverage": 0.417,
           "error": 0.2
         },
         {
-          "coverage": 0.509,
-          "error": 0.1852
+          "coverage": 0.467,
+          "error": 0.1786
         },
         {
-          "coverage": 0.547,
-          "error": 0.1724
-        },
-        {
-          "coverage": 0.585,
+          "coverage": 0.517,
           "error": 0.1613
         },
         {
-          "coverage": 0.623,
-          "error": 0.1515
+          "coverage": 0.567,
+          "error": 0.1471
         },
         {
-          "coverage": 0.66,
-          "error": 0.1486
+          "coverage": 0.617,
+          "error": 0.1351
         },
         {
-          "coverage": 0.698,
-          "error": 0.1473
+          "coverage": 0.667,
+          "error": 0.13
         },
         {
-          "coverage": 0.736,
-          "error": 0.1423
+          "coverage": 0.717,
+          "error": 0.1302
         },
         {
-          "coverage": 0.774,
-          "error": 0.1366
+          "coverage": 0.767,
+          "error": 0.1239
         },
         {
-          "coverage": 0.811,
-          "error": 0.1326
+          "coverage": 0.817,
+          "error": 0.1194
         },
         {
-          "coverage": 0.849,
-          "error": 0.1322
+          "coverage": 0.867,
+          "error": 0.1154
         },
         {
-          "coverage": 0.887,
-          "error": 0.1277
+          "coverage": 0.917,
+          "error": 0.1091
         },
         {
-          "coverage": 0.925,
-          "error": 0.1224
-        },
-        {
-          "coverage": 0.962,
-          "error": 0.1304
-        },
-        {
-          "coverage": 1.0,
-          "error": 0.1509
+          "coverage": 0.967,
+          "error": 0.1207
         }
       ]
     },
     "router_sweep": {
       "conf0.35_ret0.20": {
-        "n": 53,
-        "auto_coverage": 0.0755,
-        "assist_rate": 0.5283,
-        "escalate_rate": 0.3962,
-        "quality_on_auto": 0.75,
+        "n": 60,
+        "auto_coverage": 0.0833,
+        "assist_rate": 0.5333,
+        "escalate_rate": 0.3833,
+        "quality_on_auto": 0.8,
         "quality_on_auto_ci": [
-          0.3006,
-          0.9544
+          0.3755,
+          0.9638
         ],
-        "quality_on_assist": 0.8214,
-        "quality_overall_if_all_sent": 0.8491,
+        "quality_on_assist": 0.8438,
+        "quality_overall_if_all_sent": 0.8667,
         "catastrophic_rate_on_auto": 0.0,
         "catastrophic_rate_on_auto_ci": [
           0.0,
-          0.4899
+          0.4345
         ],
-        "catastrophic_rate_overall": 0.0189,
+        "catastrophic_rate_overall": 0.0167,
         "catastrophic_escapes": 0
       },
       "conf0.35_ret0.28": {
-        "n": 53,
-        "auto_coverage": 0.0377,
-        "assist_rate": 0.566,
-        "escalate_rate": 0.3962,
-        "quality_on_auto": 0.5,
+        "n": 60,
+        "auto_coverage": 0.05,
+        "assist_rate": 0.5667,
+        "escalate_rate": 0.3833,
+        "quality_on_auto": 0.6667,
         "quality_on_auto_ci": [
-          0.0945,
-          0.9055
+          0.2077,
+          0.9385
         ],
-        "quality_on_assist": 0.8333,
-        "quality_overall_if_all_sent": 0.8491,
+        "quality_on_assist": 0.8529,
+        "quality_overall_if_all_sent": 0.8667,
         "catastrophic_rate_on_auto": 0.0,
         "catastrophic_rate_on_auto_ci": [
           0.0,
-          0.6576
+          0.5615
         ],
-        "catastrophic_rate_overall": 0.0189,
+        "catastrophic_rate_overall": 0.0167,
         "catastrophic_escapes": 0
       },
       "conf0.35_ret0.36": {
-        "n": 53,
-        "auto_coverage": 0.0,
-        "assist_rate": 0.6038,
-        "escalate_rate": 0.3962,
-        "quality_on_auto": NaN,
+        "n": 60,
+        "auto_coverage": 0.0167,
+        "assist_rate": 0.6,
+        "escalate_rate": 0.3833,
+        "quality_on_auto": 1.0,
         "quality_on_auto_ci": [
-          NaN,
-          NaN
+          0.2065,
+          1.0
         ],
-        "quality_on_assist": 0.8125,
-        "quality_overall_if_all_sent": 0.8491,
-        "catastrophic_rate_on_auto": NaN,
+        "quality_on_assist": 0.8333,
+        "quality_overall_if_all_sent": 0.8667,
+        "catastrophic_rate_on_auto": 0.0,
         "catastrophic_rate_on_auto_ci": [
-          NaN,
-          NaN
+          0.0,
+          0.7935
         ],
-        "catastrophic_rate_overall": 0.0189,
+        "catastrophic_rate_overall": 0.0167,
         "catastrophic_escapes": 0
       },
       "conf0.45_ret0.20": {
-        "n": 53,
-        "auto_coverage": 0.0755,
-        "assist_rate": 0.5283,
-        "escalate_rate": 0.3962,
-        "quality_on_auto": 0.75,
+        "n": 60,
+        "auto_coverage": 0.0833,
+        "assist_rate": 0.5333,
+        "escalate_rate": 0.3833,
+        "quality_on_auto": 0.8,
         "quality_on_auto_ci": [
-          0.3006,
-          0.9544
+          0.3755,
+          0.9638
         ],
-        "quality_on_assist": 0.8214,
-        "quality_overall_if_all_sent": 0.8491,
+        "quality_on_assist": 0.8438,
+        "quality_overall_if_all_sent": 0.8667,
         "catastrophic_rate_on_auto": 0.0,
         "catastrophic_rate_on_auto_ci": [
           0.0,
-          0.4899
+          0.4345
         ],
-        "catastrophic_rate_overall": 0.0189,
+        "catastrophic_rate_overall": 0.0167,
         "catastrophic_escapes": 0
       },
       "conf0.45_ret0.28": {
-        "n": 53,
-        "auto_coverage": 0.0377,
-        "assist_rate": 0.566,
-        "escalate_rate": 0.3962,
-        "quality_on_auto": 0.5,
+        "n": 60,
+        "auto_coverage": 0.05,
+        "assist_rate": 0.5667,
+        "escalate_rate": 0.3833,
+        "quality_on_auto": 0.6667,
         "quality_on_auto_ci": [
-          0.0945,
-          0.9055
+          0.2077,
+          0.9385
         ],
-        "quality_on_assist": 0.8333,
-        "quality_overall_if_all_sent": 0.8491,
+        "quality_on_assist": 0.8529,
+        "quality_overall_if_all_sent": 0.8667,
         "catastrophic_rate_on_auto": 0.0,
         "catastrophic_rate_on_auto_ci": [
           0.0,
-          0.6576
+          0.5615
         ],
-        "catastrophic_rate_overall": 0.0189,
+        "catastrophic_rate_overall": 0.0167,
         "catastrophic_escapes": 0
       },
       "conf0.45_ret0.36": {
-        "n": 53,
-        "auto_coverage": 0.0,
-        "assist_rate": 0.6038,
-        "escalate_rate": 0.3962,
-        "quality_on_auto": NaN,
+        "n": 60,
+        "auto_coverage": 0.0167,
+        "assist_rate": 0.6,
+        "escalate_rate": 0.3833,
+        "quality_on_auto": 1.0,
         "quality_on_auto_ci": [
-          NaN,
-          NaN
+          0.2065,
+          1.0
         ],
-        "quality_on_assist": 0.8125,
-        "quality_overall_if_all_sent": 0.8491,
-        "catastrophic_rate_on_auto": NaN,
+        "quality_on_assist": 0.8333,
+        "quality_overall_if_all_sent": 0.8667,
+        "catastrophic_rate_on_auto": 0.0,
         "catastrophic_rate_on_auto_ci": [
-          NaN,
-          NaN
+          0.0,
+          0.7935
         ],
-        "catastrophic_rate_overall": 0.0189,
+        "catastrophic_rate_overall": 0.0167,
         "catastrophic_escapes": 0
       },
       "conf0.55_ret0.20": {
-        "n": 53,
-        "auto_coverage": 0.0755,
-        "assist_rate": 0.5283,
-        "escalate_rate": 0.3962,
-        "quality_on_auto": 0.75,
+        "n": 60,
+        "auto_coverage": 0.0833,
+        "assist_rate": 0.5333,
+        "escalate_rate": 0.3833,
+        "quality_on_auto": 0.8,
         "quality_on_auto_ci": [
-          0.3006,
-          0.9544
+          0.3755,
+          0.9638
         ],
-        "quality_on_assist": 0.8214,
-        "quality_overall_if_all_sent": 0.8491,
+        "quality_on_assist": 0.8438,
+        "quality_overall_if_all_sent": 0.8667,
         "catastrophic_rate_on_auto": 0.0,
         "catastrophic_rate_on_auto_ci": [
           0.0,
-          0.4899
+          0.4345
         ],
-        "catastrophic_rate_overall": 0.0189,
+        "catastrophic_rate_overall": 0.0167,
         "catastrophic_escapes": 0
       },
       "conf0.55_ret0.28": {
-        "n": 53,
-        "auto_coverage": 0.0377,
-        "assist_rate": 0.566,
-        "escalate_rate": 0.3962,
-        "quality_on_auto": 0.5,
+        "n": 60,
+        "auto_coverage": 0.05,
+        "assist_rate": 0.5667,
+        "escalate_rate": 0.3833,
+        "quality_on_auto": 0.6667,
         "quality_on_auto_ci": [
-          0.0945,
-          0.9055
+          0.2077,
+          0.9385
         ],
-        "quality_on_assist": 0.8333,
-        "quality_overall_if_all_sent": 0.8491,
+        "quality_on_assist": 0.8529,
+        "quality_overall_if_all_sent": 0.8667,
         "catastrophic_rate_on_auto": 0.0,
         "catastrophic_rate_on_auto_ci": [
           0.0,
-          0.6576
+          0.5615
         ],
-        "catastrophic_rate_overall": 0.0189,
+        "catastrophic_rate_overall": 0.0167,
         "catastrophic_escapes": 0
       },
       "conf0.55_ret0.36": {
-        "n": 53,
-        "auto_coverage": 0.0,
-        "assist_rate": 0.6038,
-        "escalate_rate": 0.3962,
-        "quality_on_auto": NaN,
+        "n": 60,
+        "auto_coverage": 0.0167,
+        "assist_rate": 0.6,
+        "escalate_rate": 0.3833,
+        "quality_on_auto": 1.0,
         "quality_on_auto_ci": [
-          NaN,
-          NaN
+          0.2065,
+          1.0
         ],
-        "quality_on_assist": 0.8125,
-        "quality_overall_if_all_sent": 0.8491,
-        "catastrophic_rate_on_auto": NaN,
+        "quality_on_assist": 0.8333,
+        "quality_overall_if_all_sent": 0.8667,
+        "catastrophic_rate_on_auto": 0.0,
         "catastrophic_rate_on_auto_ci": [
-          NaN,
-          NaN
+          0.0,
+          0.7935
         ],
-        "catastrophic_rate_overall": 0.0189,
+        "catastrophic_rate_overall": 0.0167,
         "catastrophic_escapes": 0
       },
       "conf0.65_ret0.20": {
-        "n": 53,
-        "auto_coverage": 0.0755,
-        "assist_rate": 0.5094,
-        "escalate_rate": 0.4151,
-        "quality_on_auto": 0.75,
+        "n": 60,
+        "auto_coverage": 0.0833,
+        "assist_rate": 0.5167,
+        "escalate_rate": 0.4,
+        "quality_on_auto": 0.8,
         "quality_on_auto_ci": [
-          0.3006,
-          0.9544
+          0.3755,
+          0.9638
         ],
-        "quality_on_assist": 0.8519,
-        "quality_overall_if_all_sent": 0.8491,
+        "quality_on_assist": 0.871,
+        "quality_overall_if_all_sent": 0.8667,
         "catastrophic_rate_on_auto": 0.0,
         "catastrophic_rate_on_auto_ci": [
           0.0,
-          0.4899
+          0.4345
         ],
-        "catastrophic_rate_overall": 0.0189,
+        "catastrophic_rate_overall": 0.0167,
         "catastrophic_escapes": 0
       },
       "conf0.65_ret0.28": {
-        "n": 53,
-        "auto_coverage": 0.0377,
-        "assist_rate": 0.5472,
-        "escalate_rate": 0.4151,
-        "quality_on_auto": 0.5,
+        "n": 60,
+        "auto_coverage": 0.05,
+        "assist_rate": 0.55,
+        "escalate_rate": 0.4,
+        "quality_on_auto": 0.6667,
         "quality_on_auto_ci": [
-          0.0945,
-          0.9055
+          0.2077,
+          0.9385
         ],
-        "quality_on_assist": 0.8621,
-        "quality_overall_if_all_sent": 0.8491,
+        "quality_on_assist": 0.8788,
+        "quality_overall_if_all_sent": 0.8667,
         "catastrophic_rate_on_auto": 0.0,
         "catastrophic_rate_on_auto_ci": [
           0.0,
-          0.6576
+          0.5615
         ],
-        "catastrophic_rate_overall": 0.0189,
+        "catastrophic_rate_overall": 0.0167,
         "catastrophic_escapes": 0
       },
       "conf0.65_ret0.36": {
-        "n": 53,
-        "auto_coverage": 0.0,
-        "assist_rate": 0.5849,
-        "escalate_rate": 0.4151,
-        "quality_on_auto": NaN,
+        "n": 60,
+        "auto_coverage": 0.0167,
+        "assist_rate": 0.5833,
+        "escalate_rate": 0.4,
+        "quality_on_auto": 1.0,
         "quality_on_auto_ci": [
-          NaN,
-          NaN
+          0.2065,
+          1.0
         ],
-        "quality_on_assist": 0.8387,
-        "quality_overall_if_all_sent": 0.8491,
-        "catastrophic_rate_on_auto": NaN,
+        "quality_on_assist": 0.8571,
+        "quality_overall_if_all_sent": 0.8667,
+        "catastrophic_rate_on_auto": 0.0,
         "catastrophic_rate_on_auto_ci": [
-          NaN,
-          NaN
+          0.0,
+          0.7935
         ],
-        "catastrophic_rate_overall": 0.0189,
+        "catastrophic_rate_overall": 0.0167,
         "catastrophic_escapes": 0
       },
       "conf0.75_ret0.20": {
-        "n": 53,
-        "auto_coverage": 0.0755,
-        "assist_rate": 0.5094,
-        "escalate_rate": 0.4151,
-        "quality_on_auto": 0.75,
+        "n": 60,
+        "auto_coverage": 0.0833,
+        "assist_rate": 0.5167,
+        "escalate_rate": 0.4,
+        "quality_on_auto": 0.8,
         "quality_on_auto_ci": [
-          0.3006,
-          0.9544
+          0.3755,
+          0.9638
         ],
-        "quality_on_assist": 0.8519,
-        "quality_overall_if_all_sent": 0.8491,
+        "quality_on_assist": 0.871,
+        "quality_overall_if_all_sent": 0.8667,
         "catastrophic_rate_on_auto": 0.0,
         "catastrophic_rate_on_auto_ci": [
           0.0,
-          0.4899
+          0.4345
         ],
-        "catastrophic_rate_overall": 0.0189,
+        "catastrophic_rate_overall": 0.0167,
         "catastrophic_escapes": 0
       },
       "conf0.75_ret0.28": {
-        "n": 53,
-        "auto_coverage": 0.0377,
-        "assist_rate": 0.5472,
-        "escalate_rate": 0.4151,
-        "quality_on_auto": 0.5,
+        "n": 60,
+        "auto_coverage": 0.05,
+        "assist_rate": 0.55,
+        "escalate_rate": 0.4,
+        "quality_on_auto": 0.6667,
         "quality_on_auto_ci": [
-          0.0945,
-          0.9055
+          0.2077,
+          0.9385
         ],
-        "quality_on_assist": 0.8621,
-        "quality_overall_if_all_sent": 0.8491,
+        "quality_on_assist": 0.8788,
+        "quality_overall_if_all_sent": 0.8667,
         "catastrophic_rate_on_auto": 0.0,
         "catastrophic_rate_on_auto_ci": [
           0.0,
-          0.6576
+          0.5615
         ],
-        "catastrophic_rate_overall": 0.0189,
+        "catastrophic_rate_overall": 0.0167,
         "catastrophic_escapes": 0
       },
       "conf0.75_ret0.36": {
-        "n": 53,
-        "auto_coverage": 0.0,
-        "assist_rate": 0.5849,
-        "escalate_rate": 0.4151,
-        "quality_on_auto": NaN,
+        "n": 60,
+        "auto_coverage": 0.0167,
+        "assist_rate": 0.5833,
+        "escalate_rate": 0.4,
+        "quality_on_auto": 1.0,
         "quality_on_auto_ci": [
-          NaN,
-          NaN
+          0.2065,
+          1.0
         ],
-        "quality_on_assist": 0.8387,
-        "quality_overall_if_all_sent": 0.8491,
-        "catastrophic_rate_on_auto": NaN,
+        "quality_on_assist": 0.8571,
+        "quality_overall_if_all_sent": 0.8667,
+        "catastrophic_rate_on_auto": 0.0,
         "catastrophic_rate_on_auto_ci": [
-          NaN,
-          NaN
+          0.0,
+          0.7935
         ],
-        "catastrophic_rate_overall": 0.0189,
+        "catastrophic_rate_overall": 0.0167,
         "catastrophic_escapes": 0
       },
       "conf0.85_ret0.20": {
-        "n": 53,
-        "auto_coverage": 0.0755,
-        "assist_rate": 0.5094,
-        "escalate_rate": 0.4151,
-        "quality_on_auto": 0.75,
+        "n": 60,
+        "auto_coverage": 0.0833,
+        "assist_rate": 0.5167,
+        "escalate_rate": 0.4,
+        "quality_on_auto": 0.8,
         "quality_on_auto_ci": [
-          0.3006,
-          0.9544
+          0.3755,
+          0.9638
         ],
-        "quality_on_assist": 0.8519,
-        "quality_overall_if_all_sent": 0.8491,
+        "quality_on_assist": 0.871,
+        "quality_overall_if_all_sent": 0.8667,
         "catastrophic_rate_on_auto": 0.0,
         "catastrophic_rate_on_auto_ci": [
           0.0,
-          0.4899
+          0.4345
         ],
-        "catastrophic_rate_overall": 0.0189,
+        "catastrophic_rate_overall": 0.0167,
         "catastrophic_escapes": 0
       },
       "conf0.85_ret0.28": {
-        "n": 53,
-        "auto_coverage": 0.0377,
-        "assist_rate": 0.5472,
-        "escalate_rate": 0.4151,
-        "quality_on_auto": 0.5,
+        "n": 60,
+        "auto_coverage": 0.05,
+        "assist_rate": 0.55,
+        "escalate_rate": 0.4,
+        "quality_on_auto": 0.6667,
         "quality_on_auto_ci": [
-          0.0945,
-          0.9055
+          0.2077,
+          0.9385
         ],
-        "quality_on_assist": 0.8621,
-        "quality_overall_if_all_sent": 0.8491,
+        "quality_on_assist": 0.8788,
+        "quality_overall_if_all_sent": 0.8667,
         "catastrophic_rate_on_auto": 0.0,
         "catastrophic_rate_on_auto_ci": [
           0.0,
-          0.6576
+          0.5615
         ],
-        "catastrophic_rate_overall": 0.0189,
+        "catastrophic_rate_overall": 0.0167,
         "catastrophic_escapes": 0
       },
       "conf0.85_ret0.36": {
-        "n": 53,
-        "auto_coverage": 0.0,
-        "assist_rate": 0.5849,
-        "escalate_rate": 0.4151,
-        "quality_on_auto": NaN,
+        "n": 60,
+        "auto_coverage": 0.0167,
+        "assist_rate": 0.5833,
+        "escalate_rate": 0.4,
+        "quality_on_auto": 1.0,
         "quality_on_auto_ci": [
-          NaN,
-          NaN
+          0.2065,
+          1.0
         ],
-        "quality_on_assist": 0.8387,
-        "quality_overall_if_all_sent": 0.8491,
-        "catastrophic_rate_on_auto": NaN,
+        "quality_on_assist": 0.8571,
+        "quality_overall_if_all_sent": 0.8667,
+        "catastrophic_rate_on_auto": 0.0,
         "catastrophic_rate_on_auto_ci": [
-          NaN,
-          NaN
+          0.0,
+          0.7935
         ],
-        "catastrophic_rate_overall": 0.0189,
+        "catastrophic_rate_overall": 0.0167,
         "catastrophic_escapes": 0
       },
       "ablate_none": {
-        "n": 53,
-        "auto_coverage": 0.0566,
-        "assist_rate": 0.5472,
-        "escalate_rate": 0.3962,
-        "quality_on_auto": 0.6667,
-        "quality_on_auto_ci": [
-          0.2077,
-          0.9385
-        ],
-        "quality_on_assist": 0.8276,
-        "quality_overall_if_all_sent": 0.8491,
-        "catastrophic_rate_on_auto": 0.0,
-        "catastrophic_rate_on_auto_ci": [
-          0.0,
-          0.5615
-        ],
-        "catastrophic_rate_overall": 0.0189,
-        "catastrophic_escapes": 0
-      },
-      "ablate_live_claim": {
-        "n": 53,
-        "auto_coverage": 0.0566,
-        "assist_rate": 0.6038,
-        "escalate_rate": 0.3396,
-        "quality_on_auto": 0.6667,
-        "quality_on_auto_ci": [
-          0.2077,
-          0.9385
-        ],
-        "quality_on_assist": 0.8125,
-        "quality_overall_if_all_sent": 0.8491,
-        "catastrophic_rate_on_auto": 0.0,
-        "catastrophic_rate_on_auto_ci": [
-          0.0,
-          0.5615
-        ],
-        "catastrophic_rate_overall": 0.0189,
-        "catastrophic_escapes": 0
-      },
-      "ablate_money": {
-        "n": 53,
-        "auto_coverage": 0.0566,
-        "assist_rate": 0.6038,
-        "escalate_rate": 0.3396,
-        "quality_on_auto": 0.6667,
-        "quality_on_auto_ci": [
-          0.2077,
-          0.9385
-        ],
-        "quality_on_assist": 0.8438,
-        "quality_overall_if_all_sent": 0.8491,
-        "catastrophic_rate_on_auto": 0.0,
-        "catastrophic_rate_on_auto_ci": [
-          0.0,
-          0.5615
-        ],
-        "catastrophic_rate_overall": 0.0189,
-        "catastrophic_escapes": 0
-      },
-      "ablate_safety": {
-        "n": 53,
-        "auto_coverage": 0.0566,
-        "assist_rate": 0.566,
-        "escalate_rate": 0.3774,
-        "quality_on_auto": 0.6667,
-        "quality_on_auto_ci": [
-          0.2077,
-          0.9385
-        ],
-        "quality_on_assist": 0.8333,
-        "quality_overall_if_all_sent": 0.8491,
-        "catastrophic_rate_on_auto": 0.0,
-        "catastrophic_rate_on_auto_ci": [
-          0.0,
-          0.5615
-        ],
-        "catastrophic_rate_overall": 0.0189,
-        "catastrophic_escapes": 0
-      },
-      "ablate_intent_policy": {
-        "n": 53,
-        "auto_coverage": 0.0566,
-        "assist_rate": 0.7547,
-        "escalate_rate": 0.1887,
-        "quality_on_auto": 0.6667,
-        "quality_on_auto_ci": [
-          0.2077,
-          0.9385
-        ],
-        "quality_on_assist": 0.85,
-        "quality_overall_if_all_sent": 0.8491,
-        "catastrophic_rate_on_auto": 0.0,
-        "catastrophic_rate_on_auto_ci": [
-          0.0,
-          0.5615
-        ],
-        "catastrophic_rate_overall": 0.0189,
-        "catastrophic_escapes": 0
-      },
-      "ablate_all_guards": {
-        "n": 53,
-        "auto_coverage": 0.0755,
-        "assist_rate": 0.9245,
-        "escalate_rate": 0.0,
+        "n": 60,
+        "auto_coverage": 0.0667,
+        "assist_rate": 0.55,
+        "escalate_rate": 0.3833,
         "quality_on_auto": 0.75,
         "quality_on_auto_ci": [
           0.3006,
           0.9544
         ],
-        "quality_on_assist": 0.8571,
-        "quality_overall_if_all_sent": 0.8491,
+        "quality_on_assist": 0.8485,
+        "quality_overall_if_all_sent": 0.8667,
         "catastrophic_rate_on_auto": 0.0,
         "catastrophic_rate_on_auto_ci": [
           0.0,
           0.4899
         ],
-        "catastrophic_rate_overall": 0.0189,
+        "catastrophic_rate_overall": 0.0167,
+        "catastrophic_escapes": 0
+      },
+      "ablate_live_claim": {
+        "n": 60,
+        "auto_coverage": 0.0667,
+        "assist_rate": 0.6,
+        "escalate_rate": 0.3333,
+        "quality_on_auto": 0.75,
+        "quality_on_auto_ci": [
+          0.3006,
+          0.9544
+        ],
+        "quality_on_assist": 0.8333,
+        "quality_overall_if_all_sent": 0.8667,
+        "catastrophic_rate_on_auto": 0.0,
+        "catastrophic_rate_on_auto_ci": [
+          0.0,
+          0.4899
+        ],
+        "catastrophic_rate_overall": 0.0167,
+        "catastrophic_escapes": 0
+      },
+      "ablate_unresponsive": {
+        "n": 60,
+        "auto_coverage": 0.0667,
+        "assist_rate": 0.55,
+        "escalate_rate": 0.3833,
+        "quality_on_auto": 0.75,
+        "quality_on_auto_ci": [
+          0.3006,
+          0.9544
+        ],
+        "quality_on_assist": 0.8485,
+        "quality_overall_if_all_sent": 0.8667,
+        "catastrophic_rate_on_auto": 0.0,
+        "catastrophic_rate_on_auto_ci": [
+          0.0,
+          0.4899
+        ],
+        "catastrophic_rate_overall": 0.0167,
+        "catastrophic_escapes": 0
+      },
+      "ablate_money": {
+        "n": 60,
+        "auto_coverage": 0.0667,
+        "assist_rate": 0.6,
+        "escalate_rate": 0.3333,
+        "quality_on_auto": 0.75,
+        "quality_on_auto_ci": [
+          0.3006,
+          0.9544
+        ],
+        "quality_on_assist": 0.8611,
+        "quality_overall_if_all_sent": 0.8667,
+        "catastrophic_rate_on_auto": 0.0,
+        "catastrophic_rate_on_auto_ci": [
+          0.0,
+          0.4899
+        ],
+        "catastrophic_rate_overall": 0.0167,
+        "catastrophic_escapes": 0
+      },
+      "ablate_safety": {
+        "n": 60,
+        "auto_coverage": 0.0667,
+        "assist_rate": 0.5667,
+        "escalate_rate": 0.3667,
+        "quality_on_auto": 0.75,
+        "quality_on_auto_ci": [
+          0.3006,
+          0.9544
+        ],
+        "quality_on_assist": 0.8529,
+        "quality_overall_if_all_sent": 0.8667,
+        "catastrophic_rate_on_auto": 0.0,
+        "catastrophic_rate_on_auto_ci": [
+          0.0,
+          0.4899
+        ],
+        "catastrophic_rate_overall": 0.0167,
+        "catastrophic_escapes": 0
+      },
+      "ablate_intent_policy": {
+        "n": 60,
+        "auto_coverage": 0.0667,
+        "assist_rate": 0.7667,
+        "escalate_rate": 0.1667,
+        "quality_on_auto": 0.75,
+        "quality_on_auto_ci": [
+          0.3006,
+          0.9544
+        ],
+        "quality_on_assist": 0.8696,
+        "quality_overall_if_all_sent": 0.8667,
+        "catastrophic_rate_on_auto": 0.0,
+        "catastrophic_rate_on_auto_ci": [
+          0.0,
+          0.4899
+        ],
+        "catastrophic_rate_overall": 0.0167,
+        "catastrophic_escapes": 0
+      },
+      "ablate_all_guards": {
+        "n": 60,
+        "auto_coverage": 0.0833,
+        "assist_rate": 0.9167,
+        "escalate_rate": 0.0,
+        "quality_on_auto": 0.8,
+        "quality_on_auto_ci": [
+          0.3755,
+          0.9638
+        ],
+        "quality_on_assist": 0.8727,
+        "quality_overall_if_all_sent": 0.8667,
+        "catastrophic_rate_on_auto": 0.0,
+        "catastrophic_rate_on_auto_ci": [
+          0.0,
+          0.4345
+        ],
+        "catastrophic_rate_overall": 0.0167,
         "catastrophic_escapes": 0
       }
     }
   },
   "router": {
     "action_distribution": {
-      "assist": 0.665,
-      "escalate": 0.295,
-      "auto": 0.04
+      "assist": 0.6571,
+      "escalate": 0.3143,
+      "auto": 0.0286
     },
     "rule_distribution": {
-      "R13-default-assist": 96,
-      "R10-weak-grounding": 37,
+      "R13-default-assist": 78,
       "R6-intent-policy": 35,
-      "R12-auto-eligible": 8,
-      "R3-money": 7,
-      "R5-unreadable": 6,
-      "R1-safety": 4,
-      "R4-existing-case": 3,
+      "R9b-unresponsive": 31,
+      "R10-weak-grounding": 29,
+      "R3-money": 9,
+      "R5-unreadable": 7,
+      "R1-safety": 6,
+      "R12-auto-eligible": 6,
+      "R4-existing-case": 5,
       "R9-live-claim": 2,
       "R2-legal": 2
     },
-    "self_report_disagreement_rate": 0.015
+    "self_report_disagreement_rate": 0.0143
   },
   "label_quality": {
     "n_labelled": 220,
@@ -1206,21 +1199,21 @@
     "status": "not yet measured - run `make grade`"
   },
   "cost": {
-    "calls": 591,
-    "total_tokens": 770427,
-    "throttle_wait_s": 5563.2,
+    "calls": 613,
+    "total_tokens": 794475,
+    "throttle_wait_s": 5612.9,
     "by_tag": {
+      "judge": {
+        "calls": 181,
+        "tokens": 222960
+      },
       "prelabel": {
         "calls": 103,
         "tokens": 217180
       },
-      "judge": {
-        "calls": 171,
-        "tokens": 210682
-      },
       "generate": {
-        "calls": 203,
-        "tokens": 202103
+        "calls": 215,
+        "tokens": 213873
       },
       "adjudicate": {
         "calls": 35,

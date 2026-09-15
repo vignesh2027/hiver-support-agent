@@ -115,3 +115,57 @@ def test_canned_baseline_is_a_deflection():
 def test_live_claim_pattern_ignores_ordinary_prose():
     for s in ["We are sorry about this.", "Please contact the team.", "Thanks for letting us know."]:
         assert not LIVE_CLAIM.search(s), s
+
+
+# ------------------------------------------- unresponsiveness (REPORT.md F0)
+
+@pytest.mark.parametrize(
+    "reply,msg",
+    [
+        # The verbatim case that got past every guard and was still unsendable.
+        ("Which service was this on? Please let us know the train number.",
+         "hi I left my hat on one your trains, it was 16:29 service from Swansea to Cardiff"),
+        ("Could you tell us which train you were on?",
+         "the 1927 from Pangbourne to Oxford was cancelled"),
+    ],
+)
+def test_asking_for_details_already_given_is_flagged(reply, msg):
+    from hsa.reply.generate import asks_for_already_given
+
+    assert asks_for_already_given(reply, msg) is True
+    assert mk(reply, msg).repeats_a_question_already_answered is True
+
+
+@pytest.mark.parametrize(
+    "reply,msg",
+    [
+        # Genuinely under-specified: asking is the right thing to do.
+        ("Which service was this on?", "I left my bag on a train"),
+        # Not a request at all.
+        ("Sorry about your hat. Report it on our lost property form.",
+         "left my hat on the 16:29 from Swansea"),
+    ],
+)
+def test_legitimate_questions_are_not_flagged(reply, msg):
+    from hsa.reply.generate import asks_for_already_given
+
+    assert asks_for_already_given(reply, msg) is False
+
+
+def test_unresponsive_draft_is_not_auto_sent():
+    """The regression test for F0: every truthfulness guard passes, and it
+    still must not be auto-sent."""
+    from hsa.route.policy import RouterConfig, route
+
+    d = mk(
+        "Hi there. Which service was this on? Please let us know the train number.",
+        "hi I left my hat on one your trains, it was 16:29 service from Swansea to Cardiff",
+    )
+    d.precedents = [Precedent(1, "a", "b", 0.8, "", True)]
+    assert d.regex_flags_live_claim is False       # asserts nothing false
+    out = route(d.customer_msg, "lost_property", 0.98, d)
+    assert out.action != "auto", f"unresponsive reply was routed {out.action}"
+    # And turning the guard off reproduces the original failure.
+    off = route(d.customer_msg, "lost_property", 0.98, d,
+                RouterConfig(block_on_unresponsive=False))
+    assert off.action == "auto"

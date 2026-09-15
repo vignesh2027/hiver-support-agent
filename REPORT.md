@@ -212,7 +212,56 @@ chosen, and each comes with a rate over its real denominator. Hand-picking five
 interesting failures would read better and tell you less: you couldn't tell
 whether one happens twice or two hundred times.
 
-**F1 — No usable precedent. 43/180 (23.9%).**
+**F0 — The one reply that got past every guard. 1 of 4 auto-sent (and 1 of 8
+across the wider run).**
+
+This is the most useful thing I found, so it goes first.
+
+> **Customer:** "hi I left my hat on one your trains, it was 16:29 service from
+> Swansea to Cardiff"
+> **Agent:** "Hi there. Which service was this on? Please let us know the train
+> number or any other details and we'll try to locate your hat."
+> **Judge:** *"Ignores provided details and asks for information the customer
+> already gave."*
+
+The judge scored it `factual_safety: 2` — the top of the scale — and not
+catastrophic. It is completely true. It invents nothing. And it is still
+unsendable, because it asks the customer for the one thing they just told us,
+which reads as not having been listened to.
+
+Every guard passed and every guard was irrelevant. `lost_property` is
+auto-eligible, confidence was 0.98, no risk marker fired, grounding was strong.
+The hypothesis this forces on me is uncomfortable: **my entire safety
+architecture is built to stop the agent saying things that are false, and it
+has no defence at all against the agent saying things that are useless.** The
+router checks for invented times, money, legal language, safety words. Nothing
+in it asks whether the reply actually engages with what the customer wrote.
+
+The fix is not a better prompt. It is a responsiveness check in the router: if
+the draft asks for service details the message already contains, it cannot be
+auto-sent. So I built it (`R9b-unresponsive`) and measured it on the same
+drafts, which costs nothing because routing is a pure function of things
+already in the run log.
+
+| | before | after |
+| --- | --- | --- |
+| auto-sent replies the judge rejected | 1 of 8 (12.5%) | **0 of 6 (0%)** |
+| auto coverage | 8 messages | 6 messages |
+
+The first version of the check fired on 55 of 210 drafts, which was too many.
+It accepted any "<word> to <word>" as evidence that the customer had named a
+service, so it matched ordinary English ("would only leave when we got to the
+station") and flagged replies to messages that identified no service at all.
+Requiring a clock time, a four-digit departure, a capitalised route or a CRS
+code pair brought it to 31 of 210 and kept every genuine catch. There is a
+regression test that reproduces the original failure verbatim and asserts it is
+no longer auto-sent.
+
+I am reporting this as a failure rather than a feature because the interesting
+part is not the fix. It is that I built six guards, all of them about
+truthfulness, and the one reply that reached a customer was perfectly truthful.
+
+**F1 — No usable precedent. 51/210 (24.3%).**
 Nearly a quarter of messages have no historical match above the grounding
 floor. *"A) I can see why you have halved the compensation B) I don't know why
 I bother setting the alarm C) …"* — a multi-part rant with no close neighbour.
