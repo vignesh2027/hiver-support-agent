@@ -157,18 +157,18 @@ would the answer be a fact about right now?"). Predicting your own model's
 dominant error and still not fixing it is a useful thing to know: the rule
 helps a human annotator and does not survive contact with a batched prompt.
 
-**Reply quality**, judged blind on 60 messages from the natural stratum
-(n=60 per arm, 180 verdicts). The judge is `qwen3.8-27b`, a different family
+**Reply quality**, judged blind on 61 messages from the natural stratum
+(n=61 per arm, 183 verdicts). The judge is `qwen3.8-27b`, a different family
 from the generator, shown the same retrieved precedents for every arm and never
 shown what GWR actually replied. Scales are 0–2; 95% Wilson intervals.
 
 | arm | factual safety | addresses need | actionability | acceptable to send | catastrophic |
 | --- | --- | --- | --- | --- | --- |
-| canned apology (trivial) | **2.00** | 0.82 | 1.00 | 70.0% [57.5–80.1] | **0.0%** [0.0–6.0] |
-| nearest-neighbour (simple) | 0.98 | 0.57 | 0.47 | 25.0% [15.8–37.2] | **35.0%** [24.2–47.6] |
-| **grounded generator** | 1.85 | **1.17** | **1.55** | **86.7%** [75.8–93.1] | 1.7% [0.3–8.9] |
+| canned apology (trivial) | **2.00** | 0.82 | 1.00 | 70.5% [58.1–80.5] | **0.0%** [0.0–5.9] |
+| nearest-neighbour (simple) | 0.97 | 0.56 | 0.48 | 24.6% [15.5–36.7] | **36.1%** [25.2–48.6] |
+| **grounded generator** | 1.84 | **1.16** | **1.54** | **85.3%** [74.3–92.0] | 1.6% [0.3–8.7] |
 
-n=60 per arm rather than the full 120, because the free tier's daily token
+n=61 per arm rather than the full 120, because the free tier's daily token
 budget ran out mid-run. The intervals reflect that. The gaps between arms are
 several times wider than the intervals, so the ordering is safe even if the
 exact values are not.
@@ -192,13 +192,13 @@ averaged.
 The judge overrode its own verdict for inconsistency **0 times in 160**, and
 returned no parse failures.
 
-**Router behaviour** over 210 messages (grounded arm):
+**Router behaviour** over 215 messages (grounded arm):
 
 | action | share |
 | --- | --- |
-| assist (drafted for a human) | 65.7% |
-| escalate | 31.4% |
-| auto-send | 2.9% |
+| assist (drafted for a human) | 64.2% |
+| escalate | 33.0% |
+| auto-send | 2.8% |
 
 and the rule that bound each decision: `R13-default-assist` 78,
 `R6-intent-policy` 35, `R9b-unresponsive` 31, `R10-weak-grounding` 29,
@@ -207,10 +207,10 @@ and the rule that bound each decision: `R13-default-assist` 78,
 
 **The headline, which has to be quoted as a pair:** at **3.3% auto-handled
 coverage**, **100% of auto-sent replies were judged acceptable** — but that
-interval is [34.2–100.0], because it is 2 replies out of 60. The honest reading
+interval is [34.2–100.0], because it is 2 replies out of 61. The honest reading
 is "no failures observed in a sample far too small to bound the failure rate",
 not "perfect". If every draft were sent unfiltered the acceptable rate would be
-86.7%, so the router is buying roughly 13 points of quality by declining to
+85.3%, so the router is buying roughly 15 points of quality by declining to
 send 97% of them.
 
 A ~3% auto rate is a small number and it is the headline anyway, because it is
