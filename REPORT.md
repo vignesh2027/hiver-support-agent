@@ -228,12 +228,22 @@ Christmas timetable, no strike. Daily volume is stable across the window so
 it's not one freak incident, but nothing here demonstrates seasonal
 robustness.
 
-**5. The golden labels are not purely hand-made, and I'd rather say so.**
-220 messages, labelled independently twice by two model families, then: every
-disagreement adjudicated by me, plus a blind audit of a random 25% of the
-agreements. That audit exists to produce a *measured* error rate for the
-agreed labels I didn't individually check. Calling this "220 hand-labelled
-examples" with no qualifier would be untrue.
+**5. The golden labels are mostly not hand-made, and this is the weakest part
+of the submission.**
+220 messages were labelled independently twice, by two model families under two
+prompts. They agreed on intent 72.7% of the time and on handling 48.6%. The 138
+disagreements went to a third, larger model that sees both prior answers and is
+told the bias the first two share. Rows carry `review_kind`, and
+`reports/RESULTS.md` publishes the breakdown, so the fraction a human actually
+checked is visible rather than implied. That fraction is currently small.
+
+The consequence is specific and I would rather name it than let a reader
+discover it: my reference labels and my classifier come from overlapping model
+families, so classification accuracy here is partly a measure of agreement
+between related systems rather than of correctness. The judge-versus-human
+study is the only part of this evaluation anchored to a person, and it is a
+sample of 60. If I had one more day rather than one more week, I would spend it
+entirely on human labels, not on the model.
 
 **6. Per-class F1 is computed on a deliberately biased sample.**
 Rare intents only have enough support to measure because the `enriched`

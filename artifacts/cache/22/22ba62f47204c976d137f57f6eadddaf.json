@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi. Could you let us know what you’re referring to?\",\"grounded_in\":[2],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"specific context or link details\",\"confidence\":0.85}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 863,
+ "completion_tokens": 79,
+ "tag": "generate"
+}

@@ -1,0 +1,7 @@
+{
+ "text": "{\"decisions\":[{\"id\":\"N039\",\"intent\":\"service_complaint\",\"handling\":\"assist\",\"chose\":\"neither\",\"why\":\"both chose auto or assist, but rule requires assist\"},{\"id\":\"N040\",\"intent\":\"live_service_status\",\"handling\":\"escalate\",\"chose\":\"neither\",\"why\":\"both chose auto or assist, but rule requires escalate\"},{\"id\":\"N042\",\"intent\":\"live_service_status\",\"handling\":\"escalate\",\"chose\":\"neither\",\"why\":\"both got intent or handling wrong\"},{\"id\":\"N043\",\"intent\":\"lost_property\",\"handling\":\"auto\",\"chose\":\"A\",\"why\":\"A matches rule for lost_property\"}]}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 1153,
+ "completion_tokens": 319,
+ "tag": "adjudicate"
+}

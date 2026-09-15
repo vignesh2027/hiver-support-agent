@@ -1,0 +1,7 @@
+{
+ "text": "{\"decisions\":[{\"id\":\"N065\",\"intent\":\"capacity_and_overcrowding\",\"handling\":\"escalate\",\"chose\":\"B\",\"why\":\"safety mention requires escalation\"},{\"id\":\"N067\",\"intent\":\"onboard_facilities\",\"handling\":\"assist\",\"chose\":\"B\",\"why\":\"complaint about seats needs human assistance\"},{\"id\":\"N068\",\"intent\":\"capacity_and_overcrowding\",\"handling\":\"escalate\",\"chose\":\"B\",\"why\":\"health & safety breach triggers escalation\"},{\"id\":\"N069\",\"intent\":\"compensation_and_refunds\",\"handling\":\"escalate\",\"chose\":\"neither\",\"why\":\"money amount and refund request require escalation\"}]}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 1160,
+ "completion_tokens": 365,
+ "tag": "adjudicate"
+}

@@ -1,0 +1,7 @@
+{
+ "text": "{\"decisions\":[{\"id\":\"N084\",\"intent\":\"service_complaint\",\"handling\":\"assist\",\"chose\":\"B\",\"why\":\"auto not allowed for complaints\"},{\"id\":\"N086\",\"intent\":\"service_complaint\",\"handling\":\"assist\",\"chose\":\"B\",\"why\":\"auto not allowed for complaints\"},{\"id\":\"N087\",\"intent\":\"service_complaint\",\"handling\":\"assist\",\"chose\":\"B\",\"why\":\"auto not allowed for complaints\"},{\"id\":\"N088\",\"intent\":\"seat_reservation\",\"handling\":\"assist\",\"chose\":\"neither\",\"why\":\"both answers wrong\"}]}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 1167,
+ "completion_tokens": 257,
+ "tag": "adjudicate"
+}

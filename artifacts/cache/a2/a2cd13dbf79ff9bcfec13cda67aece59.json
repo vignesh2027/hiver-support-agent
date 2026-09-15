@@ -1,0 +1,7 @@
+{
+ "text": "{\"decisions\":[{\"id\":\"N009\",\"intent\":\"capacity_and_overcrowding\",\"handling\":\"assist\",\"chose\":\"B\",\"why\":\"complaint about crowding, not a live status, requires assist\"},{\"id\":\"N010\",\"intent\":\"compensation_and_refunds\",\"handling\":\"escalate\",\"chose\":\"neither\",\"why\":\"requests money refund/price change with specific amount, must be escalated\"},{\"id\":\"N011\",\"intent\":\"service_complaint\",\"handling\":\"assist\",\"chose\":\"B\",\"why\":\"vent about delay, no live data needed, assist appropriate\"},{\"id\":\"N012\",\"intent\":\"onboard_facilities\",\"handling\":\"assist\",\"chose\":\"B\",\"why\":\"complaint about wifi, requires assist\"}]}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 1188,
+ "completion_tokens": 531,
+ "tag": "adjudicate"
+}

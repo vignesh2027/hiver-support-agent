@@ -1,0 +1,7 @@
+{
+ "text": "{\"decisions\":[{\"id\":\"N014\",\"intent\":\"onboard_facilities\",\"handling\":\"assist\",\"chose\":\"B\",\"why\":\"auto not allowed for facilities complaints\"},{\"id\":\"N015\",\"intent\":\"compensation_and_refunds\",\"handling\":\"escalate\",\"chose\":\"B\",\"why\":\"money request requires escalation\"},{\"id\":\"N016\",\"intent\":\"service_complaint\",\"handling\":\"assist\",\"chose\":\"B\",\"why\":\"complaint about service quality, not capacity\"},{\"id\":\"N017\",\"intent\":\"live_service_status\",\"handling\":\"escalate\",\"chose\":\"neither\",\"why\":\"both gave wrong handling; live status must be escalated\"}]}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 1179,
+ "completion_tokens": 360,
+ "tag": "adjudicate"
+}

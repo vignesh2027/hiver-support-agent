@@ -1,0 +1,7 @@
+{
+ "text": "{\"decisions\":[{\"id\":\"N075\",\"intent\":\"missed_connection\",\"handling\":\"escalate\",\"chose\":\"B\",\"why\":\"B follows escalation rule\"},{\"id\":\"N077\",\"intent\":\"live_service_status\",\"handling\":\"escalate\",\"chose\":\"neither\",\"why\":\"both chose auto, should be escalate\"},{\"id\":\"N078\",\"intent\":\"live_service_status\",\"handling\":\"escalate\",\"chose\":\"neither\",\"why\":\"both chose auto, should be escalate\"},{\"id\":\"N079\",\"intent\":\"ticketing_and_booking\",\"handling\":\"assist\",\"chose\":\"B\",\"why\":\"B uses assist as required\"}]}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 1185,
+ "completion_tokens": 240,
+ "tag": "adjudicate"
+}

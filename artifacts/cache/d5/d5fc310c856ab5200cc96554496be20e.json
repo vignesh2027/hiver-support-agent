@@ -1,0 +1,7 @@
+{
+ "text": "{\"decisions\":[{\"id\":\"N034\",\"intent\":\"compensation_and_refunds\",\"handling\":\"escalate\",\"chose\":\"neither\",\"why\":\"both handlers too lenient\"},{\"id\":\"N035\",\"intent\":\"compensation_and_refunds\",\"handling\":\"escalate\",\"chose\":\"B\",\"why\":\"B matches escalation rule\"},{\"id\":\"N036\",\"intent\":\"live_service_status\",\"handling\":\"escalate\",\"chose\":\"neither\",\"why\":\"both handlers incorrect\"},{\"id\":\"N038\",\"intent\":\"compensation_and_refunds\",\"handling\":\"escalate\",\"chose\":\"B\",\"why\":\"B correctly escalates\"}]}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 1162,
+ "completion_tokens": 330,
+ "tag": "adjudicate"
+}

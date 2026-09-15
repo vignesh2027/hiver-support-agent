@@ -1,0 +1,7 @@
+{
+ "text": "{\"decisions\":[{\"id\":\"N002\",\"intent\":\"missed_connection\",\"handling\":\"escalate\",\"chose\":\"neither\",\"why\":\"both gave wrong handling\"},{\"id\":\"N004\",\"intent\":\"compensation_and_refunds\",\"handling\":\"escalate\",\"chose\":\"neither\",\"why\":\"both gave wrong handling\"},{\"id\":\"N006\",\"intent\":\"service_complaint\",\"handling\":\"assist\",\"chose\":\"neither\",\"why\":\"both gave wrong handling\"},{\"id\":\"N008\",\"intent\":\"service_complaint\",\"handling\":\"assist\",\"chose\":\"neither\",\"why\":\"both gave wrong handling\"}]}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 1171,
+ "completion_tokens": 381,
+ "tag": "adjudicate"
+}

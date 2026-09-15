@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"decisions\": [\n    {\n      \"id\": \"N080\",\n      \"intent\": \"service_information\",\n      \"handling\": \"assist\",\n      \"chose\": \"neither\",\n      \"why\": \"question about planned disruptions, not live status\"\n    },\n    {\n      \"id\": \"N081\",\n      \"intent\": \"service_complaint\",\n      \"handling\": \"assist\",\n      \"chose\": \"B\",\n      \"why\": \"complaint needs human handling\"\n    },\n    {\n      \"id\": \"N082\",\n      \"intent\": \"service_complaint\",\n      \"handling\": \"assist\",\n      \"chose\": \"B\",\n      \"why\": \"complaint about missed train\"\n    },\n    {\n      \"id\": \"N083\",\n      \"intent\": \"capacity_and_overcrowding\",\n      \"handling\": \"assist\",\n      \"chose\": \"B\",\n      \"why\": \"overcrowding issue requires human assistance\"\n    }\n  ]\n}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 1171,
+ "completion_tokens": 296,
+ "tag": "adjudicate"
+}

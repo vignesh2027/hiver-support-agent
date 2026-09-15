@@ -142,19 +142,27 @@ because the wording matters.
 
 220 messages were sampled from the held-out test split across three strata.
 Each one was labelled twice, independently, by two different model families
-under two different prompts. Where the two disagreed, I decided. Where they
-agreed, I still blind-audited a random quarter of them. Every correction is
-logged with a timestamp.
+under two different prompts. They agreed on intent 72.7% of the time and on
+handling only 48.6% of the time, which is itself a finding: deciding what to
+*do* about a message is much harder than deciding what it is.
 
-That audit is the part I care about. It gives a measured error rate for the
-agreed labels I didn't individually check, instead of me assuming they're fine.
-The rate is in `reports/RESULTS.md` along with how often the two passes agreed
-in the first place (72.7% on intent, and only 48.6% on what to *do* about it,
-which tells you where the difficulty really is).
+That left 138 disagreements. Those went to a third pass using a larger model
+that sees both prior answers, has to pick one or reject both, and is told the
+specific bias the first two share (both are far too willing to automate: one
+marked 144 of 220 messages as safe to auto-send, the other 78). Those rows are
+marked `review_kind: llm_adjudicated`.
 
-Calling this "220 hand-labelled examples" with no qualifier would be untrue.
-Describing it this way is both accurate and more useful, since it comes with a
-number attached.
+Rows a human individually reviewed are marked `adjudicate` or `audit` instead,
+and `reports/RESULTS.md` breaks the set down by `review_kind` so the
+human-verified fraction is always visible. **At the time of writing that
+fraction is small.** Items nobody resolved carry no label at all and are
+excluded from scoring rather than being given a provisional one that would read
+like ground truth.
+
+So: this is not 220 hand-labelled examples, and I am not going to call it that.
+It is 220 examples labelled by a documented multi-pass process whose
+composition is published alongside the results. The honest version is less
+impressive and more useful, because you can see exactly which parts to trust.
 
 ## What I left out on purpose
 

@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"decisions\": [\n    {\n      \"id\": \"N045\",\n      \"intent\": \"missed_connection\",\n      \"handling\": \"escalate\",\n      \"chose\": \"neither\",\n      \"why\": \"needs escalation, not assist\"\n    },\n    {\n      \"id\": \"N046\",\n      \"intent\": \"service_information\",\n      \"handling\": \"assist\",\n      \"chose\": \"neither\",\n      \"why\": \"auto not allowed\"\n    },\n    {\n      \"id\": \"N047\",\n      \"intent\": \"missed_connection\",\n      \"handling\": \"escalate\",\n      \"chose\": \"neither\",\n      \"why\": \"both mishandled\"\n    },\n    {\n      \"id\": \"N051\",\n      \"intent\": \"capacity_and_overcrowding\",\n      \"handling\": \"assist\",\n      \"chose\": \"B\",\n      \"why\": \"B correct\"\n    }\n  ]\n}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 1145,
+ "completion_tokens": 485,
+ "tag": "adjudicate"
+}

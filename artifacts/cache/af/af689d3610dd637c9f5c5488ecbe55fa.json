@@ -1,0 +1,7 @@
+{
+ "text": "{\"decisions\":[{\"id\":\"N023\",\"intent\":\"service_complaint\",\"handling\":\"assist\",\"chose\":\"neither\",\"why\":\"both mislabelled as live status and handling\"},{\"id\":\"N024\",\"intent\":\"lost_property\",\"handling\":\"auto\",\"chose\":\"A\",\"why\":\"clear lost property request qualifies for auto\"},{\"id\":\"N025\",\"intent\":\"missed_connection\",\"handling\":\"escalate\",\"chose\":\"B\",\"why\":\"missed_connection requires escalation\"},{\"id\":\"N026\",\"intent\":\"seat_reservation\",\"handling\":\"assist\",\"chose\":\"B\",\"why\":\"seat issue needs assist, not auto\"}]}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 1168,
+ "completion_tokens": 329,
+ "tag": "adjudicate"
+}

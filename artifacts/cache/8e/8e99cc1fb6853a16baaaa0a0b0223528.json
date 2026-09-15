@@ -1,0 +1,7 @@
+{
+ "text": "{\"decisions\":[{\"id\":\"N018\",\"intent\":\"capacity_and_overcrowding\",\"handling\":\"assist\",\"chose\":\"B\",\"why\":\"auto not allowed\"},{\"id\":\"N020\",\"intent\":\"capacity_and_overcrowding\",\"handling\":\"assist\",\"chose\":\"B\",\"why\":\"auto not allowed\"},{\"id\":\"N021\",\"intent\":\"missed_connection\",\"handling\":\"escalate\",\"chose\":\"neither\",\"why\":\"both wrong\"},{\"id\":\"N022\",\"intent\":\"capacity_and_overcrowding\",\"handling\":\"assist\",\"chose\":\"B\",\"why\":\"correct\"}]}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 1226,
+ "completion_tokens": 320,
+ "tag": "adjudicate"
+}

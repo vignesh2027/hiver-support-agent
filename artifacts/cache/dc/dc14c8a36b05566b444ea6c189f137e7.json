@@ -1,0 +1,7 @@
+{
+ "text": "{\"decisions\":[{\"id\":\"N071\",\"intent\":\"service_complaint\",\"handling\":\"assist\",\"chose\":\"neither\",\"why\":\"both mis‑labelled intent/handling\"},{\"id\":\"N072\",\"intent\":\"ticketing_and_booking\",\"handling\":\"assist\",\"chose\":\"B\",\"why\":\"B got intent right and handling correct\"},{\"id\":\"N073\",\"intent\":\"compensation_and_refunds\",\"handling\":\"escalate\",\"chose\":\"B\",\"why\":\"B chose correct handling for money request\"},{\"id\":\"N074\",\"intent\":\"service_complaint\",\"handling\":\"assist\",\"chose\":\"neither\",\"why\":\"both used auto; correct is assist\"}]}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 1185,
+ "completion_tokens": 411,
+ "tag": "adjudicate"
+}

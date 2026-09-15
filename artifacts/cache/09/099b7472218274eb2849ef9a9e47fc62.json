@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"decisions\": [\n    {\n      \"id\": \"N053\",\n      \"intent\": \"onboard_facilities\",\n      \"handling\": \"assist\",\n      \"chose\": \"B\",\n      \"why\": \"complaint about wifi requires assist\"\n    },\n    {\n      \"id\": \"N054\",\n      \"intent\": \"compensation_and_refunds\",\n      \"handling\": \"escalate\",\n      \"chose\": \"A\",\n      \"why\": \"money issue triggers escalation\"\n    },\n    {\n      \"id\": \"N055\",\n      \"intent\": \"service_information\",\n      \"handling\": \"assist\",\n      \"chose\": \"B\",\n      \"why\": \"informational query needs assist\"\n    },\n    {\n      \"id\": \"N057\",\n      \"intent\": \"ticketing_and_booking\",\n      \"handling\": \"assist\",\n      \"chose\": \"neither\",\n      \"why\": \"both answers wrong\"\n    }\n  ]\n}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 1138,
+ "completion_tokens": 491,
+ "tag": "adjudicate"
+}

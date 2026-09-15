@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi, we’re sorry you had a bad experience with staff at Slough. Could you tell us the train number or scheduled departure time you were waiting for? That will help us investigate further.\",\"grounded_in\":[2],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"train number or scheduled departure time\",\"confidence\":0.85}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 942,
+ "completion_tokens": 110,
+ "tag": "generate"
+}
