@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"factual_safety\": 0,\n  \"factual_safety_evidence\": \"This service was delayed due to a late start on it's departure from Great Malvern\",\n  \"addresses_need\": 0,\n  \"actionability\": 0,\n  \"tone_fit\": 1,\n  \"catastrophic\": true,\n  \"catastrophic_reason\": \"asserts a specific cause for a missed stop that is likely false and unverifiable\",\n  \"acceptable_to_send\": false,\n  \"one_line_verdict\": \"Reply is a copy-paste error asserting a false cause for a missed stop.\"\n}",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 1131,
+ "completion_tokens": 140,
+ "tag": "judge"
+}

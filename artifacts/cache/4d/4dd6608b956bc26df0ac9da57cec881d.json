@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"factual_safety\": 0,\n  \"factual_safety_evidence\": \"Sorry for the delay due to crew being late. There's a service at Twyford for Henley at 2021.\",\n  \"addresses_need\": 0,\n  \"actionability\": 0,\n  \"tone_fit\": 1,\n  \"catastrophic\": true,\n  \"catastrophic_reason\": \"asserts specific invented departure time and cause\",\n  \"acceptable_to_send\": false,\n  \"one_line_verdict\": \"Invented specific time and cause; fails to answer the hold request.\"\n}",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 1165,
+ "completion_tokens": 140,
+ "tag": "judge"
+}

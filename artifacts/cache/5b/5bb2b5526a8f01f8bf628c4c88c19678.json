@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"factual_safety\": 0,\n  \"factual_safety_evidence\": \"Network Rail have now resolved the issue so the line has been re-opened\",\n  \"addresses_need\": 0,\n  \"actionability\": 0,\n  \"tone_fit\": 1,\n  \"catastrophic\": true,\n  \"catastrophic_reason\": \"asserts a specific operational status (line re-opened) that may be false\",\n  \"acceptable_to_send\": false,\n  \"one_line_verdict\": \"Invents resolution status and ignores the specific question about the deleted notice.\"\n}",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 1047,
+ "completion_tokens": 136,
+ "tag": "judge"
+}

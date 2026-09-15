@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"factual_safety\": 0,\n  \"factual_safety_evidence\": \"This has been rebooted and it's showing that it's working fine now\",\n  \"addresses_need\": 0,\n  \"actionability\": 0,\n  \"tone_fit\": 0,\n  \"catastrophic\": false,\n  \"catastrophic_reason\": null,\n  \"acceptable_to_send\": false,\n  \"one_line_verdict\": \"Completely irrelevant reply addressing WiFi instead of lost property.\"\n}",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 1110,
+ "completion_tokens": 117,
+ "tag": "judge"
+}

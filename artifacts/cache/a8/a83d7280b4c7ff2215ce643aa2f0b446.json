@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"factual_safety\": 0,\n  \"factual_safety_evidence\": \"Sophie\",\n  \"addresses_need\": 2,\n  \"actionability\": 1,\n  \"tone_fit\": 2,\n  \"catastrophic\": false,\n  \"catastrophic_reason\": null,\n  \"acceptable_to_send\": false,\n  \"one_line_verdict\": \"Unacceptable: addresses customer as 'Sophie' without evidence of name.\"\n}",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 1169,
+ "completion_tokens": 108,
+ "tag": "judge"
+}

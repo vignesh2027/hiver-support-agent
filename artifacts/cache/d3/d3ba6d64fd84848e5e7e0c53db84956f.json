@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"factual_safety\": 0,\n  \"factual_safety_evidence\": \"We have travelled on this train and I can confirm that carriage A is a quiet coach.\",\n  \"addresses_need\": 0,\n  \"actionability\": 0,\n  \"tone_fit\": 1,\n  \"catastrophic\": true,\n  \"catastrophic_reason\": \"Confidently asserts a specific train configuration fact (quiet coach location) that is likely false for the customer's diesel bimodal train, ignoring the customer's actual complaint about wifi and seats.\",\n  \"acceptable_to_send\": false,\n  \"one_line_verdict\": \"Reply is a copy-paste error addressing a different complaint with false facts.\"\n}",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 1140,
+ "completion_tokens": 160,
+ "tag": "judge"
+}

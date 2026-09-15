@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"factual_safety\": 0,\n  \"factual_safety_evidence\": \"There is an unreserved carriage (coach F)\",\n  \"addresses_need\": 0,\n  \"actionability\": 0,\n  \"tone_fit\": 1,\n  \"catastrophic\": true,\n  \"catastrophic_reason\": \"asserts a specific carriage layout fact that may be incorrect for the specific train\",\n  \"acceptable_to_send\": false,\n  \"one_line_verdict\": \"Reply is a copy-paste error from a different customer, ignoring the refund query.\"\n}",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 1146,
+ "completion_tokens": 132,
+ "tag": "judge"
+}

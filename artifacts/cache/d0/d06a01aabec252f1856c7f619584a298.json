@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"factual_safety\": 2,\n  \"factual_safety_evidence\": null,\n  \"addresses_need\": 2,\n  \"actionability\": 2,\n  \"tone_fit\": 1,\n  \"catastrophic\": false,\n  \"catastrophic_reason\": null,\n  \"acceptable_to_send\": true,\n  \"one_line_verdict\": \"Accurate and actionable, though slightly stiff and missing a specific apology.\"\n}",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 1135,
+ "completion_tokens": 105,
+ "tag": "judge"
+}

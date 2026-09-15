@@ -369,9 +369,21 @@ def _label_quality() -> dict:
     g = pd.read_json(GOLD, lines=True)
     if not len(g):
         return {"status": "golden.jsonl is empty"}
+    pool_n = len(pd.read_json(POOL, lines=True)) if POOL.exists() else len(g)
+    kinds = g["review_kind"].value_counts().to_dict()
+    human_seen = int(sum(v for k, v in kinds.items() if k in ("adjudicate", "audit")))
     out = {
-        "n": len(g),
-        "by_review_kind": g["review_kind"].value_counts().to_dict(),
+        "n_labelled": len(g),
+        "pool_n": pool_n,
+        "label_coverage_of_pool": round(len(g) / pool_n, 4) if pool_n else None,
+        "by_review_kind": kinds,
+        "individually_reviewed_by_human": human_seen,
+        "reviewed_fraction_of_labelled": round(human_seen / len(g), 4) if len(g) else None,
+        "note": (
+            "Items where the two independent pre-label passes disagreed and which were "
+            "not adjudicated carry no gold label at all and are excluded from scoring, "
+            "rather than being given a provisional label that would look like ground truth."
+        ),
     }
     aud = g[g.review_kind == "audit"]
     if len(aud):

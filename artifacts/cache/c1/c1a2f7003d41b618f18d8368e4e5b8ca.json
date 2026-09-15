@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"factual_safety\": 0,\n  \"factual_safety_evidence\": \"There was an issue on departure but running fine now\",\n  \"addresses_need\": 0,\n  \"actionability\": 0,\n  \"tone_fit\": 0,\n  \"catastrophic\": true,\n  \"catastrophic_reason\": \"asserts specific operational status (wifi running fine) that the sender cannot know\",\n  \"acceptable_to_send\": false,\n  \"one_line_verdict\": \"Invented specific operational status and ignored the customer's complaint.\"\n}",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 1090,
+ "completion_tokens": 128,
+ "tag": "judge"
+}

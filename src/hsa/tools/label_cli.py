@@ -104,7 +104,7 @@ def _suggest(p1: str | None, p2: str | None, p3: str | None) -> str | None:
     return None
 
 
-def run_intent_mode(only_disagreements: bool = False) -> None:
+def run_intent_mode(only_disagreements: bool = False, limit: int = 0) -> None:
     tax = load_taxonomy()
     names = list(tax.names)
     df = pd.read_json(PRELABELS, lines=True)
@@ -124,6 +124,16 @@ def run_intent_mode(only_disagreements: bool = False) -> None:
     if not queue:
         print("Nothing left to review. Run with --stats to see the summary.")
         return
+
+    # A bounded session beats an abandoned one. Adjudications are shuffled
+    # before truncation so a partial session is a random sample of the
+    # disagreements rather than the first N in file order, which would be
+    # ordered by stratum and would leave the adversarial items systematically
+    # unreviewed. `review_kind` records what was actually reviewed, so the
+    # report states the human-verified fraction instead of implying all of it.
+    if limit:
+        rng.shuffle(queue)
+        queue = queue[:limit]
 
     n_adj = sum(1 for _, k in queue if k == "adjudicate")
     print(f"{C['b']}{len(queue)} items to review{C['r']} "
@@ -331,6 +341,8 @@ def main() -> None:
     ap.add_argument("--limit", type=int, default=60)
     ap.add_argument("--stats", action="store_true")
     ap.add_argument("--only-disagreements", action="store_true")
+    ap.add_argument("--limit", type=int, default=0,
+                    help="review at most N items this session (randomly chosen)")
     ap.add_argument("--finalise", action="store_true",
                     help="write agreed-and-unaudited items through without reviewing")
     args = ap.parse_args()
@@ -341,7 +353,7 @@ def main() -> None:
         finalise_unreviewed()
         print_stats()
     elif args.mode == "intent":
-        run_intent_mode(only_disagreements=args.only_disagreements)
+        run_intent_mode(only_disagreements=args.only_disagreements, limit=args.limit)
     else:
         run_reply_mode(Path(args.replies), args.limit)
 

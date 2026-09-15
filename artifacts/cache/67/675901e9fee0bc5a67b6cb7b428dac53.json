@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"factual_safety\": 0,\n  \"factual_safety_evidence\": \"the impact the engineering works had on your journey today\",\n  \"addresses_need\": 0,\n  \"actionability\": 0,\n  \"tone_fit\": 1,\n  \"catastrophic\": true,\n  \"catastrophic_reason\": \"asserts a specific cause (engineering works) not provided by customer\",\n  \"acceptable_to_send\": false,\n  \"one_line_verdict\": \"Invents cause and ignores accessibility complaint; unacceptable.\"\n}",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 1129,
+ "completion_tokens": 124,
+ "tag": "judge"
+}

@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"factual_safety\": 0,\n  \"factual_safety_evidence\": \"the train is in reverse formation today\",\n  \"addresses_need\": 1,\n  \"actionability\": 0,\n  \"tone_fit\": 1,\n  \"catastrophic\": true,\n  \"catastrophic_reason\": \"asserts a specific operational cause (reverse formation) that the agent cannot verify for this specific journey\",\n  \"acceptable_to_send\": false,\n  \"one_line_verdict\": \"Invents a specific cause (reverse formation) without evidence; unacceptable.\"\n}",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 1213,
+ "completion_tokens": 131,
+ "tag": "judge"
+}

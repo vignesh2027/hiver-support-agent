@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"factual_safety\": 0,\n  \"factual_safety_evidence\": \"Carriage A (next to the cycle storage area) will be at the rear of the train\",\n  \"addresses_need\": 0,\n  \"actionability\": 0,\n  \"tone_fit\": 0,\n  \"catastrophic\": true,\n  \"catastrophic_reason\": \"Asserts specific train formation details for a journey the customer did not ask about\",\n  \"acceptable_to_send\": false,\n  \"one_line_verdict\": \"Completely irrelevant copy-paste error; asserts unknown facts about a different query.\"\n}",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 1118,
+ "completion_tokens": 141,
+ "tag": "judge"
+}

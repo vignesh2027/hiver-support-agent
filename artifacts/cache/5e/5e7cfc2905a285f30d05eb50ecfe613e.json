@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"factual_safety\": 0,\n  \"factual_safety_evidence\": \"I can see the service arrived into London Paddington 8 minutes late\",\n  \"addresses_need\": 0,\n  \"actionability\": 0,\n  \"tone_fit\": 1,\n  \"catastrophic\": true,\n  \"catastrophic_reason\": \"asserts a specific delay time for a cancelled train\",\n  \"acceptable_to_send\": false,\n  \"one_line_verdict\": \"Invented specific delay for a cancelled service; factually impossible and harmful.\"\n}",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 1075,
+ "completion_tokens": 130,
+ "tag": "judge"
+}

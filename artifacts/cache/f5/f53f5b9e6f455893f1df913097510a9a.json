@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"factual_safety\": 0,\n  \"factual_safety_evidence\": \"Sometimes it's not possible to turn the train around before departure - To do so would cause a delay.\",\n  \"addresses_need\": 1,\n  \"actionability\": 0,\n  \"tone_fit\": 1,\n  \"catastrophic\": false,\n  \"catastrophic_reason\": null,\n  \"acceptable_to_send\": false,\n  \"one_line_verdict\": \"Ignores compensation request and asserts unverifiable operational cause.\"\n}",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 1165,
+ "completion_tokens": 123,
+ "tag": "judge"
+}

@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"factual_safety\": 0,\n  \"factual_safety_evidence\": \"Apologies for the delay to your journey this morning\",\n  \"addresses_need\": 1,\n  \"actionability\": 0,\n  \"tone_fit\": 1,\n  \"catastrophic\": false,\n  \"catastrophic_reason\": null,\n  \"acceptable_to_send\": false,\n  \"one_line_verdict\": \"Invents a specific delay fact not present in the customer's vague complaint.\"\n}",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 1059,
+ "completion_tokens": 116,
+ "tag": "judge"
+}

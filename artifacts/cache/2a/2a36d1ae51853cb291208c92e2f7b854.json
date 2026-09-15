@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"factual_safety\": 1,\n  \"factual_safety_evidence\": \"All our carriages are currently being utilised across our network at the moment\",\n  \"addresses_need\": 1,\n  \"actionability\": 0,\n  \"tone_fit\": 1,\n  \"catastrophic\": false,\n  \"catastrophic_reason\": null,\n  \"acceptable_to_send\": false,\n  \"one_line_verdict\": \"Generic boilerplate ignores specific complaint and offers no actionable next steps.\"\n}",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 1156,
+ "completion_tokens": 119,
+ "tag": "judge"
+}
