@@ -134,6 +134,7 @@ def run_intent_mode(only_disagreements: bool = False) -> None:
     print(f"{C['d']}Handling: a=auto  s=assist  e=escalate. "
           f"Enter = accept the shown suggestion. q = quit and save.{C['r']}\n")
 
+    completed = True
     for n, (r, kind) in enumerate(queue, 1):
         t0 = time.monotonic()
         tag = f"{C['y']}DISAGREEMENT{C['r']}" if kind == "adjudicate" else f"{C['g']}audit{C['r']}"
@@ -158,6 +159,7 @@ def run_intent_mode(only_disagreements: bool = False) -> None:
         sug = f"{suggest_i or '?'} / {suggest_h or '?'}"
         raw = input(f"\n  intent# [{sug}] > ").strip().lower()
         if raw == "q":
+            completed = False
             break
         if raw == "" and suggest_i:
             intent = suggest_i
@@ -198,7 +200,19 @@ def run_intent_mode(only_disagreements: bool = False) -> None:
         print(f"  {C['g']}saved{C['r']} -> {intent} / {handling}"
               + (f"  {C['y']}(corrected){C['r']}" if changed else ""))
 
-    finalise_unreviewed()
+    # Only write through the agreed-and-unaudited items once the review queue
+    # has actually been worked to the end. Doing it on an early quit would mark
+    # every agreed item as done, so a later session would never be offered the
+    # random audit sample again -- and that audit is the only measurement of
+    # how good the un-reviewed labels are.
+    if completed:
+        finalise_unreviewed()
+    else:
+        remaining = sum(1 for _ in queue) - n
+        print(f"\n  stopped early. Run `make label` again to continue "
+              f"({max(remaining, 0)} left in this queue).")
+        print("  Agreed-and-unaudited items are NOT written yet, so the audit "
+              "sample stays available.")
     print_stats()
 
 
