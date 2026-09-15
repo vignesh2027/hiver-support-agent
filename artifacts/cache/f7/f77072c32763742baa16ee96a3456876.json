@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi. We’re sorry you’ve had a frustrating journey. Could you tell us the date and time of your Bristol‑to‑Brighton trip and any tickets you booked? That will help us look into what happened.\",\"grounded_in\":[1,2],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"journey date, time and ticket details\",\"confidence\":0.92}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 887,
+ "completion_tokens": 122,
+ "tag": "generate"
+}

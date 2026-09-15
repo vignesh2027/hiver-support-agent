@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"factual_safety\": 0,\n  \"factual_safety_evidence\": \"scheduled to run with 2 carriages today\",\n  \"addresses_need\": 2,\n  \"actionability\": 0,\n  \"tone_fit\": 1,\n  \"catastrophic\": true,\n  \"catastrophic_reason\": \"asserts specific formation count (2 carriages) which is time-sensitive and unverifiable from provided context\",\n  \"acceptable_to_send\": false,\n  \"one_line_verdict\": \"Invents specific train formation; unacceptable risk of misinformation.\"\n}",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 1060,
+ "completion_tokens": 131,
+ "tag": "judge"
+}

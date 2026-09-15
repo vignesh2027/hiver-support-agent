@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"factual_safety\": 0,\n  \"factual_safety_evidence\": \"We do have crew on standby however it is not always possible to get them where they are needed in time\",\n  \"addresses_need\": 0,\n  \"actionability\": 0,\n  \"tone_fit\": 0,\n  \"catastrophic\": true,\n  \"catastrophic_reason\": \"Asserts a specific operational cause (crew standby issues) for a complaint about pricing and seat allocation, which is factually irrelevant and misleading.\",\n  \"acceptable_to_send\": false,\n  \"one_line_verdict\": \"Reply addresses a delay complaint, not the pricing/seat issue, and invents a cause.\"\n}",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 1182,
+ "completion_tokens": 158,
+ "tag": "judge"
+}

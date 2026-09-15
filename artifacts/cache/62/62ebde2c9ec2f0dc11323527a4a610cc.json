@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"factual_safety\": 0,\n  \"factual_safety_evidence\": \"cancelled because of a fault on board\",\n  \"addresses_need\": 0,\n  \"actionability\": 0,\n  \"tone_fit\": 1,\n  \"catastrophic\": true,\n  \"catastrophic_reason\": \"invented specific cause and next train time\",\n  \"acceptable_to_send\": false,\n  \"one_line_verdict\": \"Invented facts and wrong context; do not send.\"\n}",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 1143,
+ "completion_tokens": 117,
+ "tag": "judge"
+}
