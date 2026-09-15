@@ -1,0 +1,7 @@
+{
+ "text": "{\"decisions\":[{\"id\":\"A207\",\"intent\":\"capacity_and_overcrowding\",\"handling\":\"assist\",\"chose\":\"neither\",\"why\":\"auto not allowed, needs human assistance\"},{\"id\":\"A208\",\"intent\":\"service_complaint\",\"handling\":\"assist\",\"chose\":\"B\",\"why\":\"B correctly chose assist; auto is not permitted for complaints\"},{\"id\":\"A209\",\"intent\":\"live_service_status\",\"handling\":\"escalate\",\"chose\":\"neither\",\"why\":\"both marked auto; live status requires escalation\"},{\"id\":\"A210\",\"intent\":\"feedback_positive\",\"handling\":\"auto\",\"chose\":\"A\",\"why\":\"A correctly identified praise and auto handling\"}]}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 1155,
+ "completion_tokens": 363,
+ "tag": "adjudicate"
+}

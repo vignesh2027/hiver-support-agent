@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi there. We’re sorry you’re experiencing overcrowding. Could you let us know the train number or departure time so we can look into it?\",\"grounded_in\":[1],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"train number or departure time\",\"confidence\":0.92}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 897,
+ "completion_tokens": 99,
+ "tag": "generate"
+}

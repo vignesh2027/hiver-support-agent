@@ -57,6 +57,21 @@ GEN_RUN = RUNS / "generation.jsonl"
 JUDGE_RUN = RUNS / "judgements.jsonl"
 
 
+def _stable_order(df: pd.DataFrame) -> pd.DataFrame:
+    """Canonical row order: the numeric part of the example id.
+
+    Ids are stratum-prefixed (N000.., E120.., A180..) and were assigned in
+    pool order, so ordering on the number reproduces the pool exactly while
+    sorting on the raw string would put the adversarial block first. That
+    matters because batched LLM calls hash their whole batch: a different row
+    order means different batches, different cache keys, and a full paid
+    re-run of results that should be free.
+    """
+    d = df.copy()
+    d["_ord"] = d["example_id"].astype(str).str[1:].astype(int)
+    return d.sort_values("_ord").drop(columns="_ord").reset_index(drop=True)
+
+
 def load_golden(require_labels: bool = True) -> pd.DataFrame:
     """Golden set if it exists, otherwise the unlabelled pool.
 
@@ -72,13 +87,20 @@ def load_golden(require_labels: bool = True) -> pd.DataFrame:
         g = pd.read_json(GOLD, lines=True)
         if len(g):
             g["labels_available"] = True
-            return g
+            # Sort by id. The golden file is written in review order (human
+            # adjudications, then machine adjudications, then agreed items),
+            # which is a different order from the pool. Batched LLM calls hash
+            # their whole batch, so a different row order produces different
+            # batches, different cache keys, and a full re-run against the
+            # API for results that should have been free. Row order must not
+            # be able to change what the pipeline costs or what it returns.
+            return _stable_order(g)
     if require_labels:
         raise SystemExit(
             "data/golden/golden.jsonl not found or empty.\n"
             "Run:  make prelabel   then   make label   (see README, 'Building the golden set')."
         )
-    pool = pd.read_json(POOL, lines=True)
+    pool = _stable_order(pd.read_json(POOL, lines=True))
     pool["intent"] = None
     pool["handling"] = None
     pool["review_kind"] = "UNLABELLED"

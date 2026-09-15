@@ -338,11 +338,11 @@ def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--mode", default="intent", choices=["intent", "reply"])
     ap.add_argument("--replies", default=str(GOLDEN / "replies_for_grading.jsonl"))
-    ap.add_argument("--limit", type=int, default=60)
     ap.add_argument("--stats", action="store_true")
     ap.add_argument("--only-disagreements", action="store_true")
     ap.add_argument("--limit", type=int, default=0,
-                    help="review at most N items this session (randomly chosen)")
+                    help="cap this session: N items for --mode intent (chosen at "
+                         "random from the queue), N replies for --mode reply")
     ap.add_argument("--finalise", action="store_true",
                     help="write agreed-and-unaudited items through without reviewing")
     args = ap.parse_args()
@@ -355,7 +355,7 @@ def main() -> None:
     elif args.mode == "intent":
         run_intent_mode(only_disagreements=args.only_disagreements, limit=args.limit)
     else:
-        run_reply_mode(Path(args.replies), args.limit)
+        run_reply_mode(Path(args.replies), args.limit or 60)
 
 
 if __name__ == "__main__":

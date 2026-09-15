@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"decisions\": [\n    {\n      \"id\": \"N104\",\n      \"intent\": \"live_service_status\",\n      \"handling\": \"escalate\",\n      \"chose\": \"neither\",\n      \"why\": \"asks for current service status, requires real‑time data\"\n    },\n    {\n      \"id\": \"N105\",\n      \"intent\": \"seat_reservation\",\n      \"handling\": \"assist\",\n      \"chose\": \"B\",\n      \"why\": \"primary issue is reservation problem, not a complaint\"\n    },\n    {\n      \"id\": \"N107\",\n      \"intent\": \"ticketing_and_booking\",\n      \"handling\": \"assist\",\n      \"chose\": \"B\",\n      \"why\": \"question about discount eligibility, not auto‑eligible\"\n    },\n    {\n      \"id\": \"N108\",\n      \"intent\": \"live_service_status\",\n      \"handling\": \"escalate\",\n      \"chose\": \"neither\",\n      \"why\": \"needs real‑time running information\"\n    }\n  ]\n}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 1154,
+ "completion_tokens": 342,
+ "tag": "adjudicate"
+}

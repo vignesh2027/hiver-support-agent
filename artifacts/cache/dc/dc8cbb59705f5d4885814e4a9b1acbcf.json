@@ -1,0 +1,7 @@
+{
+ "text": "{\"decisions\":[{\"id\":\"E133\",\"intent\":\"lost_property\",\"handling\":\"auto\",\"chose\":\"A\",\"why\":\"lost_property qualifies for auto and request is clear\"},{\"id\":\"E134\",\"intent\":\"service_complaint\",\"handling\":\"assist\",\"chose\":\"B\",\"why\":\"complaint about seat reservation, not eligible for auto\"},{\"id\":\"E135\",\"intent\":\"seat_reservation\",\"handling\":\"assist\",\"chose\":\"B\",\"why\":\"information request, auto not allowed\"},{\"id\":\"E137\",\"intent\":\"compensation_and_refunds\",\"handling\":\"escalate\",\"chose\":\"B\",\"why\":\"money request requires escalation\"}]}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 1205,
+ "completion_tokens": 325,
+ "tag": "adjudicate"
+}

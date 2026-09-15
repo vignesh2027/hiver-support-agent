@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"I’m very sorry you experienced such overcrowding on the 8:26. All trains are being used across the network today. If you’d like to discuss this further, please let us know the date and any details you have.\",\"grounded_in\":[3],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"date of journey and any further details\",\"confidence\":0.85}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 913,
+ "completion_tokens": 118,
+ "tag": "generate"
+}

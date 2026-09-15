@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi there. We’re sorry you’re unhappy with the service. Could you let us know which journey you’re referring to?\",\"grounded_in\":[1,2,3],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"journey details\",\"confidence\":0.92}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 850,
+ "completion_tokens": 103,
+ "tag": "generate"
+}

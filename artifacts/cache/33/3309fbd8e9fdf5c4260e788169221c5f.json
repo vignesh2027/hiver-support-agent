@@ -1,0 +1,7 @@
+{
+ "text": "{\"decisions\":[{\"id\":\"N109\",\"intent\":\"onboard_facilities\",\"handling\":\"assist\",\"chose\":\"A\",\"why\":\"A correctly identified intent and appropriate assist handling\"},{\"id\":\"N112\",\"intent\":\"live_service_status\",\"handling\":\"escalate\",\"chose\":\"neither\",\"why\":\"both mis‑labelled intent/handling\"},{\"id\":\"N114\",\"intent\":\"other\",\"handling\":\"assist\",\"chose\":\"neither\",\"why\":\"both gave incorrect handling for vague other intent\"},{\"id\":\"N116\",\"intent\":\"capacity_and_overcrowding\",\"handling\":\"assist\",\"chose\":\"neither\",\"why\":\"both mis‑applied auto/escalate; assist is required\"}]}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 1153,
+ "completion_tokens": 376,
+ "tag": "adjudicate"
+}

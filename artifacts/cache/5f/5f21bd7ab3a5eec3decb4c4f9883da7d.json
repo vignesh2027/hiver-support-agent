@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"decisions\": [\n    {\n      \"id\": \"E157\",\n      \"intent\": \"capacity_and_overcrowding\",\n      \"handling\": \"assist\",\n      \"chose\": \"neither\",\n      \"why\": \"both mis‑label intent and auto handling is not allowed\"\n    },\n    {\n      \"id\": \"E158\",\n      \"intent\": \"onboard_facilities\",\n      \"handling\": \"assist\",\n      \"chose\": \"neither\",\n      \"why\": \"both mis‑label intent and auto handling is invalid\"\n    },\n    {\n      \"id\": \"E159\",\n      \"intent\": \"service_complaint\",\n      \"handling\": \"escalate\",\n      \"chose\": \"A\",\n      \"why\": \"A is correct on both intent and handling\"\n    },\n    {\n      \"id\": \"E160\",\n      \"intent\": \"service_information\",\n      \"handling\": \"assist\",\n      \"chose\": \"B\",\n      \"why\": \"B has correct handling\"\n    }\n  ]\n}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 1181,
+ "completion_tokens": 562,
+ "tag": "adjudicate"
+}

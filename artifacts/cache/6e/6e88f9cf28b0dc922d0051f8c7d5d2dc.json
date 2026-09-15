@@ -1,0 +1,7 @@
+{
+ "text": "{\"decisions\":[{\"id\":\"A183\",\"intent\":\"service_complaint\",\"handling\":\"assist\",\"chose\":\"A\",\"why\":\"auto not allowed\"},{\"id\":\"A184\",\"intent\":\"other\",\"handling\":\"escalate\",\"chose\":\"A\",\"why\":\"vague complaint, requires escalation\"},{\"id\":\"A187\",\"intent\":\"service_complaint\",\"handling\":\"assist\",\"chose\":\"A\",\"why\":\"auto not permitted\"},{\"id\":\"A189\",\"intent\":\"service_complaint\",\"handling\":\"assist\",\"chose\":\"A\",\"why\":\"auto not permitted\"}]}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 1152,
+ "completion_tokens": 291,
+ "tag": "adjudicate"
+}

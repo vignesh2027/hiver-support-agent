@@ -1,0 +1,7 @@
+{
+ "text": "{\"decisions\":[{\"id\":\"A211\",\"intent\":\"missed_connection\",\"handling\":\"escalate\",\"chose\":\"neither\",\"why\":\"both mislabeled intent and handling\"},{\"id\":\"A214\",\"intent\":\"service_complaint\",\"handling\":\"assist\",\"chose\":\"A\",\"why\":\"A correct intent and handling\"},{\"id\":\"A216\",\"intent\":\"other\",\"handling\":\"escalate\",\"chose\":\"A\",\"why\":\"A correctly identified vague case as other and escalated\"},{\"id\":\"A218\",\"intent\":\"service_complaint\",\"handling\":\"assist\",\"chose\":\"B\",\"why\":\"B identified correct intent and handling\"}]}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 1147,
+ "completion_tokens": 429,
+ "tag": "adjudicate"
+}

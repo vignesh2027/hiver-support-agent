@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi, sorry you’re stuck. Which service were you on? Once we know the train number we can advise the next steps.\",\"grounded_in\":[1,2],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"train number or service details\",\"confidence\":0.85}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 894,
+ "completion_tokens": 104,
+ "tag": "generate"
+}

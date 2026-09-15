@@ -1,0 +1,1247 @@
+{
+  "golden_set": {
+    "n": 220,
+    "labelled": 220,
+    "by_stratum": {
+      "natural": 120,
+      "enriched": 60,
+      "adversarial": 40
+    },
+    "intent_distribution": {
+      "service_complaint": 0.2727,
+      "capacity_and_overcrowding": 0.1455,
+      "live_service_status": 0.1182,
+      "compensation_and_refunds": 0.1,
+      "onboard_facilities": 0.0636,
+      "missed_connection": 0.0545,
+      "ticketing_and_booking": 0.0545,
+      "other": 0.05,
+      "service_information": 0.0455,
+      "feedback_positive": 0.0409,
+      "seat_reservation": 0.0364,
+      "lost_property": 0.0182
+    },
+    "handling_distribution": {
+      "assist": 0.4955,
+      "auto": 0.2591,
+      "escalate": 0.2455
+    }
+  },
+  "classification": {
+    "by_stratum": {
+      "adversarial": {
+        "majority": {
+          "n": 40,
+          "accuracy": 0.125,
+          "macro_f1": 0.0222
+        },
+        "tfidf_logreg": {
+          "n": 40,
+          "accuracy": 0.225,
+          "macro_f1": 0.1813
+        },
+        "llm": {
+          "n": 40,
+          "accuracy": 0.825,
+          "macro_f1": 0.8003
+        }
+      },
+      "enriched": {
+        "majority": {
+          "n": 60,
+          "accuracy": 0.05,
+          "macro_f1": 0.0079
+        },
+        "tfidf_logreg": {
+          "n": 60,
+          "accuracy": 0.3667,
+          "macro_f1": 0.3399
+        },
+        "llm": {
+          "n": 60,
+          "accuracy": 0.8667,
+          "macro_f1": 0.8769
+        }
+      },
+      "natural": {
+        "majority": {
+          "n": 120,
+          "accuracy": 0.15,
+          "macro_f1": 0.0217
+        },
+        "tfidf_logreg": {
+          "n": 120,
+          "accuracy": 0.3833,
+          "macro_f1": 0.3427
+        },
+        "llm": {
+          "n": 120,
+          "accuracy": 0.75,
+          "macro_f1": 0.7547
+        }
+      }
+    },
+    "overall_natural_only": {
+      "majority": {
+        "n": 120,
+        "accuracy": 0.15,
+        "accuracy_ci": [
+          0.0917,
+          0.2167
+        ],
+        "macro_f1": 0.0217,
+        "macro_f1_ci": [
+          0.014,
+          0.0297
+        ],
+        "weighted_f1": 0.0391,
+        "top_confusions": [
+          [
+            "service_complaint",
+            "live_service_status",
+            30
+          ],
+          [
+            "capacity_and_overcrowding",
+            "live_service_status",
+            17
+          ],
+          [
+            "compensation_and_refunds",
+            "live_service_status",
+            12
+          ],
+          [
+            "onboard_facilities",
+            "live_service_status",
+            9
+          ],
+          [
+            "missed_connection",
+            "live_service_status",
+            8
+          ],
+          [
+            "ticketing_and_booking",
+            "live_service_status",
+            7
+          ]
+        ]
+      },
+      "tfidf_logreg": {
+        "n": 120,
+        "accuracy": 0.3833,
+        "accuracy_ci": [
+          0.3,
+          0.4667
+        ],
+        "macro_f1": 0.3427,
+        "macro_f1_ci": [
+          0.2558,
+          0.405
+        ],
+        "weighted_f1": 0.3751,
+        "top_confusions": [
+          [
+            "service_complaint",
+            "live_service_status",
+            12
+          ],
+          [
+            "service_complaint",
+            "compensation_and_refunds",
+            4
+          ],
+          [
+            "onboard_facilities",
+            "lost_property",
+            4
+          ],
+          [
+            "missed_connection",
+            "live_service_status",
+            4
+          ],
+          [
+            "live_service_status",
+            "lost_property",
+            3
+          ],
+          [
+            "compensation_and_refunds",
+            "ticketing_and_booking",
+            3
+          ]
+        ]
+      },
+      "llm": {
+        "n": 120,
+        "accuracy": 0.75,
+        "accuracy_ci": [
+          0.675,
+          0.825
+        ],
+        "macro_f1": 0.7547,
+        "macro_f1_ci": [
+          0.605,
+          0.8257
+        ],
+        "weighted_f1": 0.7545,
+        "top_confusions": [
+          [
+            "live_service_status",
+            "service_complaint",
+            3
+          ],
+          [
+            "service_complaint",
+            "live_service_status",
+            3
+          ],
+          [
+            "service_complaint",
+            "onboard_facilities",
+            2
+          ],
+          [
+            "service_complaint",
+            "service_information",
+            2
+          ],
+          [
+            "compensation_and_refunds",
+            "service_complaint",
+            2
+          ],
+          [
+            "capacity_and_overcrowding",
+            "service_complaint",
+            2
+          ]
+        ]
+      }
+    },
+    "per_class_llm_all_strata": {
+      "live_service_status": {
+        "precision": 0.7333,
+        "recall": 0.8462,
+        "f1": 0.7857,
+        "support": 26
+      },
+      "service_complaint": {
+        "precision": 0.7797,
+        "recall": 0.7667,
+        "f1": 0.7731,
+        "support": 60
+      },
+      "compensation_and_refunds": {
+        "precision": 0.9444,
+        "recall": 0.7727,
+        "f1": 0.85,
+        "support": 22
+      },
+      "ticketing_and_booking": {
+        "precision": 0.9,
+        "recall": 0.75,
+        "f1": 0.8182,
+        "support": 12
+      },
+      "seat_reservation": {
+        "precision": 0.6154,
+        "recall": 1.0,
+        "f1": 0.7619,
+        "support": 8
+      },
+      "capacity_and_overcrowding": {
+        "precision": 0.9286,
+        "recall": 0.8125,
+        "f1": 0.8667,
+        "support": 32
+      },
+      "onboard_facilities": {
+        "precision": 0.7143,
+        "recall": 0.7143,
+        "f1": 0.7143,
+        "support": 14
+      },
+      "lost_property": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 4
+      },
+      "missed_connection": {
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6667,
+        "support": 12
+      },
+      "service_information": {
+        "precision": 0.5625,
+        "recall": 0.9,
+        "f1": 0.6923,
+        "support": 10
+      },
+      "feedback_positive": {
+        "precision": 0.8889,
+        "recall": 0.8889,
+        "f1": 0.8889,
+        "support": 9
+      },
+      "other": {
+        "precision": 0.7692,
+        "recall": 0.9091,
+        "f1": 0.8333,
+        "support": 11
+      }
+    },
+    "confusion_llm_all_strata": {
+      "live_service_status": {
+        "live_service_status": 22,
+        "service_complaint": 3,
+        "compensation_and_refunds": 0,
+        "ticketing_and_booking": 0,
+        "seat_reservation": 0,
+        "capacity_and_overcrowding": 0,
+        "onboard_facilities": 0,
+        "lost_property": 0,
+        "missed_connection": 0,
+        "service_information": 1,
+        "feedback_positive": 0,
+        "other": 0
+      },
+      "service_complaint": {
+        "live_service_status": 3,
+        "service_complaint": 46,
+        "compensation_and_refunds": 1,
+        "ticketing_and_booking": 0,
+        "seat_reservation": 3,
+        "capacity_and_overcrowding": 0,
+        "onboard_facilities": 4,
+        "lost_property": 0,
+        "missed_connection": 0,
+        "service_information": 2,
+        "feedback_positive": 1,
+        "other": 0
+      },
+      "compensation_and_refunds": {
+        "live_service_status": 0,
+        "service_complaint": 2,
+        "compensation_and_refunds": 17,
+        "ticketing_and_booking": 0,
+        "seat_reservation": 0,
+        "capacity_and_overcrowding": 2,
+        "onboard_facilities": 0,
+        "lost_property": 0,
+        "missed_connection": 0,
+        "service_information": 0,
+        "feedback_positive": 0,
+        "other": 1
+      },
+      "ticketing_and_booking": {
+        "live_service_status": 0,
+        "service_complaint": 1,
+        "compensation_and_refunds": 0,
+        "ticketing_and_booking": 9,
+        "seat_reservation": 0,
+        "capacity_and_overcrowding": 0,
+        "onboard_facilities": 0,
+        "lost_property": 0,
+        "missed_connection": 0,
+        "service_information": 1,
+        "feedback_positive": 0,
+        "other": 1
+      },
+      "seat_reservation": {
+        "live_service_status": 0,
+        "service_complaint": 0,
+        "compensation_and_refunds": 0,
+        "ticketing_and_booking": 0,
+        "seat_reservation": 8,
+        "capacity_and_overcrowding": 0,
+        "onboard_facilities": 0,
+        "lost_property": 0,
+        "missed_connection": 0,
+        "service_information": 0,
+        "feedback_positive": 0,
+        "other": 0
+      },
+      "capacity_and_overcrowding": {
+        "live_service_status": 0,
+        "service_complaint": 3,
+        "compensation_and_refunds": 0,
+        "ticketing_and_booking": 1,
+        "seat_reservation": 2,
+        "capacity_and_overcrowding": 26,
+        "onboard_facilities": 0,
+        "lost_property": 0,
+        "missed_connection": 0,
+        "service_information": 0,
+        "feedback_positive": 0,
+        "other": 0
+      },
+      "onboard_facilities": {
+        "live_service_status": 1,
+        "service_complaint": 3,
+        "compensation_and_refunds": 0,
+        "ticketing_and_booking": 0,
+        "seat_reservation": 0,
+        "capacity_and_overcrowding": 0,
+        "onboard_facilities": 10,
+        "lost_property": 0,
+        "missed_connection": 0,
+        "service_information": 0,
+        "feedback_positive": 0,
+        "other": 0
+      },
+      "lost_property": {
+        "live_service_status": 0,
+        "service_complaint": 0,
+        "compensation_and_refunds": 0,
+        "ticketing_and_booking": 0,
+        "seat_reservation": 0,
+        "capacity_and_overcrowding": 0,
+        "onboard_facilities": 0,
+        "lost_property": 4,
+        "missed_connection": 0,
+        "service_information": 0,
+        "feedback_positive": 0,
+        "other": 0
+      },
+      "missed_connection": {
+        "live_service_status": 3,
+        "service_complaint": 1,
+        "compensation_and_refunds": 0,
+        "ticketing_and_booking": 0,
+        "seat_reservation": 0,
+        "capacity_and_overcrowding": 0,
+        "onboard_facilities": 0,
+        "lost_property": 0,
+        "missed_connection": 6,
+        "service_information": 2,
+        "feedback_positive": 0,
+        "other": 0
+      },
+      "service_information": {
+        "live_service_status": 1,
+        "service_complaint": 0,
+        "compensation_and_refunds": 0,
+        "ticketing_and_booking": 0,
+        "seat_reservation": 0,
+        "capacity_and_overcrowding": 0,
+        "onboard_facilities": 0,
+        "lost_property": 0,
+        "missed_connection": 0,
+        "service_information": 9,
+        "feedback_positive": 0,
+        "other": 0
+      },
+      "feedback_positive": {
+        "live_service_status": 0,
+        "service_complaint": 0,
+        "compensation_and_refunds": 0,
+        "ticketing_and_booking": 0,
+        "seat_reservation": 0,
+        "capacity_and_overcrowding": 0,
+        "onboard_facilities": 0,
+        "lost_property": 0,
+        "missed_connection": 0,
+        "service_information": 0,
+        "feedback_positive": 8,
+        "other": 1
+      },
+      "other": {
+        "live_service_status": 0,
+        "service_complaint": 0,
+        "compensation_and_refunds": 0,
+        "ticketing_and_booking": 0,
+        "seat_reservation": 0,
+        "capacity_and_overcrowding": 0,
+        "onboard_facilities": 0,
+        "lost_property": 0,
+        "missed_connection": 0,
+        "service_information": 1,
+        "feedback_positive": 0,
+        "other": 10
+      }
+    }
+  },
+  "reply_quality_natural_stratum": {
+    "canned": {
+      "n": 54,
+      "acceptable_rate": 0.7037,
+      "acceptable_ci": [
+        0.5717,
+        0.8086
+      ],
+      "catastrophic_rate": 0.0,
+      "catastrophic_ci": [
+        0.0,
+        0.0664
+      ],
+      "mean_factual_safety": 2.0,
+      "mean_addresses_need": 0.833,
+      "mean_actionability": 1.0,
+      "mean_tone_fit": 1.056,
+      "mean_composite": 0.611,
+      "judge_consistency_overrides": 0,
+      "judge_errors": 0
+    },
+    "grounded_llm": {
+      "n": 53,
+      "acceptable_rate": 0.8491,
+      "acceptable_ci": [
+        0.7295,
+        0.9215
+      ],
+      "catastrophic_rate": 0.0189,
+      "catastrophic_ci": [
+        0.0033,
+        0.0994
+      ],
+      "mean_factual_safety": 1.83,
+      "mean_addresses_need": 1.17,
+      "mean_actionability": 1.547,
+      "mean_tone_fit": 1.509,
+      "mean_composite": 0.757,
+      "judge_consistency_overrides": 0,
+      "judge_errors": 0
+    },
+    "nearest_neighbour": {
+      "n": 53,
+      "acceptable_rate": 0.2642,
+      "acceptable_ci": [
+        0.1644,
+        0.3958
+      ],
+      "catastrophic_rate": 0.3585,
+      "catastrophic_ci": [
+        0.243,
+        0.4931
+      ],
+      "mean_factual_safety": 0.962,
+      "mean_addresses_need": 0.623,
+      "mean_actionability": 0.509,
+      "mean_tone_fit": 1.038,
+      "mean_composite": 0.392,
+      "judge_consistency_overrides": 0,
+      "judge_errors": 0
+    }
+  },
+  "selective": {
+    "operating_point": {
+      "n": 53,
+      "auto_coverage": 0.0566,
+      "assist_rate": 0.566,
+      "escalate_rate": 0.3774,
+      "quality_on_auto": 0.6667,
+      "quality_on_auto_ci": [
+        0.2077,
+        0.9385
+      ],
+      "quality_on_assist": 0.8333,
+      "quality_overall_if_all_sent": 0.8491,
+      "catastrophic_rate_on_auto": 0.0,
+      "catastrophic_rate_on_auto_ci": [
+        0.0,
+        0.5615
+      ],
+      "catastrophic_rate_overall": 0.0189,
+      "catastrophic_escapes": 0
+    },
+    "by_stratum": {
+      "natural": {
+        "n": 53,
+        "auto_coverage": 0.0566,
+        "assist_rate": 0.566,
+        "escalate_rate": 0.3774,
+        "quality_on_auto": 0.6667,
+        "quality_on_auto_ci": [
+          0.2077,
+          0.9385
+        ],
+        "quality_on_assist": 0.8333,
+        "quality_overall_if_all_sent": 0.8491,
+        "catastrophic_rate_on_auto": 0.0,
+        "catastrophic_rate_on_auto_ci": [
+          0.0,
+          0.5615
+        ],
+        "catastrophic_rate_overall": 0.0189,
+        "catastrophic_escapes": 0
+      }
+    },
+    "risk_coverage": {
+      "aurc": 0.1923,
+      "points": [
+        {
+          "coverage": 0.019,
+          "error": 1.0
+        },
+        {
+          "coverage": 0.057,
+          "error": 0.3333
+        },
+        {
+          "coverage": 0.094,
+          "error": 0.2
+        },
+        {
+          "coverage": 0.132,
+          "error": 0.2071
+        },
+        {
+          "coverage": 0.17,
+          "error": 0.2222
+        },
+        {
+          "coverage": 0.208,
+          "error": 0.2318
+        },
+        {
+          "coverage": 0.245,
+          "error": 0.2269
+        },
+        {
+          "coverage": 0.283,
+          "error": 0.22
+        },
+        {
+          "coverage": 0.321,
+          "error": 0.2353
+        },
+        {
+          "coverage": 0.358,
+          "error": 0.2263
+        },
+        {
+          "coverage": 0.396,
+          "error": 0.2262
+        },
+        {
+          "coverage": 0.434,
+          "error": 0.2174
+        },
+        {
+          "coverage": 0.472,
+          "error": 0.2
+        },
+        {
+          "coverage": 0.509,
+          "error": 0.1852
+        },
+        {
+          "coverage": 0.547,
+          "error": 0.1724
+        },
+        {
+          "coverage": 0.585,
+          "error": 0.1613
+        },
+        {
+          "coverage": 0.623,
+          "error": 0.1515
+        },
+        {
+          "coverage": 0.66,
+          "error": 0.1486
+        },
+        {
+          "coverage": 0.698,
+          "error": 0.1473
+        },
+        {
+          "coverage": 0.736,
+          "error": 0.1423
+        },
+        {
+          "coverage": 0.774,
+          "error": 0.1366
+        },
+        {
+          "coverage": 0.811,
+          "error": 0.1326
+        },
+        {
+          "coverage": 0.849,
+          "error": 0.1322
+        },
+        {
+          "coverage": 0.887,
+          "error": 0.1277
+        },
+        {
+          "coverage": 0.925,
+          "error": 0.1224
+        },
+        {
+          "coverage": 0.962,
+          "error": 0.1304
+        },
+        {
+          "coverage": 1.0,
+          "error": 0.1509
+        }
+      ]
+    },
+    "router_sweep": {
+      "conf0.35_ret0.20": {
+        "n": 53,
+        "auto_coverage": 0.0755,
+        "assist_rate": 0.5283,
+        "escalate_rate": 0.3962,
+        "quality_on_auto": 0.75,
+        "quality_on_auto_ci": [
+          0.3006,
+          0.9544
+        ],
+        "quality_on_assist": 0.8214,
+        "quality_overall_if_all_sent": 0.8491,
+        "catastrophic_rate_on_auto": 0.0,
+        "catastrophic_rate_on_auto_ci": [
+          0.0,
+          0.4899
+        ],
+        "catastrophic_rate_overall": 0.0189,
+        "catastrophic_escapes": 0
+      },
+      "conf0.35_ret0.28": {
+        "n": 53,
+        "auto_coverage": 0.0377,
+        "assist_rate": 0.566,
+        "escalate_rate": 0.3962,
+        "quality_on_auto": 0.5,
+        "quality_on_auto_ci": [
+          0.0945,
+          0.9055
+        ],
+        "quality_on_assist": 0.8333,
+        "quality_overall_if_all_sent": 0.8491,
+        "catastrophic_rate_on_auto": 0.0,
+        "catastrophic_rate_on_auto_ci": [
+          0.0,
+          0.6576
+        ],
+        "catastrophic_rate_overall": 0.0189,
+        "catastrophic_escapes": 0
+      },
+      "conf0.35_ret0.36": {
+        "n": 53,
+        "auto_coverage": 0.0,
+        "assist_rate": 0.6038,
+        "escalate_rate": 0.3962,
+        "quality_on_auto": NaN,
+        "quality_on_auto_ci": [
+          NaN,
+          NaN
+        ],
+        "quality_on_assist": 0.8125,
+        "quality_overall_if_all_sent": 0.8491,
+        "catastrophic_rate_on_auto": NaN,
+        "catastrophic_rate_on_auto_ci": [
+          NaN,
+          NaN
+        ],
+        "catastrophic_rate_overall": 0.0189,
+        "catastrophic_escapes": 0
+      },
+      "conf0.45_ret0.20": {
+        "n": 53,
+        "auto_coverage": 0.0755,
+        "assist_rate": 0.5283,
+        "escalate_rate": 0.3962,
+        "quality_on_auto": 0.75,
+        "quality_on_auto_ci": [
+          0.3006,
+          0.9544
+        ],
+        "quality_on_assist": 0.8214,
+        "quality_overall_if_all_sent": 0.8491,
+        "catastrophic_rate_on_auto": 0.0,
+        "catastrophic_rate_on_auto_ci": [
+          0.0,
+          0.4899
+        ],
+        "catastrophic_rate_overall": 0.0189,
+        "catastrophic_escapes": 0
+      },
+      "conf0.45_ret0.28": {
+        "n": 53,
+        "auto_coverage": 0.0377,
+        "assist_rate": 0.566,
+        "escalate_rate": 0.3962,
+        "quality_on_auto": 0.5,
+        "quality_on_auto_ci": [
+          0.0945,
+          0.9055
+        ],
+        "quality_on_assist": 0.8333,
+        "quality_overall_if_all_sent": 0.8491,
+        "catastrophic_rate_on_auto": 0.0,
+        "catastrophic_rate_on_auto_ci": [
+          0.0,
+          0.6576
+        ],
+        "catastrophic_rate_overall": 0.0189,
+        "catastrophic_escapes": 0
+      },
+      "conf0.45_ret0.36": {
+        "n": 53,
+        "auto_coverage": 0.0,
+        "assist_rate": 0.6038,
+        "escalate_rate": 0.3962,
+        "quality_on_auto": NaN,
+        "quality_on_auto_ci": [
+          NaN,
+          NaN
+        ],
+        "quality_on_assist": 0.8125,
+        "quality_overall_if_all_sent": 0.8491,
+        "catastrophic_rate_on_auto": NaN,
+        "catastrophic_rate_on_auto_ci": [
+          NaN,
+          NaN
+        ],
+        "catastrophic_rate_overall": 0.0189,
+        "catastrophic_escapes": 0
+      },
+      "conf0.55_ret0.20": {
+        "n": 53,
+        "auto_coverage": 0.0755,
+        "assist_rate": 0.5283,
+        "escalate_rate": 0.3962,
+        "quality_on_auto": 0.75,
+        "quality_on_auto_ci": [
+          0.3006,
+          0.9544
+        ],
+        "quality_on_assist": 0.8214,
+        "quality_overall_if_all_sent": 0.8491,
+        "catastrophic_rate_on_auto": 0.0,
+        "catastrophic_rate_on_auto_ci": [
+          0.0,
+          0.4899
+        ],
+        "catastrophic_rate_overall": 0.0189,
+        "catastrophic_escapes": 0
+      },
+      "conf0.55_ret0.28": {
+        "n": 53,
+        "auto_coverage": 0.0377,
+        "assist_rate": 0.566,
+        "escalate_rate": 0.3962,
+        "quality_on_auto": 0.5,
+        "quality_on_auto_ci": [
+          0.0945,
+          0.9055
+        ],
+        "quality_on_assist": 0.8333,
+        "quality_overall_if_all_sent": 0.8491,
+        "catastrophic_rate_on_auto": 0.0,
+        "catastrophic_rate_on_auto_ci": [
+          0.0,
+          0.6576
+        ],
+        "catastrophic_rate_overall": 0.0189,
+        "catastrophic_escapes": 0
+      },
+      "conf0.55_ret0.36": {
+        "n": 53,
+        "auto_coverage": 0.0,
+        "assist_rate": 0.6038,
+        "escalate_rate": 0.3962,
+        "quality_on_auto": NaN,
+        "quality_on_auto_ci": [
+          NaN,
+          NaN
+        ],
+        "quality_on_assist": 0.8125,
+        "quality_overall_if_all_sent": 0.8491,
+        "catastrophic_rate_on_auto": NaN,
+        "catastrophic_rate_on_auto_ci": [
+          NaN,
+          NaN
+        ],
+        "catastrophic_rate_overall": 0.0189,
+        "catastrophic_escapes": 0
+      },
+      "conf0.65_ret0.20": {
+        "n": 53,
+        "auto_coverage": 0.0755,
+        "assist_rate": 0.5094,
+        "escalate_rate": 0.4151,
+        "quality_on_auto": 0.75,
+        "quality_on_auto_ci": [
+          0.3006,
+          0.9544
+        ],
+        "quality_on_assist": 0.8519,
+        "quality_overall_if_all_sent": 0.8491,
+        "catastrophic_rate_on_auto": 0.0,
+        "catastrophic_rate_on_auto_ci": [
+          0.0,
+          0.4899
+        ],
+        "catastrophic_rate_overall": 0.0189,
+        "catastrophic_escapes": 0
+      },
+      "conf0.65_ret0.28": {
+        "n": 53,
+        "auto_coverage": 0.0377,
+        "assist_rate": 0.5472,
+        "escalate_rate": 0.4151,
+        "quality_on_auto": 0.5,
+        "quality_on_auto_ci": [
+          0.0945,
+          0.9055
+        ],
+        "quality_on_assist": 0.8621,
+        "quality_overall_if_all_sent": 0.8491,
+        "catastrophic_rate_on_auto": 0.0,
+        "catastrophic_rate_on_auto_ci": [
+          0.0,
+          0.6576
+        ],
+        "catastrophic_rate_overall": 0.0189,
+        "catastrophic_escapes": 0
+      },
+      "conf0.65_ret0.36": {
+        "n": 53,
+        "auto_coverage": 0.0,
+        "assist_rate": 0.5849,
+        "escalate_rate": 0.4151,
+        "quality_on_auto": NaN,
+        "quality_on_auto_ci": [
+          NaN,
+          NaN
+        ],
+        "quality_on_assist": 0.8387,
+        "quality_overall_if_all_sent": 0.8491,
+        "catastrophic_rate_on_auto": NaN,
+        "catastrophic_rate_on_auto_ci": [
+          NaN,
+          NaN
+        ],
+        "catastrophic_rate_overall": 0.0189,
+        "catastrophic_escapes": 0
+      },
+      "conf0.75_ret0.20": {
+        "n": 53,
+        "auto_coverage": 0.0755,
+        "assist_rate": 0.5094,
+        "escalate_rate": 0.4151,
+        "quality_on_auto": 0.75,
+        "quality_on_auto_ci": [
+          0.3006,
+          0.9544
+        ],
+        "quality_on_assist": 0.8519,
+        "quality_overall_if_all_sent": 0.8491,
+        "catastrophic_rate_on_auto": 0.0,
+        "catastrophic_rate_on_auto_ci": [
+          0.0,
+          0.4899
+        ],
+        "catastrophic_rate_overall": 0.0189,
+        "catastrophic_escapes": 0
+      },
+      "conf0.75_ret0.28": {
+        "n": 53,
+        "auto_coverage": 0.0377,
+        "assist_rate": 0.5472,
+        "escalate_rate": 0.4151,
+        "quality_on_auto": 0.5,
+        "quality_on_auto_ci": [
+          0.0945,
+          0.9055
+        ],
+        "quality_on_assist": 0.8621,
+        "quality_overall_if_all_sent": 0.8491,
+        "catastrophic_rate_on_auto": 0.0,
+        "catastrophic_rate_on_auto_ci": [
+          0.0,
+          0.6576
+        ],
+        "catastrophic_rate_overall": 0.0189,
+        "catastrophic_escapes": 0
+      },
+      "conf0.75_ret0.36": {
+        "n": 53,
+        "auto_coverage": 0.0,
+        "assist_rate": 0.5849,
+        "escalate_rate": 0.4151,
+        "quality_on_auto": NaN,
+        "quality_on_auto_ci": [
+          NaN,
+          NaN
+        ],
+        "quality_on_assist": 0.8387,
+        "quality_overall_if_all_sent": 0.8491,
+        "catastrophic_rate_on_auto": NaN,
+        "catastrophic_rate_on_auto_ci": [
+          NaN,
+          NaN
+        ],
+        "catastrophic_rate_overall": 0.0189,
+        "catastrophic_escapes": 0
+      },
+      "conf0.85_ret0.20": {
+        "n": 53,
+        "auto_coverage": 0.0755,
+        "assist_rate": 0.5094,
+        "escalate_rate": 0.4151,
+        "quality_on_auto": 0.75,
+        "quality_on_auto_ci": [
+          0.3006,
+          0.9544
+        ],
+        "quality_on_assist": 0.8519,
+        "quality_overall_if_all_sent": 0.8491,
+        "catastrophic_rate_on_auto": 0.0,
+        "catastrophic_rate_on_auto_ci": [
+          0.0,
+          0.4899
+        ],
+        "catastrophic_rate_overall": 0.0189,
+        "catastrophic_escapes": 0
+      },
+      "conf0.85_ret0.28": {
+        "n": 53,
+        "auto_coverage": 0.0377,
+        "assist_rate": 0.5472,
+        "escalate_rate": 0.4151,
+        "quality_on_auto": 0.5,
+        "quality_on_auto_ci": [
+          0.0945,
+          0.9055
+        ],
+        "quality_on_assist": 0.8621,
+        "quality_overall_if_all_sent": 0.8491,
+        "catastrophic_rate_on_auto": 0.0,
+        "catastrophic_rate_on_auto_ci": [
+          0.0,
+          0.6576
+        ],
+        "catastrophic_rate_overall": 0.0189,
+        "catastrophic_escapes": 0
+      },
+      "conf0.85_ret0.36": {
+        "n": 53,
+        "auto_coverage": 0.0,
+        "assist_rate": 0.5849,
+        "escalate_rate": 0.4151,
+        "quality_on_auto": NaN,
+        "quality_on_auto_ci": [
+          NaN,
+          NaN
+        ],
+        "quality_on_assist": 0.8387,
+        "quality_overall_if_all_sent": 0.8491,
+        "catastrophic_rate_on_auto": NaN,
+        "catastrophic_rate_on_auto_ci": [
+          NaN,
+          NaN
+        ],
+        "catastrophic_rate_overall": 0.0189,
+        "catastrophic_escapes": 0
+      },
+      "ablate_none": {
+        "n": 53,
+        "auto_coverage": 0.0566,
+        "assist_rate": 0.5472,
+        "escalate_rate": 0.3962,
+        "quality_on_auto": 0.6667,
+        "quality_on_auto_ci": [
+          0.2077,
+          0.9385
+        ],
+        "quality_on_assist": 0.8276,
+        "quality_overall_if_all_sent": 0.8491,
+        "catastrophic_rate_on_auto": 0.0,
+        "catastrophic_rate_on_auto_ci": [
+          0.0,
+          0.5615
+        ],
+        "catastrophic_rate_overall": 0.0189,
+        "catastrophic_escapes": 0
+      },
+      "ablate_live_claim": {
+        "n": 53,
+        "auto_coverage": 0.0566,
+        "assist_rate": 0.6038,
+        "escalate_rate": 0.3396,
+        "quality_on_auto": 0.6667,
+        "quality_on_auto_ci": [
+          0.2077,
+          0.9385
+        ],
+        "quality_on_assist": 0.8125,
+        "quality_overall_if_all_sent": 0.8491,
+        "catastrophic_rate_on_auto": 0.0,
+        "catastrophic_rate_on_auto_ci": [
+          0.0,
+          0.5615
+        ],
+        "catastrophic_rate_overall": 0.0189,
+        "catastrophic_escapes": 0
+      },
+      "ablate_money": {
+        "n": 53,
+        "auto_coverage": 0.0566,
+        "assist_rate": 0.6038,
+        "escalate_rate": 0.3396,
+        "quality_on_auto": 0.6667,
+        "quality_on_auto_ci": [
+          0.2077,
+          0.9385
+        ],
+        "quality_on_assist": 0.8438,
+        "quality_overall_if_all_sent": 0.8491,
+        "catastrophic_rate_on_auto": 0.0,
+        "catastrophic_rate_on_auto_ci": [
+          0.0,
+          0.5615
+        ],
+        "catastrophic_rate_overall": 0.0189,
+        "catastrophic_escapes": 0
+      },
+      "ablate_safety": {
+        "n": 53,
+        "auto_coverage": 0.0566,
+        "assist_rate": 0.566,
+        "escalate_rate": 0.3774,
+        "quality_on_auto": 0.6667,
+        "quality_on_auto_ci": [
+          0.2077,
+          0.9385
+        ],
+        "quality_on_assist": 0.8333,
+        "quality_overall_if_all_sent": 0.8491,
+        "catastrophic_rate_on_auto": 0.0,
+        "catastrophic_rate_on_auto_ci": [
+          0.0,
+          0.5615
+        ],
+        "catastrophic_rate_overall": 0.0189,
+        "catastrophic_escapes": 0
+      },
+      "ablate_intent_policy": {
+        "n": 53,
+        "auto_coverage": 0.0566,
+        "assist_rate": 0.7547,
+        "escalate_rate": 0.1887,
+        "quality_on_auto": 0.6667,
+        "quality_on_auto_ci": [
+          0.2077,
+          0.9385
+        ],
+        "quality_on_assist": 0.85,
+        "quality_overall_if_all_sent": 0.8491,
+        "catastrophic_rate_on_auto": 0.0,
+        "catastrophic_rate_on_auto_ci": [
+          0.0,
+          0.5615
+        ],
+        "catastrophic_rate_overall": 0.0189,
+        "catastrophic_escapes": 0
+      },
+      "ablate_all_guards": {
+        "n": 53,
+        "auto_coverage": 0.0755,
+        "assist_rate": 0.9245,
+        "escalate_rate": 0.0,
+        "quality_on_auto": 0.75,
+        "quality_on_auto_ci": [
+          0.3006,
+          0.9544
+        ],
+        "quality_on_assist": 0.8571,
+        "quality_overall_if_all_sent": 0.8491,
+        "catastrophic_rate_on_auto": 0.0,
+        "catastrophic_rate_on_auto_ci": [
+          0.0,
+          0.4899
+        ],
+        "catastrophic_rate_overall": 0.0189,
+        "catastrophic_escapes": 0
+      }
+    }
+  },
+  "router": {
+    "action_distribution": {
+      "assist": 0.665,
+      "escalate": 0.295,
+      "auto": 0.04
+    },
+    "rule_distribution": {
+      "R13-default-assist": 96,
+      "R10-weak-grounding": 37,
+      "R6-intent-policy": 35,
+      "R12-auto-eligible": 8,
+      "R3-money": 7,
+      "R5-unreadable": 6,
+      "R1-safety": 4,
+      "R4-existing-case": 3,
+      "R9-live-claim": 2,
+      "R2-legal": 2
+    },
+    "self_report_disagreement_rate": 0.015
+  },
+  "label_quality": {
+    "n_labelled": 220,
+    "pool_n": 220,
+    "label_coverage_of_pool": 1.0,
+    "by_review_kind": {
+      "llm_adjudicated": 137,
+      "auto_agreed": 82,
+      "adjudicate": 1
+    },
+    "individually_reviewed_by_human": 1,
+    "reviewed_fraction_of_labelled": 0.0045,
+    "note": "Items where the two independent pre-label passes disagreed and which were not adjudicated carry no gold label at all and are excluded from scoring, rather than being given a provisional label that would look like ground truth.",
+    "adjudicated_disagreements": 1,
+    "median_seconds_per_reviewed_item": 22.4
+  },
+  "judge_vs_human": {
+    "status": "not yet measured - run `make grade`"
+  },
+  "cost": {
+    "calls": 591,
+    "total_tokens": 770427,
+    "throttle_wait_s": 5563.2,
+    "by_tag": {
+      "prelabel": {
+        "calls": 103,
+        "tokens": 217180
+      },
+      "judge": {
+        "calls": 171,
+        "tokens": 210682
+      },
+      "generate": {
+        "calls": 203,
+        "tokens": 202103
+      },
+      "adjudicate": {
+        "calls": 35,
+        "tokens": 53987
+      },
+      "classify": {
+        "calls": 38,
+        "tokens": 49021
+      },
+      "taxonomy": {
+        "calls": 39,
+        "tokens": 37269
+      },
+      "smoke2": {
+        "calls": 1,
+        "tokens": 118
+      },
+      "smoke": {
+        "calls": 1,
+        "tokens": 67
+      }
+    }
+  }
+}

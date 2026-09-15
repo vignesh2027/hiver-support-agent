@@ -128,6 +128,35 @@ no LLM and runs in milliseconds; the nearest-neighbour replier is genuinely
 competitive for a brand with formulaic replies. If the LLM can't clear them by
 a visible margin it isn't worth its latency.
 
+**Intent classification**, on the natural stratum only (n=120), 95% bootstrap
+intervals:
+
+| system | accuracy | macro-F1 |
+| --- | --- | --- |
+| majority class (trivial) | 0.150 [0.092, 0.217] | 0.022 [0.014, 0.030] |
+| TF-IDF + logreg on weak labels (simple) | 0.383 [0.300, 0.467] | 0.343 [0.256, 0.405] |
+| **LLM classifier** | **0.750** [0.675, 0.825] | **0.755** [0.605, 0.826] |
+
+The LLM roughly doubles the simple baseline, which is the margin I'd want
+before accepting the latency and cost. Two things about this table are worth
+more than the headline.
+
+First, the majority baseline scores 15%, not the ~41% the taxonomy's
+cluster-derived prior predicted for the largest intent. The prior was wrong:
+`live_service_status` is 41% of *clusters* but only 12% of *adjudicated
+labels*, mostly because the 12.7% mixed cluster I folded into it turned out to
+contain a lot of complaints. The taxonomy file calls that field `prior_share`
+and says it is not a measured distribution, which is exactly why. If I had
+quoted it as the intent distribution the whole report would have been built on
+it.
+
+Second, the top confusions are `live_service_status ↔ service_complaint`,
+three in each direction. That is the boundary I predicted when curating the
+taxonomy and wrote a specific rule for ("is the journey still in progress and
+would the answer be a fact about right now?"). Predicting your own model's
+dominant error and still not fixing it is a useful thing to know: the rule
+helps a human annotator and does not survive contact with a batched prompt.
+
 **Router behaviour** over 180 messages (grounded arm):
 
 | action | share |

@@ -1,0 +1,7 @@
+{
+ "text": "{\"decisions\":[{\"id\":\"A219\",\"intent\":\"compensation_and_refunds\",\"handling\":\"escalate\",\"chose\":\"neither\",\"why\":\"Customer wants a refund (money), so intent is compensation_and_refunds and handling must be escalate; both annotators missed this.\"}]}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 986,
+ "completion_tokens": 145,
+ "tag": "adjudicate"
+}

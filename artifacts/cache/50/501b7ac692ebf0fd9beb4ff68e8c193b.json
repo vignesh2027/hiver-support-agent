@@ -1,0 +1,7 @@
+{
+ "text": "{\"decisions\":[{\"id\":\"A191\",\"intent\":\"other\",\"handling\":\"escalate\",\"chose\":\"B\",\"why\":\"other requires escalation\"},{\"id\":\"A194\",\"intent\":\"service_complaint\",\"handling\":\"assist\",\"chose\":\"B\",\"why\":\"complaint without money/legal threat needs assist\"},{\"id\":\"A196\",\"intent\":\"capacity_and_overcrowding\",\"handling\":\"assist\",\"chose\":\"B\",\"why\":\"capacity issue is not auto‑eligible\"},{\"id\":\"A199\",\"intent\":\"missed_connection\",\"handling\":\"escalate\",\"chose\":\"B\",\"why\":\"missed connections must be escalated\"}]}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 1145,
+ "completion_tokens": 382,
+ "tag": "adjudicate"
+}

@@ -1,0 +1,7 @@
+{
+ "text": "{\"decisions\":[{\"id\":\"E127\",\"intent\":\"service_complaint\",\"handling\":\"assist\",\"chose\":\"B\",\"why\":\"complaint requires human response\"},{\"id\":\"E128\",\"intent\":\"service_complaint\",\"handling\":\"assist\",\"chose\":\"B\",\"why\":\"complaint requires human response\"},{\"id\":\"E129\",\"intent\":\"service_complaint\",\"handling\":\"assist\",\"chose\":\"B\",\"why\":\"complaint requires human response\"},{\"id\":\"E130\",\"intent\":\"capacity_and_overcrowding\",\"handling\":\"assist\",\"chose\":\"B\",\"why\":\"overcrowding complaint needs human handling\"}]}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 1199,
+ "completion_tokens": 316,
+ "tag": "adjudicate"
+}

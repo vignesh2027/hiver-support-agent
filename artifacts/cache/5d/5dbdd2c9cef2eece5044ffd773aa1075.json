@@ -1,0 +1,7 @@
+{
+ "text": "{\"decisions\":[{\"id\":\"E174\",\"intent\":\"capacity_and_overcrowding\",\"handling\":\"assist\",\"chose\":\"B\",\"why\":\"auto not allowed for complaints\"},{\"id\":\"E175\",\"intent\":\"compensation_and_refunds\",\"handling\":\"escalate\",\"chose\":\"B\",\"why\":\"money request requires escalation\"},{\"id\":\"E176\",\"intent\":\"service_complaint\",\"handling\":\"assist\",\"chose\":\"B\",\"why\":\"auto not permitted for complaints\"},{\"id\":\"E177\",\"intent\":\"ticketing_and_booking\",\"handling\":\"assist\",\"chose\":\"B\",\"why\":\"auto disallowed for booking issues\"}]}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 1166,
+ "completion_tokens": 240,
+ "tag": "adjudicate"
+}

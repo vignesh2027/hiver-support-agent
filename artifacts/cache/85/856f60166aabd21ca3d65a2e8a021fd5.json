@@ -1,0 +1,7 @@
+{
+ "text": "{\"decisions\":[{\"id\":\"E179\",\"intent\":\"service_complaint\",\"handling\":\"assist\",\"chose\":\"B\",\"why\":\"auto not allowed for complaints\"},{\"id\":\"A180\",\"intent\":\"capacity_and_overcrowding\",\"handling\":\"assist\",\"chose\":\"neither\",\"why\":\"both mis‑identified intent\"},{\"id\":\"A181\",\"intent\":\"capacity_and_overcrowding\",\"handling\":\"escalate\",\"chose\":\"B\",\"why\":\"vulnerable passengers require escalation\"},{\"id\":\"A182\",\"intent\":\"capacity_and_overcrowding\",\"handling\":\"escalate\",\"chose\":\"B\",\"why\":\"capacity issue with vulnerable passenger mandates escalation\"}]}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 1249,
+ "completion_tokens": 552,
+ "tag": "adjudicate"
+}

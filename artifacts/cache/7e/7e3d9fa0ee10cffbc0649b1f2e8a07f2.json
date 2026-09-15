@@ -1,0 +1,7 @@
+{
+ "text": "{\"decisions\":[{\"id\":\"A200\",\"intent\":\"compensation_and_refunds\",\"handling\":\"assist\",\"chose\":\"A\",\"why\":\"money complaint overrides overcrowding, assist needed\"},{\"id\":\"A201\",\"intent\":\"compensation_and_refunds\",\"handling\":\"assist\",\"chose\":\"A\",\"why\":\"explicit money grievance, highest priority, assist\"},{\"id\":\"A204\",\"intent\":\"other\",\"handling\":\"escalate\",\"chose\":\"A\",\"why\":\"vague no request, falls under other, must be escalated\"},{\"id\":\"A206\",\"intent\":\"onboard_facilities\",\"handling\":\"assist\",\"chose\":\"B\",\"why\":\"food price gripe is onboard facilities, not praise, requires assist\"}]}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 1162,
+ "completion_tokens": 435,
+ "tag": "adjudicate"
+}

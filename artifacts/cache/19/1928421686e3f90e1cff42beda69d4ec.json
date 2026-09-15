@@ -1,0 +1,7 @@
+{
+ "text": "{\"decisions\":[{\"id\":\"E146\",\"intent\":\"ticketing_and_booking\",\"handling\":\"assist\",\"chose\":\"neither\",\"why\":\"both answers wrong\"},{\"id\":\"E150\",\"intent\":\"onboard_facilities\",\"handling\":\"assist\",\"chose\":\"A\",\"why\":\"A correct\"},{\"id\":\"E151\",\"intent\":\"service_complaint\",\"handling\":\"assist\",\"chose\":\"A\",\"why\":\"A correct\"},{\"id\":\"E153\",\"intent\":\"capacity_and_overcrowding\",\"handling\":\"assist\",\"chose\":\"B\",\"why\":\"B correct\"}]}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 1172,
+ "completion_tokens": 418,
+ "tag": "adjudicate"
+}
