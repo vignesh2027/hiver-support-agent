@@ -1,0 +1,7 @@
+{
+ "text": "```json\n{\"labels\":[{\"id\":\"A\",\"intent\":\"x\"}]}\n```",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 55,
+ "completion_tokens": 63,
+ "tag": "smoke2"
+}

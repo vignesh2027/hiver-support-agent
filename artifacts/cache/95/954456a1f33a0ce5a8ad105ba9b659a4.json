@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"label\": \"request_service_schedule\",\n  \"definition\": \"customer wants confirmation or details about train times, reservations, peak/off‑peak services, or cancellations\",\n  \"coherent\": false,\n  \"coherence_note\": \"cluster mixes schedule confirmation requests with general complaints about delays and service quality\",\n  \"needs_live_data\": true,\n  \"needs_live_data_note\": \"requires real‑time timetable, reservation availability, and cancellation information\"\n}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 674,
+ "completion_tokens": 181,
+ "tag": "taxonomy:name"
+}

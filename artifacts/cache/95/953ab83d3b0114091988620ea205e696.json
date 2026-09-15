@@ -1,0 +1,7 @@
+{
+ "text": "{\"labels\":[{\"id\":\"N012\",\"intent\":\"onboard_facilities\",\"handling\":\"auto\",\"handling_reason\":\"simple facilities query\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.95},{\"id\":\"N013\",\"intent\":\"live_service_status\",\"handling\":\"auto\",\"handling_reason\":\"current status request\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.97},{\"id\":\"N014\",\"intent\":\"onboard_facilities\",\"handling\":\"auto\",\"handling_reason\":\"facility status question\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.96},{\"id\":\"N015\",\"intent\":\"compensation_and_refunds\",\"handling\":\"assist\",\"handling_reason\":\"refund claim requires human review\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.93},{\"id\":\"N016\",\"intent\":\"capacity_and_overcrowding\",\"handling\":\"auto\",\"handling_reason\":\"short formation and facilities issue\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.94},{\"id\":\"N017\",\"intent\":\"service_complaint\",\"handling\":\"assist\",\"handling_reason\":\"complaint about delays/cancellations\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.92}]}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 2768,
+ "completion_tokens": 441,
+ "tag": "prelabel:p1"
+}

@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Sorry to hear this, Jackie – which carriage were you in on the 6.16 from Reading?\",\"grounded_in\":[1,2],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"carriage number\",\"confidence\":0.92}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 854,
+ "completion_tokens": 85,
+ "tag": "generate"
+}

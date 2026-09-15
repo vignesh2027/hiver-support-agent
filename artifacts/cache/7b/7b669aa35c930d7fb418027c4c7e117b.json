@@ -1,0 +1,7 @@
+{
+ "text": "{\"labels\":[{\"id\":\"N000\",\"intent\":\"service_complaint\",\"confidence\":0.95},{\"id\":\"N001\",\"intent\":\"live_service_status\",\"confidence\":0.92},{\"id\":\"N002\",\"intent\":\"live_service_status\",\"confidence\":0.88},{\"id\":\"N003\",\"intent\":\"service_information\",\"confidence\":0.93},{\"id\":\"N004\",\"intent\":\"compensation_and_refunds\",\"confidence\":0.96},{\"id\":\"N005\",\"intent\":\"compensation_and_refunds\",\"confidence\":0.94}]}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 953,
+ "completion_tokens": 265,
+ "tag": "classify:knn0:b6"
+}

@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"label\": \"request_punctuality_explanation\",\n  \"definition\": \"Customer wants to know why their train is repeatedly late and seeks an explanation or assurance of on‑time service.\",\n  \"coherent\": true,\n  \"coherence_note\": null,\n  \"needs_live_data\": true,\n  \"needs_live_data_note\": \"Current delay status and reasons for the specific train/service at the time of the query.\"\n}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 614,
+ "completion_tokens": 203,
+ "tag": "taxonomy:name"
+}

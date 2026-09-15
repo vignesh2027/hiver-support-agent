@@ -1,0 +1,33 @@
+# Secrets
+.env
+.env.local
+
+# Raw corpus: 493 MB, fetched by `make data`
+data/raw/
+
+# The combined episode file is derivable from the three splits, which ARE
+# committed because `make reproduce` rebuilds the retrieval index from them
+# (2.4 seconds) rather than shipping an 18 MB pickle.
+data/interim/episodes_GWRHelp.parquet
+artifacts/*.pkl
+
+# Per-day request counter, not a result
+artifacts/.rpd_state.json
+
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+
+# Deliberately NOT ignored, because the reviewer needs them:
+#   artifacts/cache/       1.3 MB of cached LLM responses -> `make reproduce`
+#                          runs with no API key and no network
+#   artifacts/runs/        the raw per-example outputs behind every table
+#   artifacts/metrics/     computed results
+#   data/golden/           the golden set and its full provenance
+#   data/interim/*.parquet the chronological splits (3 MB)
+#   data/interim/brand_scorecard.csv  evidence for the brand choice
+
+# Internal working notes, not part of the submission
+STATUS.md

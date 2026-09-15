@@ -1,0 +1,7 @@
+{
+ "text": "{\"labels\":[{\"id\":\"E120\",\"intent\":\"missed_connection\",\"handling\":\"escalate\",\"handling_reason\":\"time-critical missed connection\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.95},{\"id\":\"E121\",\"intent\":\"service_complaint\",\"handling\":\"assist\",\"handling_reason\":\"complaint about repeated turnbacks\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.92},{\"id\":\"E122\",\"intent\":\"feedback_positive\",\"handling\":\"auto\",\"handling_reason\":\"genuine praise\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.99},{\"id\":\"E123\",\"intent\":\"live_service_status\",\"handling\":\"auto\",\"handling_reason\":\"request for current status of a specific train\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.97},{\"id\":\"E124\",\"intent\":\"service_information\",\"handling\":\"auto\",\"handling_reason\":\"query about announcer voice\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.93},{\"id\":\"E125\",\"intent\":\"service_complaint\",\"handling\":\"assist\",\"handling_reason\":\"complaint about seat reservations and buffet\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.90}]}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 2741,
+ "completion_tokens": 607,
+ "tag": "prelabel:p1"
+}

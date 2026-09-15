@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi there. We’re sorry you had to stand for your journey after booking a seat. You can claim compensation for this. Please email __email__ with your details.\",\"grounded_in\":[1,2],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"none\",\"confidence\":0.92}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 936,
+ "completion_tokens": 107,
+ "tag": "generate"
+}

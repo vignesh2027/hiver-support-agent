@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"label\": \"driver_absence_delay\",\n  \"definition\": \"Customer wants the train to run on time and is demanding a driver be present or an explanation for the driver‑related delay.\",\n  \"coherent\": true,\n  \"coherence_note\": null,\n  \"needs_live_data\": true,\n  \"needs_live_data_note\": \"Requires real‑time information on driver availability/status for the specific service.\"\n}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 671,
+ "completion_tokens": 176,
+ "tag": "taxonomy:name"
+}

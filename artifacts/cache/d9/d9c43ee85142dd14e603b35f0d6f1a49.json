@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi, we’re sorry you’re feeling frustrated. Could you let us know which train you were on and where you were travelling to? That will help us look into what happened.\",\"grounded_in\":[1,4],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"train details and destination\",\"confidence\":0.85}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 937,
+ "completion_tokens": 103,
+ "tag": "generate"
+}

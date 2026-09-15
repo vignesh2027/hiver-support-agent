@@ -1,0 +1,7 @@
+{
+ "text": "```json\n{\"labels\": [\n  {\n    \"id\": \"N000\",\n    \"wants\": \"Explanation for why 1st class was privately chartered, causing overcrowding\",\n    \"requires\": \"Knowledge of whether a private charter was booked on that service\",\n    \"intent\": \"service_complaint\",\n    \"handling\": \"assist\",\n    \"handling_reason\": \"angry complaint likely to escalate to a compensation demand\",\n    \"ambiguous\": false,\n    \"runner_up\": \"capacity_and_overcrowding\",\n    \"confidence\": 0.82\n  },\n  {\n    \"id\": \"N001\",\n    \"wants\": \"Current delay or status of a specific named service\",\n    \"requires\": \"Real-time operational data for the 1357 Paddington–Plymouth\",\n    \"intent\": \"live_service_status\",\n    \"handling\": \"auto\",\n    \"handling_reason\": \"simple factual query with no risk factors\",\n    \"ambiguous\": false,\n    \"runner_up\": null,\n    \"confidence\": 0.95\n  }\n]}\n```",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 998,
+ "completion_tokens": 841,
+ "tag": "prelabel:p2"
+}

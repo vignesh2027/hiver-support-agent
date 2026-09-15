@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi, we’re sorry to hear you’re having trouble getting to Bath. To help you find the best options, could you let us know your departure station and the dates you’re planning to travel?\",\"grounded_in\":[2],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"departure station and travel dates\",\"confidence\":0.85}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 907,
+ "completion_tokens": 105,
+ "tag": "generate"
+}

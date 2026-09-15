@@ -1,0 +1,7 @@
+{
+ "text": "{\"labels\":[{\"id\":\"N030\",\"intent\":\"capacity_and_overcrowding\",\"handling\":\"auto\",\"handling_reason\":\"simple factual complaint\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.99},{\"id\":\"N031\",\"intent\":\"capacity_and_overcrowding\",\"handling\":\"auto\",\"handling_reason\":\"overcrowding complaint\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.99},{\"id\":\"N032\",\"intent\":\"onboard_facilities\",\"handling\":\"auto\",\"handling_reason\":\"facility request\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.99},{\"id\":\"N033\",\"intent\":\"live_service_status\",\"handling\":\"auto\",\"handling_reason\":\"status query\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.99},{\"id\":\"N034\",\"intent\":\"compensation_and_refunds\",\"handling\":\"auto\",\"handling_reason\":\"refund request\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.99},{\"id\":\"N035\",\"intent\":\"compensation_and_refunds\",\"handling\":\"auto\",\"handling_reason\":\"money back request\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.99}]}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 2794,
+ "completion_tokens": 393,
+ "tag": "prelabel:p1"
+}

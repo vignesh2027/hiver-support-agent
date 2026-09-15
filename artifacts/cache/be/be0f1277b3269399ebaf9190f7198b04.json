@@ -1,0 +1,7 @@
+{
+ "text": "{\"labels\":[{\"id\":\"E126\",\"intent\":\"service_complaint\",\"handling\":\"auto\",\"handling_reason\":\"simple complaint\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.95},{\"id\":\"E127\",\"intent\":\"service_complaint\",\"handling\":\"auto\",\"handling_reason\":\"simple complaint\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.95},{\"id\":\"E128\",\"intent\":\"service_complaint\",\"handling\":\"auto\",\"handling_reason\":\"simple complaint\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.95},{\"id\":\"E129\",\"intent\":\"seat_reservation\",\"handling\":\"auto\",\"handling_reason\":\"seat reservation issue\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.95},{\"id\":\"E130\",\"intent\":\"seat_reservation\",\"handling\":\"auto\",\"handling_reason\":\"seat reservation issue\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.95},{\"id\":\"E131\",\"intent\":\"service_complaint\",\"handling\":\"auto\",\"handling_reason\":\"simple complaint\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.95}]}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 2784,
+ "completion_tokens": 508,
+ "tag": "prelabel:p1"
+}

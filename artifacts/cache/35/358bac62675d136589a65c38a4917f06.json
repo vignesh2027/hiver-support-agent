@@ -1,0 +1,7 @@
+{
+ "text": "{\"labels\":[{\"id\":\"N006\",\"intent\":\"compensation_and_refunds\",\"handling\":\"assist\",\"handling_reason\":\"customer is requesting explanation of a money issue\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.92},{\"id\":\"N007\",\"intent\":\"live_service_status\",\"handling\":\"auto\",\"handling_reason\":\"simple factual request about a specific train\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.88}]}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 2619,
+ "completion_tokens": 389,
+ "tag": "prelabel:p1"
+}

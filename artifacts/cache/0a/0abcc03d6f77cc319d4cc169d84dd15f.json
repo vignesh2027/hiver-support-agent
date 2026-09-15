@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"label\": \"inquire_new_train_schedule\",\n  \"definition\": \"customer wants information about which services are using the new trains and when they run\",\n  \"coherent\": true,\n  \"coherence_note\": null,\n  \"needs_live_data\": false,\n  \"needs_live_data_note\": null\n}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 598,
+ "completion_tokens": 132,
+ "tag": "taxonomy:name"
+}

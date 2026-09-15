@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"label\": \"demand_compensation_for_poor_service\",\n  \"definition\": \"customer wants compensation or refund because they consider the train service unacceptable and a joke\",\n  \"coherent\": true,\n  \"coherence_note\": null,\n  \"needs_live_data\": true,\n  \"needs_live_data_note\": \"requires the customer's ticket details and journey history to process a refund or compensation\"\n}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 643,
+ "completion_tokens": 168,
+ "tag": "taxonomy:name"
+}

@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"labels\": [\n    {\n      \"id\": \"A180\",\n      \"requires\": \"Acknowledge specific onboard failures\",\n      \"intent\": \"onboard_facilities\",\n      \"handling\": \"assist\",\n      \"ambiguous\": false,\n      \"confidence\": 0.95\n    },\n    {\n      \"id\": \"A181\",\n      \"requires\": \"Address accessibility/capacity crisis\",\n      \"intent\": \"capacity_and_overcrowding\",\n      \"handling\": \"escalate\",\n      \"ambiguous\": false,\n      \"confidence\": 0.9\n    },\n    {\n      \"id\": \"A182\",\n      \"requires\": \"Resolve immediate boarding denial\",\n      \"intent\": \"capacity_and_overcrowding\",\n      \"handling\": \"escalate\",\n      \"ambiguous\": false,\n      \"confidence\": 0.95\n    },\n    {\n      \"id\": \"A183\",\n      \"requires\": \"Explain current delay/stranding\",\n      \"intent\": \"live_service_status\",\n      \"handling\": \"assist\",\n      \"ambiguous\": false,\n      \"confidence\": 0.85\n    }\n  ]\n}",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 1073,
+ "completion_tokens": 277,
+ "tag": "prelabel:p2"
+}

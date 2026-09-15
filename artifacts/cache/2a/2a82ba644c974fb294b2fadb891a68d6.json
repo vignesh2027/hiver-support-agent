@@ -1,0 +1,7 @@
+{
+ "text": "```json\n{\n  \"labels\": [\n    {\n      \"id\": \"N002\",\n      \"wants\": \"Current status of their train and how to reach Guildford\",\n      \"requires\": \"Verified live status of that specific service and alternative routing\",\n      \"intent\": \"live_service_status\",\n      \"handling\": \"assist\",\n      \"handling_reason\": \"conflicting status data and time-sensitive passenger potentially stranded\",\n      \"",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 1014,
+ "completion_tokens": 900,
+ "tag": "prelabel:p2"
+}

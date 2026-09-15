@@ -1,0 +1,10 @@
+# Optional: the dense-embedding retriever, reported as an ablation only.
+#
+# The headline configuration deliberately does NOT depend on this. Installing
+# it pulls torch (~200 MB) and downloads a 90 MB model on first use, which
+# would put the "reproduce in under 15 minutes" claim at the mercy of the
+# reviewer's bandwidth. Install it only to reproduce the retriever ablation:
+#
+#   pip install -r requirements-optional.txt
+#   python -m hsa.retrieve.index --backend embed --demo
+sentence-transformers==6.0.1

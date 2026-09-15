@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi. We announce the platform for safety reasons, but the freight train can pass any platform. The allocation can change based on conditions at the time.\",\"grounded_in\":[1,2],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"none\",\"confidence\":0.85}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 925,
+ "completion_tokens": 106,
+ "tag": "generate"
+}

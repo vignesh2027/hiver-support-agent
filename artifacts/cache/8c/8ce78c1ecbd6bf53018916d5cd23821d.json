@@ -1,0 +1,7 @@
+{
+ "text": "{\"labels\":[{\"id\":\"E162\",\"intent\":\"lost_property\",\"confidence\":0.95},{\"id\":\"E163\",\"intent\":\"service_complaint\",\"confidence\":0.92},{\"id\":\"E164\",\"intent\":\"service_complaint\",\"confidence\":0.93},{\"id\":\"E165\",\"intent\":\"ticketing_and_booking\",\"confidence\":0.94},{\"id\":\"E166\",\"intent\":\"capacity_and_overcrowding\",\"confidence\":0.91},{\"id\":\"E167\",\"intent\":\"live_service_status\",\"confidence\":0.96}]}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 909,
+ "completion_tokens": 348,
+ "tag": "classify:knn0:b6"
+}

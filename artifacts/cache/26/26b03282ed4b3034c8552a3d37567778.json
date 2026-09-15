@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"label\": \"multiple_intents\",\n  \"definition\": \"The customer wants various unrelated things such as train time updates, service complaints, station information, or general comments\",\n  \"coherent\": false,\n  \"coherence_note\": \"The cluster mixes requests for real‑time departure information, complaints about food or safety, random praise, and unrelated queries about parking, making it incoherent as a single intent\",\n  \"needs_live_data\": true,\n  \"needs_live_data_note\": \"Real‑time train schedules and service status are required to answer the time‑of‑departure queries\"\n}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 612,
+ "completion_tokens": 186,
+ "tag": "taxonomy:name"
+}

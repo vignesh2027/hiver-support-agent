@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"label\": \"multiple_unrelated_requests\",\n  \"definition\": \"The customer is expressing various unrelated issues or comments and does not have a single clear request.\",\n  \"coherent\": false,\n  \"coherence_note\": \"The cluster mixes complaints about power sockets, lost items, price concerns, praise, missing trains, and other unrelated remarks, so it lacks a single intent.\",\n  \"needs_live_data\": false,\n  \"needs_live_data_note\": null\n}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 652,
+ "completion_tokens": 146,
+ "tag": "taxonomy:name"
+}

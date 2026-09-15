@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi there. Sorry to hear the 22:45 Taunton‑to‑Bristol service has been cancelled. Have you spoken to station staff for an alternative?\",\"grounded_in\":[2,3],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"details of alternative arrangements or passenger details\",\"confidence\":0.85}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 858,
+ "completion_tokens": 121,
+ "tag": "generate"
+}

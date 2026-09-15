@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi, sorry to hear this. Could you tell us the journey details and when you booked? Reservations should be on the train. We’ll look into it.\",\"grounded_in\":[3,4],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"journey details and booking time\",\"confidence\":0.85}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 903,
+ "completion_tokens": 128,
+ "tag": "generate"
+}

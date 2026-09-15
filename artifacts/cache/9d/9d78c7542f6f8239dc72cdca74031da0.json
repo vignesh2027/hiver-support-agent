@@ -1,0 +1,7 @@
+{
+ "text": "{\"labels\":[{\"id\":\"N054\",\"intent\":\"compensation_and_refunds\",\"handling\":\"escalate\",\"handling_reason\":\"money request\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.95},{\"id\":\"N055\",\"intent\":\"service_information\",\"handling\":\"auto\",\"handling_reason\":\"information request\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.90},{\"id\":\"N056\",\"intent\":\"feedback_positive\",\"handling\":\"auto\",\"handling_reason\":\"positive feedback\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.98},{\"id\":\"N057\",\"intent\":\"ticketing_and_booking\",\"handling\":\"auto\",\"handling_reason\":\"booking request\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.92},{\"id\":\"N058\",\"intent\":\"seat_reservation\",\"handling\":\"auto\",\"handling_reason\":\"reservation complaint\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.93},{\"id\":\"N059\",\"intent\":\"other\",\"handling\":\"escalate\",\"handling_reason\":\"safety risk\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.88}]}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 2747,
+ "completion_tokens": 771,
+ "tag": "prelabel:p1"
+}

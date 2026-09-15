@@ -1,0 +1,7 @@
+{
+ "text": "{\"labels\":[{\"id\":\"E156\",\"intent\":\"compensation_and_refunds\",\"confidence\":0.95},{\"id\":\"E157\",\"intent\":\"capacity_and_overcrowding\",\"confidence\":0.92},{\"id\":\"E158\",\"intent\":\"onboard_facilities\",\"confidence\":0.93},{\"id\":\"E159\",\"intent\":\"service_complaint\",\"confidence\":0.90},{\"id\":\"E160\",\"intent\":\"service_information\",\"confidence\":0.88},{\"id\":\"E161\",\"intent\":\"capacity_and_overcrowding\",\"confidence\":0.91}]}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 1024,
+ "completion_tokens": 360,
+ "tag": "classify:knn0:b6"
+}

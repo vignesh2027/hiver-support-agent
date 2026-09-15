@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi, we’re sorry to hear about the confusion on your 10am journey. Could you tell us the date and the stations you were travelling between so we can look into what happened?\",\"grounded_in\":[3],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"journey date and stations\",\"confidence\":0.92}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 916,
+ "completion_tokens": 107,
+ "tag": "generate"
+}

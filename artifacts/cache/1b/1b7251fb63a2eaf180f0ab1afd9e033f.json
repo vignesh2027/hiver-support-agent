@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"label\": \"staff_complaint\",\n  \"definition\": \"customer wants staff to be more helpful, courteous, and adequately present on trains and stations\",\n  \"coherent\": true,\n  \"coherence_note\": null,\n  \"needs_live_data\": false,\n  \"needs_live_data_note\": null\n}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 664,
+ "completion_tokens": 185,
+ "tag": "taxonomy:name"
+}

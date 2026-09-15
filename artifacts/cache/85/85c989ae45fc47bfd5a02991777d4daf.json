@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi, sorry for the trouble. Try clearing your browser cache or cookies, or use a different browser to book. If it still doesn’t work, let us know the error message and we’ll look into it further.\",\"grounded_in\":[1,3],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"error message or details of the booking attempt\",\"confidence\":0.85}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 926,
+ "completion_tokens": 124,
+ "tag": "generate"
+}

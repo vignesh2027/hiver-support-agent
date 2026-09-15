@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi, we’re sorry to hear about the situation. To help you with a refund we’ll need your ticket details and the journey you were planning. Please send those to us and we’ll look into it.\",\"grounded_in\":[2],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"ticket details and journey information\",\"confidence\":0.85}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 889,
+ "completion_tokens": 109,
+ "tag": "generate"
+}

@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi. Apologies for the delay. If you were delayed by an hour you can claim compensation here: <url>\",\"grounded_in\":[4],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"train details\",\"confidence\":0.92}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 910,
+ "completion_tokens": 89,
+ "tag": "generate"
+}

@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"labels\": [\n    {\n      \"id\": \"N096\",\n      \"requires\": \"Confirm trolley availability on specific train\",\n      \"intent\": \"onboard_facilities\",\n      \"handling\": \"auto\",\n      \"ambiguous\": false,\n      \"confidence\": 0.95\n    },\n    {\n      \"id\": \"N097\",\n      \"requires\": \"Provide viable route to Diss today\",\n      \"intent\": \"service_information\",\n      \"handling\": \"assist\",\n      \"ambiguous\": false,\n      \"confidence\": 0.85\n    },\n    {\n      \"id\": \"N098\",\n      \"requires\": \"Explain cause of current delays\",\n      \"intent\": \"service_complaint\",\n      \"handling\": \"assist\",\n      \"ambiguous\": false,\n      \"confidence\": 0.9\n    },\n    {\n      \"id\": \"N099\",\n      \"requires\": \"Acknowledge overcrowding complaint with evidence\",\n      \"intent\": \"capacity_and_overcrowding\",\n      \"handling\": \"escalate\",\n      \"ambiguous\": false,\n      \"confidence\": 0.9\n    }\n  ]\n}",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 990,
+ "completion_tokens": 276,
+ "tag": "prelabel:p2"
+}

@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi, sorry you’re disappointed. We can’t provide water on board, but you can ask a crew member for a bottle or use the trolley service. If you need more help, let us know your train details and we’ll assist further.\",\"grounded_in\":[2,3],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"train details and time of journey\",\"confidence\":0.85}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 904,
+ "completion_tokens": 129,
+ "tag": "generate"
+}

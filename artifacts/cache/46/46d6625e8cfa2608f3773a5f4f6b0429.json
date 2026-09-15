@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"labels\": [\n    {\n      \"id\": \"N112\",\n      \"requires\": \"Current status of Oxford-Milton Keynes route\",\n      \"intent\": \"live_service_status\",\n      \"handling\": \"auto\",\n      \"ambiguous\": false,\n      \"confidence\": 0.95\n    },\n    {\n      \"id\": \"N113\",\n      \"requires\": \"Explanation for recurring delays/cancellations\",\n      \"intent\": \"service_complaint\",\n      \"handling\": \"assist\",\n      \"ambiguous\": false,\n      \"confidence\": 0.9\n    },\n    {\n      \"id\": \"N114\",\n      \"requires\": \"Context for linked incident\",\n      \"intent\": \"other\",\n      \"handling\": \"escalate\",\n      \"ambiguous\": false,\n      \"confidence\": 0.85\n    },\n    {\n      \"id\": \"N115\",\n      \"requires\": \"Current arrival time/status of 816\",\n      \"intent\": \"live_service_status\",\n      \"handling\": \"auto\",\n      \"ambiguous\": false,\n      \"confidence\": 0.9\n    }\n  ]\n}",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 1011,
+ "completion_tokens": 274,
+ "tag": "prelabel:p2"
+}

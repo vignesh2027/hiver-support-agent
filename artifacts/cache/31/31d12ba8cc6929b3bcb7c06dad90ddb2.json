@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi there! Can you tell us which train you’re on and the time you were due to arrive at Paddington? That will help us find the best next steps for you.\",\"grounded_in\":[3],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"train number, scheduled arrival time, current location\",\"confidence\":0.85}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 870,
+ "completion_tokens": 108,
+ "tag": "generate"
+}

@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi, sorry to hear you’re frustrated. Could you let us know which journey or station you’re referring to? We’ll look into it and get back to you.\",\"grounded_in\":[2],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"journey details or station\",\"confidence\":0.85}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 838,
+ "completion_tokens": 104,
+ "tag": "generate"
+}

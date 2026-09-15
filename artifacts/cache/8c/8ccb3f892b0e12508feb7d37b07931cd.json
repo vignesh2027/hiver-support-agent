@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"label\": \"request_more_seating_capacity\",\n  \"definition\": \"Customer wants the train to have enough seats and not be standing‑room‑only.\",\n  \"coherent\": true,\n  \"coherence_note\": null,\n  \"needs_live_data\": false,\n  \"needs_live_data_note\": null\n}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 773,
+ "completion_tokens": 130,
+ "tag": "taxonomy:name"
+}

@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"label\": \"request_connection_assistance\",\n  \"definition\": \"customer wants help resolving a missed connection caused by train delays\",\n  \"coherent\": true,\n  \"coherence_note\": null,\n  \"needs_live_data\": true,\n  \"needs_live_data_note\": \"requires real‑time train status and alternative connection options for the specific journey\"\n}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 723,
+ "completion_tokens": 158,
+ "tag": "taxonomy:name"
+}

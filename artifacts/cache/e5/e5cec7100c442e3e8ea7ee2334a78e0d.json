@@ -1,0 +1,7 @@
+{
+ "text": "{\"labels\":[{\"id\":\"N084\",\"intent\":\"service_complaint\",\"handling\":\"auto\",\"handling_reason\":\"simple complaint, no safety or money issue\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.95},{\"id\":\"N085\",\"intent\":\"live_service_status\",\"handling\":\"auto\",\"handling_reason\":\"request for current delay status\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.97},{\"id\":\"N086\",\"intent\":\"service_complaint\",\"handling\":\"auto\",\"handling_reason\":\"complaint about frequency of service\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.93},{\"id\":\"N087\",\"intent\":\"service_complaint\",\"handling\":\"auto\",\"handling_reason\":\"complaint about scheduling and delays\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.92},{\"id\":\"N088\",\"intent\":\"seat_reservation\",\"handling\":\"auto\",\"handling_reason\":\"issue with seat reservations not placed\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.96},{\"id\":\"N089\",\"intent\":\"capacity_and_overcrowding\",\"handling\":\"auto\",\"handling_reason\":\"report of overcrowding and short formation\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.94}]}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 2755,
+ "completion_tokens": 532,
+ "tag": "prelabel:p1"
+}

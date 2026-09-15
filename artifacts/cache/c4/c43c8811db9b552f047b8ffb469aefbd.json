@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi, could you please confirm the exact service number or departure time you’re on? We’ll then check the status for you.\",\"grounded_in\":[4],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"Exact service number or departure time\",\"confidence\":0.92}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 893,
+ "completion_tokens": 96,
+ "tag": "generate"
+}

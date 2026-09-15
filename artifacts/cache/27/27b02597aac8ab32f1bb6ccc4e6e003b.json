@@ -1,0 +1,7 @@
+{
+ "text": "{\"labels\":[{\"id\":\"A216\",\"intent\":\"other\",\"handling\":\"escalate\",\"handling_reason\":\"content unclear, requires human review\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.9},{\"id\":\"A217\",\"intent\":\"live_service_status\",\"handling\":\"auto\",\"handling_reason\":\"simple factual request\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.95},{\"id\":\"A218\",\"intent\":\"missed_connection\",\"handling\":\"assist\",\"handling_reason\":\"needs human approval for onward travel advice\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.92},{\"id\":\"A219\",\"intent\":\"capacity_and_overcrowding\",\"handling\":\"escalate\",\"handling_reason\":\"medical emergency present\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.93}]}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 2670,
+ "completion_tokens": 313,
+ "tag": "prelabel:p1"
+}

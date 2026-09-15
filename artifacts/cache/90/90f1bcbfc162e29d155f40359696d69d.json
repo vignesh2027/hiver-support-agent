@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"label\": \"request_platform_information\",\n  \"definition\": \"customer wants to know which platform their train will use or details about a specific platform\",\n  \"coherent\": true,\n  \"coherence_note\": null,\n  \"needs_live_data\": true,\n  \"needs_live_data_note\": \"requires real‑time platform assignments for the requested service and any current platform‑related notices\"\n}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 629,
+ "completion_tokens": 182,
+ "tag": "taxonomy:name"
+}

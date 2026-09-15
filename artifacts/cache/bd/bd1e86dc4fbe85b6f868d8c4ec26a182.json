@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"labels\": [\n    {\n      \"id\": \"E124\",\n      \"requires\": \"Identify voice actor or confirm tone\",\n      \"intent\": \"service_information\",\n      \"handling\": \"auto\",\n      \"ambiguous\": false,\n      \"confidence\": 0.9\n    },\n    {\n      \"id\": \"E125\",\n      \"requires\": \"Acknowledge missing seats and buffet\",\n      \"intent\": \"service_complaint\",\n      \"handling\": \"assist\",\n      \"ambiguous\": false,\n      \"confidence\": 0.95\n    },\n    {\n      \"id\": \"E126\",\n      \"requires\": \"Explain specific delay cause\",\n      \"intent\": \"service_complaint\",\n      \"handling\": \"assist\",\n      \"ambiguous\": false,\n      \"confidence\": 0.85\n    },\n    {\n      \"id\": \"E127\",\n      \"requires\": \"Acknowledge operational disruption\",\n      \"intent\": \"service_complaint\",\n      \"handling\": \"assist\",\n      \"ambiguous\": false,\n      \"confidence\": 0.9\n    }\n  ]\n}",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 1017,
+ "completion_tokens": 268,
+ "tag": "prelabel:p2"
+}

@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"labels\": [\n    {\n      \"id\": \"A204\",\n      \"requires\": \"Context for delay complaint\",\n      \"intent\": \"service_complaint\",\n      \"handling\": \"escalate\",\n      \"ambiguous\": false,\n      \"confidence\": 0.9\n    },\n    {\n      \"id\": \"A205\",\n      \"requires\": \"Future disruption schedule\",\n      \"intent\": \"service_information\",\n      \"handling\": \"auto\",\n      \"ambiguous\": false,\n      \"confidence\": 0.95\n    },\n    {\n      \"id\": \"A206\",\n      \"requires\": \"Catering price/value acknowledgement\",\n      \"intent\": \"onboard_facilities\",\n      \"handling\": \"assist\",\n      \"ambiguous\": false,\n      \"confidence\": 0.85\n    },\n    {\n      \"id\": \"A207\",\n      \"requires\": \"Safety incident investigation\",\n      \"intent\": \"capacity_and_overcrowding\",\n      \"handling\": \"escalate\",\n      \"ambiguous\": false,\n      \"confidence\": 0.95\n    }\n  ]\n}",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 998,
+ "completion_tokens": 267,
+ "tag": "prelabel:p2"
+}

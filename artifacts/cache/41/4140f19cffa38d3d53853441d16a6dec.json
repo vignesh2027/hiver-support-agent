@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"labels\": [\n    {\n      \"id\": \"A200\",\n      \"requires\": \"Acknowledge overcrowding and overselling\",\n      \"intent\": \"capacity_and_overcrowding\",\n      \"handling\": \"assist\",\n      \"ambiguous\": false,\n      \"confidence\": 0.95\n    },\n    {\n      \"id\": \"A201\",\n      \"requires\": \"Acknowledge short formation and safety\",\n      \"intent\": \"capacity_and_overcrowding\",\n      \"handling\": \"escalate\",\n      \"ambiguous\": false,\n      \"confidence\": 0.9\n    },\n    {\n      \"id\": \"A202\",\n      \"requires\": \"Acknowledge service failure and anger\",\n      \"intent\": \"service_complaint\",\n      \"handling\": \"assist\",\n      \"ambiguous\": false,\n      \"confidence\": 0.85\n    },\n    {\n      \"id\": \"A203\",\n      \"requires\": \"Explain missing seat reservations\",\n      \"intent\": \"seat_reservation\",\n      \"handling\": \"assist\",\n      \"ambiguous\": false,\n      \"confidence\": 0.95\n    }\n  ]\n}",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 1038,
+ "completion_tokens": 276,
+ "tag": "prelabel:p2"
+}

@@ -1,0 +1,7 @@
+{
+ "text": "{\"labels\":[{\"id\":\"A198\",\"intent\":\"other\",\"handling\":\"escalate\",\"handling_reason\":\"content not actionable\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.9},{\"id\":\"A199\",\"intent\":\"missed_connection\",\"handling\":\"assist\",\"handling_reason\":\"time‑critical onward travel\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.95},{\"id\":\"A200\",\"intent\":\"compensation_and_refunds\",\"handling\":\"assist\",\"handling_reason\":\"money claim present\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.92},{\"id\":\"A201\",\"intent\":\"compensation_and_refunds\",\"handling\":\"assist\",\"handling_reason\":\"money claim present\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.93},{\"id\":\"A202\",\"intent\":\"service_complaint\",\"handling\":\"assist\",\"handling_reason\":\"venting about service quality\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.88},{\"id\":\"A203\",\"intent\":\"seat_reservation\",\"handling\":\"assist\",\"handling_reason\":\"reservation not showing\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.91}]}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 2758,
+ "completion_tokens": 444,
+ "tag": "prelabel:p1"
+}

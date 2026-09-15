@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi there. Sorry about the toilet situation. Could you let us know which service and carriage you’re on? Have you spoken to the crew on board?\",\"grounded_in\":[4],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"service details and carriage number\",\"confidence\":\"0.92\"}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 903,
+ "completion_tokens": 104,
+ "tag": "generate"
+}

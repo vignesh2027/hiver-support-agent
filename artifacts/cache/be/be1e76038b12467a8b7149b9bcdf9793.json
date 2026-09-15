@@ -1,0 +1,7 @@
+{
+ "text": "{\"labels\":[{\"id\":\"N090\",\"intent\":\"compensation_and_refunds\",\"handling\":\"escalate\",\"handling_reason\":\"money claim\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.99},{\"id\":\"N091\",\"intent\":\"live_service_status\",\"handling\":\"auto\",\"handling_reason\":\"factual status query\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.99},{\"id\":\"N092\",\"intent\":\"capacity_and_overcrowding\",\"handling\":\"auto\",\"handling_reason\":\"crowding complaint\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.99},{\"id\":\"N093\",\"intent\":\"onboard_facilities\",\"handling\":\"auto\",\"handling_reason\":\"seat comfort issue\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.99},{\"id\":\"N094\",\"intent\":\"onboard_facilities\",\"handling\":\"auto\",\"handling_reason\":\"multiple facility complaints\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.99},{\"id\":\"N095\",\"intent\":\"service_complaint\",\"handling\":\"assist\",\"handling_reason\":\"complaint requiring human review\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.99}]}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 2800,
+ "completion_tokens": 452,
+ "tag": "prelabel:p1"
+}

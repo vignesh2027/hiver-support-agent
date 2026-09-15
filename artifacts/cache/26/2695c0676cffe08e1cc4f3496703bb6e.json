@@ -1,0 +1,7 @@
+{
+ "text": "{\"labels\":[{\"id\":\"A210\",\"intent\":\"feedback_positive\",\"handling\":\"auto\",\"handling_reason\":\"no actionable request\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.99},{\"id\":\"A211\",\"intent\":\"missed_connection\",\"handling\":\"assist\",\"handling_reason\":\"needs immediate help with missed train\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.97},{\"id\":\"A212\",\"intent\":\"compensation_and_refunds\",\"handling\":\"assist\",\"handling_reason\":\"request for money back\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.96},{\"id\":\"A213\",\"intent\":\"other\",\"handling\":\"escalate\",\"handling_reason\":\"safety emergency\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.99},{\"id\":\"A214\",\"intent\":\"service_complaint\",\"handling\":\"assist\",\"handling_reason\":\"venting about service quality\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.95},{\"id\":\"A215\",\"intent\":\"compensation_and_refunds\",\"handling\":\"assist\",\"handling_reason\":\"follow‑up on pending claim\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.94}]}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 2729,
+ "completion_tokens": 524,
+ "tag": "prelabel:p1"
+}

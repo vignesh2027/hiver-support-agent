@@ -1,0 +1,7 @@
+{
+ "text": "{\"labels\":[{\"id\":\"E156\",\"intent\":\"compensation_and_refunds\",\"handling\":\"escalate\",\"handling_reason\":\"money request\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.99},{\"id\":\"E157\",\"intent\":\"service_complaint\",\"handling\":\"auto\",\"handling_reason\":\"complaint about overcrowding\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.97},{\"id\":\"E158\",\"intent\":\"other\",\"handling\":\"escalate\",\"handling_reason\":\"safety issue with toilets\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.96},{\"id\":\"E159\",\"intent\":\"service_complaint\",\"handling\":\"escalate\",\"handling_reason\":\"staff intimidation\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.98},{\"id\":\"E160\",\"intent\":\"service_information\",\"handling\":\"auto\",\"handling_reason\":\"future timetable request\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.99},{\"id\":\"E161\",\"intent\":\"capacity_and_overcrowding\",\"handling\":\"auto\",\"handling_reason\":\"overcrowding complaint\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.97}]}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 2836,
+ "completion_tokens": 486,
+ "tag": "prelabel:p1"
+}

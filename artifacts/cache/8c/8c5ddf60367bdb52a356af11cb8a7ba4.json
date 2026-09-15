@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Sorry to hear about the short train. Could you let us know the date and time you travelled, and if you were left standing? That will help us look into it.\",\"grounded_in\":[4],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"date, time, and whether you were left standing\",\"confidence\":0.85}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 853,
+ "completion_tokens": 105,
+ "tag": "generate"
+}

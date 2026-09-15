@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi there, sorry for the cancellation and the delays this morning. Could you let us know your full journey details so we can look into what happened?\",\"grounded_in\":[1,2,3,4],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"full journey details\",\"confidence\":0.92}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 854,
+ "completion_tokens": 111,
+ "tag": "generate"
+}

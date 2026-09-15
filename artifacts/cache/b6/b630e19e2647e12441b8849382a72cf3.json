@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"labels\": [\n    {\n      \"id\": \"E156\",\n      \"requires\": \"Reimbursement for third-party event tickets\",\n      \"intent\": \"compensation_and_refunds\",\n      \"handling\": \"escalate\",\n      \"ambiguous\": false,\n      \"confidence\": 0.95\n    },\n    {\n      \"id\": \"E157\",\n      \"requires\": \"Acknowledgement of overcrowding complaint\",\n      \"intent\": \"capacity_and_overcrowding\",\n      \"handling\": \"auto\",\n      \"ambiguous\": false,\n      \"confidence\": 0.9\n    },\n    {\n      \"id\": \"E158\",\n      \"requires\": \"Acknowledgement of hygiene complaint\",\n      \"intent\": \"onboard_facilities\",\n      \"handling\": \"auto\",\n      \"ambiguous\": false,\n      \"confidence\": 0.9\n    },\n    {\n      \"id\": \"E159\",\n      \"requires\": \"Intervention for passenger conflict\",\n      \"intent\": \"other\",\n      \"handling\": \"escalate\",\n      \"ambiguous\": false,\n      \"confidence\": 0.85\n    }\n  ]\n}",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 1038,
+ "completion_tokens": 276,
+ "tag": "prelabel:p2"
+}

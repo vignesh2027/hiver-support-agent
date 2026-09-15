@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi there. We’re sorry you experienced overcrowding on your journey. The short formation was due to a carriage being removed for maintenance. We can’t give live details, but we’ll look into it.\",\"grounded_in\":[2,3],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"train number, date and time of journey\",\"confidence\":0.85}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 861,
+ "completion_tokens": 127,
+ "tag": "generate"
+}

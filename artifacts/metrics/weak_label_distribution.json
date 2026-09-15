@@ -1,0 +1,14 @@
+{
+  "live_service_status": 0.4138,
+  "ticketing_and_booking": 0.0998,
+  "compensation_and_refunds": 0.0947,
+  "service_complaint": 0.08,
+  "capacity_and_overcrowding": 0.0753,
+  "service_information": 0.056,
+  "onboard_facilities": 0.0505,
+  "lost_property": 0.0458,
+  "other": 0.0253,
+  "seat_reservation": 0.0243,
+  "feedback_positive": 0.0185,
+  "missed_connection": 0.0158
+}

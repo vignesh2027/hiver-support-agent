@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"labels\": [\n    {\n      \"id\": \"N020\",\n      \"requires\": \"Acknowledge overcrowding complaint\",\n      \"intent\": \"capacity_and_overcrowding\",\n      \"handling\": \"assist\",\n      \"ambiguous\": false,\n      \"confidence\": 0.95\n    },\n    {\n      \"id\": \"N021\",\n      \"requires\": \"Acknowledge cancellation and staff conduct\",\n      \"intent\": \"service_complaint\",\n      \"handling\": \"escalate\",\n      \"ambiguous\": false,\n      \"confidence\": 0.9\n    },\n    {\n      \"id\": \"N022\",\n      \"requires\": \"Acknowledge overcrowding due to cancellations\",\n      \"intent\": \"capacity_and_overcrowding\",\n      \"handling\": \"assist\",\n      \"ambiguous\": false,\n      \"confidence\": 0.9\n    },\n    {\n      \"id\": \"N023\",\n      \"requires\": \"Explain cause of specific delay\",\n      \"intent\": \"live_service_status\",\n      \"handling\": \"assist\",\n      \"ambiguous\": false,\n      \"confidence\": 0.85\n    }\n  ]\n}",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 1057,
+ "completion_tokens": 277,
+ "tag": "prelabel:p2"
+}

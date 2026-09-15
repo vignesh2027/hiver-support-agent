@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"labels\": [\n    {\n      \"id\": \"N080\",\n      \"requires\": \"Confirm specific disruption status\",\n      \"intent\": \"live_service_status\",\n      \"handling\": \"auto\",\n      \"ambiguous\": false,\n      \"confidence\": 0.95\n    },\n    {\n      \"id\": \"N081\",\n      \"requires\": \"Acknowledge anger, explain delay\",\n      \"intent\": \"service_complaint\",\n      \"handling\": \"assist\",\n      \"ambiguous\": false,\n      \"confidence\": 0.9\n    },\n    {\n      \"id\": \"N082\",\n      \"requires\": \"Acknowledge missed connection anger\",\n      \"intent\": \"service_complaint\",\n      \"handling\": \"assist\",\n      \"ambiguous\": false,\n      \"confidence\": 0.85\n    },\n    {\n      \"id\": \"N083\",\n      \"requires\": \"Acknowledge overcrowding/short formation\",\n      \"intent\": \"capacity_and_overcrowding\",\n      \"handling\": \"assist\",\n      \"ambiguous\": false,\n      \"confidence\": 0.9\n    }\n  ]\n}",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 1019,
+ "completion_tokens": 271,
+ "tag": "prelabel:p2"
+}

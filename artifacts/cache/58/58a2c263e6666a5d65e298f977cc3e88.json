@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"labels\": [\n    {\n      \"id\": \"N040\",\n      \"requires\": \"Current operational decision on holding trains\",\n      \"intent\": \"live_service_status\",\n      \"handling\": \"assist\",\n      \"ambiguous\": false,\n      \"confidence\": 0.95\n    },\n    {\n      \"id\": \"N041\",\n      \"requires\": \"Acknowledgement of chronic service failure\",\n      \"intent\": \"service_complaint\",\n      \"handling\": \"auto\",\n      \"ambiguous\": false,\n      \"confidence\": 0.9\n    },\n    {\n      \"id\": \"N042\",\n      \"requires\": \"Live status of specific delayed service\",\n      \"intent\": \"live_service_status\",\n      \"handling\": \"assist\",\n      \"ambiguous\": false,\n      \"confidence\": 0.9\n    },\n    {\n      \"id\": \"N043\",\n      \"requires\": \"Recovery of lost hat from train\",\n      \"intent\": \"lost_property\",\n      \"handling\": \"assist\",\n      \"ambiguous\": false,\n      \"confidence\": 0.98\n    }\n  ]\n}",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 985,
+ "completion_tokens": 271,
+ "tag": "prelabel:p2"
+}

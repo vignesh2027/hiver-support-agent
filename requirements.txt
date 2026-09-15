@@ -1,0 +1,12 @@
+# Core pipeline. Everything in the README's reproduce path runs with only these.
+# No LLM SDK: the client in src/hsa/llm.py speaks the OpenAI-compatible HTTP
+# API over the standard library, which keeps the dependency surface small and
+# the provider swappable.
+pandas==3.0.5
+numpy==2.4.6
+scikit-learn==1.9.1
+scipy==1.17.1
+pyarrow==25.0.1
+
+# Tests
+pytest==9.1.1

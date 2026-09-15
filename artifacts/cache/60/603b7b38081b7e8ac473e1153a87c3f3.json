@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"label\": \"request_train_time_info\",\n  \"definition\": \"Customer wants to know the scheduled or expected arrival time/status of a specific train or service.\",\n  \"coherent\": true,\n  \"coherence_note\": null,\n  \"needs_live_data\": true,\n  \"needs_live_data_note\": \"Requires real‑time train schedule or service status for the requested service.\"\n}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 707,
+ "completion_tokens": 180,
+ "tag": "taxonomy:name"
+}

@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"labels\": [\n    {\n      \"id\": \"A184\",\n      \"requires\": \"Ticket validity or booking error\",\n      \"intent\": \"ticketing_and_booking\",\n      \"handling\": \"assist\",\n      \"ambiguous\": false,\n      \"confidence\": 0.85\n    },\n    {\n      \"id\": \"A185\",\n      \"requires\": \"Current delay cause for specific route\",\n      \"intent\": \"live_service_status\",\n      \"handling\": \"auto\",\n      \"ambiguous\": false,\n      \"confidence\": 0.95\n    },\n    {\n      \"id\": \"A186\",\n      \"requires\": \"Explanation for short formation/crowding\",\n      \"intent\": \"capacity_and_overcrowding\",\n      \"handling\": \"assist\",\n      \"ambiguous\": false,\n      \"confidence\": 0.9\n    },\n    {\n      \"id\": \"A187\",\n      \"requires\": \"Acknowledgement of price/lateness/seat complaint\",\n      \"intent\": \"service_complaint\",\n      \"handling\": \"auto\",\n      \"ambiguous\": false,\n      \"confidence\": 0.9\n    }\n  ]\n}",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 1013,
+ "completion_tokens": 278,
+ "tag": "prelabel:p2"
+}

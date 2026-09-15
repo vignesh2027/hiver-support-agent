@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"label\": \"check_service_status\",\n  \"definition\": \"Customer wants to know if a specific train or service is currently running/on time\",\n  \"coherent\": true,\n  \"coherence_note\": null,\n  \"needs_live_data\": true,\n  \"needs_live_data_note\": \"Requires real‑time service status for the queried train or route\"\n}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 587,
+ "completion_tokens": 137,
+ "tag": "taxonomy:name"
+}

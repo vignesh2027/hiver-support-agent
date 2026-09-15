@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi there. We’re still waiting on Network Rail to finalise the engineering work details. Sorry we can’t give an estimate on when reservations will open.\",\"grounded_in\":[1],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"details of the specific engineering works and timetable confirmation\",\"confidence\":0.85}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 962,
+ "completion_tokens": 116,
+ "tag": "generate"
+}

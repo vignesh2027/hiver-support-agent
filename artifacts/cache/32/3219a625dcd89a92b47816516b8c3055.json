@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Thanks for your kind words! We’re glad you’re enjoying your journeys with us.\",\"grounded_in\":[1],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":null,\"confidence\":0.92}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 814,
+ "completion_tokens": 122,
+ "tag": "generate"
+}

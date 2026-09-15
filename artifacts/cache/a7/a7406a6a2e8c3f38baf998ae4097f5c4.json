@@ -1,0 +1,7 @@
+{
+ "text": "{\"labels\":[{\"id\":\"A180\",\"intent\":\"service_complaint\",\"handling\":\"assist\",\"handling_reason\":\"complaint about service quality\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.95},{\"id\":\"A181\",\"intent\":\"service_complaint\",\"handling\":\"assist\",\"handling_reason\":\"complaint about overcrowding and accessibility\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.93},{\"id\":\"A182\",\"intent\":\"missed_connection\",\"handling\":\"assist\",\"handling_reason\":\"passengers unable to board, stranded\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.92},{\"id\":\"A183\",\"intent\":\"service_complaint\",\"handling\":\"assist\",\"handling_reason\":\"complaint about long delays and standing\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.94},{\"id\":\"A184\",\"intent\":\"other\",\"handling\":\"escalate\",\"handling_reason\":\"content unclear, potential policy issue\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.80},{\"id\":\"A185\",\"intent\":\"live_service_status\",\"handling\":\"auto\",\"handling_reason\":\"request for current delay information\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.96}]}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 2805,
+ "completion_tokens": 478,
+ "tag": "prelabel:p1"
+}

@@ -1,0 +1,7 @@
+{
+ "text": "{\"labels\":[{\"id\":\"N096\",\"intent\":\"service_information\",\"handling\":\"auto\",\"handling_reason\":\"simple factual query\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.95},{\"id\":\"N097\",\"intent\":\"missed_connection\",\"handling\":\"auto\",\"handling_reason\":\"time‑critical onward travel request\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.92},{\"id\":\"N098\",\"intent\":\"service_complaint\",\"handling\":\"auto\",\"handling_reason\":\"complaint about recurring delays\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.93},{\"id\":\"N099\",\"intent\":\"capacity_and_overcrowding\",\"handling\":\"auto\",\"handling_reason\":\"complaint about space availability\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.90},{\"id\":\"N100\",\"intent\":\"service_complaint\",\"handling\":\"auto\",\"handling_reason\":\"complaint about cancellations and excuses\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.94},{\"id\":\"N101\",\"intent\":\"live_service_status\",\"handling\":\"auto\",\"handling_reason\":\"request for current delay status\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.96}]}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 2748,
+ "completion_tokens": 580,
+ "tag": "prelabel:p1"
+}

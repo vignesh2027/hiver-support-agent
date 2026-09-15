@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi. Sorry for the inconvenience. If you let me know the train and carriage number, I can flag this up to our Maintenance Team to look into the locked toilets.\",\"grounded_in\":[1],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"train and carriage number\",\"confidence\":0.85}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 865,
+ "completion_tokens": 105,
+ "tag": "generate"
+}

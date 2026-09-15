@@ -1,0 +1,7 @@
+{
+ "text": "{\"labels\":[{\"id\":\"A192\",\"intent\":\"live_service_status\",\"handling\":\"auto\",\"handling_reason\":\"factual status request\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.95},{\"id\":\"A193\",\"intent\":\"service_complaint\",\"handling\":\"escalate\",\"handling_reason\":\"legal threat and potential safety issue\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.92},{\"id\":\"A194\",\"intent\":\"service_complaint\",\"handling\":\"escalate\",\"handling_reason\":\"serious staff and service failure claim\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.90},{\"id\":\"A195\",\"intent\":\"feedback_positive\",\"handling\":\"auto\",\"handling_reason\":\"genuine praise\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.97},{\"id\":\"A196\",\"intent\":\"capacity_and_overcrowding\",\"handling\":\"auto\",\"handling_reason\":\"overcrowding complaint\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.88},{\"id\":\"A197\",\"intent\":\"service_complaint\",\"handling\":\"escalate\",\"handling_reason\":\"staff misconduct and unresponsive DM\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.93}]}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 2838,
+ "completion_tokens": 394,
+ "tag": "prelabel:p1"
+}

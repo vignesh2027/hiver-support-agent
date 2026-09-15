@@ -1,0 +1,7 @@
+{
+ "text": "{\"labels\":[{\"id\":\"N060\",\"intent\":\"ticketing_and_booking\",\"confidence\":0.95},{\"id\":\"N061\",\"intent\":\"service_complaint\",\"confidence\":0.92},{\"id\":\"N062\",\"intent\":\"capacity_and_overcrowding\",\"confidence\":0.93},{\"id\":\"N063\",\"intent\":\"service_information\",\"confidence\":0.88},{\"id\":\"N064\",\"intent\":\"service_information\",\"confidence\":0.87},{\"id\":\"N065\",\"intent\":\"capacity_and_overcrowding\",\"confidence\":0.94}]}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 956,
+ "completion_tokens": 319,
+ "tag": "classify:knn0:b6"
+}

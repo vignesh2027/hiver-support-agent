@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"label\": \"multiple_intents\",\n  \"definition\": \"Customers are asking for various things such as retrieving lost items, reporting Wi‑Fi problems, and checking service delays or availability.\",\n  \"coherent\": false,\n  \"coherence_note\": \"The cluster mixes requests about lost property, Wi‑Fi connectivity, and train delay/status inquiries, which are distinct intents.\",\n  \"needs_live_data\": false,\n  \"needs_live_data_note\": null\n}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 703,
+ "completion_tokens": 146,
+ "tag": "taxonomy:name"
+}

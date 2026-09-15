@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"labels\": [\n    {\n      \"id\": \"E148\",\n      \"requires\": \"Ticket validity rules for alighting\",\n      \"intent\": \"ticketing_and_booking\",\n      \"handling\": \"auto\",\n      \"ambiguous\": false,\n      \"confidence\": 0.95\n    },\n    {\n      \"id\": \"E149\",\n      \"requires\": \"Explanation of reservation system logic\",\n      \"intent\": \"seat_reservation\",\n      \"handling\": \"auto\",\n      \"ambiguous\": false,\n      \"confidence\": 0.9\n    },\n    {\n      \"id\": \"E150\",\n      \"requires\": \"Adjustment of onboard climate control\",\n      \"intent\": \"onboard_facilities\",\n      \"handling\": \"escalate\",\n      \"ambiguous\": false,\n      \"confidence\": 0.95\n    },\n    {\n      \"id\": \"E151\",\n      \"requires\": \"Live status of specific delayed train\",\n      \"intent\": \"live_service_status\",\n      \"handling\": \"assist\",\n      \"ambiguous\": false,\n      \"confidence\": 0.9\n    }\n  ]\n}",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 1024,
+ "completion_tokens": 272,
+ "tag": "prelabel:p2"
+}

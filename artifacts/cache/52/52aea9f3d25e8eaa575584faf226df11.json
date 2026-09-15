@@ -1,0 +1,7 @@
+{
+ "text": "{\"labels\":[{\"id\":\"N036\",\"intent\":\"missed_connection\",\"handling\":\"auto\",\"handling_reason\":\"factual question about missed stop\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.95},{\"id\":\"N037\",\"intent\":\"feedback_positive\",\"handling\":\"auto\",\"handling_reason\":\"genuine praise\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.98},{\"id\":\"N038\",\"intent\":\"compensation_and_refunds\",\"handling\":\"assist\",\"handling_reason\":\"money claim requires human review\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.92},{\"id\":\"N039\",\"intent\":\"service_complaint\",\"handling\":\"auto\",\"handling_reason\":\"complaint about repeated cancellations\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.93},{\"id\":\"N040\",\"intent\":\"live_service_status\",\"handling\":\"auto\",\"handling_reason\":\"question about current service operation\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.96},{\"id\":\"N041\",\"intent\":\"service_complaint\",\"handling\":\"auto\",\"handling_reason\":\"venting about poor service\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.94}]}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 2734,
+ "completion_tokens": 402,
+ "tag": "prelabel:p1"
+}

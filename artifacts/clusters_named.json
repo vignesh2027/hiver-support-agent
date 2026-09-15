@@ -1,0 +1,1104 @@
+{
+ "0": {
+  "label": "driver_absence_delay",
+  "definition": "Customer wants the train to run on time and is demanding a driver be present or an explanation for the driver\u2011related delay.",
+  "coherent": true,
+  "coherence_note": null,
+  "needs_live_data": true,
+  "needs_live_data_note": "Requires real\u2011time information on driver availability/status for the specific service.",
+  "size": 88,
+  "share": 0.0147,
+  "top_terms": [
+   "driver",
+   "delayed",
+   "pay",
+   "going",
+   "late",
+   "announcements",
+   "waiting",
+   "manager",
+   "turn",
+   "slow",
+   "moving",
+   "arrived"
+  ],
+  "sample": [
+   "18.10 Paddington to Maidenhead....where's the driver??",
+   "No driver for the 13:30 from Bristol Temple Meads to Oxford. You turning into ?",
+   "why has a driver only just turned up for the 20:15 train to Cheltenham?! #publictransport #train #notgoodenough"
+  ]
+ },
+ "1": {
+  "label": "request_replacement_bus_info",
+  "definition": "customer wants information about rail replacement bus services (routes, locations, times, availability)",
+  "coherent": true,
+  "coherence_note": null,
+  "needs_live_data": true,
+  "needs_live_data_note": "requires up\u2011to\u2011date replacement bus schedules and locations for the specific routes the customer mentions",
+  "size": 91,
+  "share": 0.0152,
+  "top_terms": [
+   "replacement",
+   "bus",
+   "replacement bus",
+   "rail",
+   "rail replacement",
+   "bus replacement",
+   "buses",
+   "replacement buses",
+   "sunday",
+   "journey",
+   "taxi",
+   "saturday"
+  ],
+  "sample": [
+   "can I get a replacement taxi pls",
+   "Where is the Reading to Swindon rail replacement bus? It\u2019s freezing",
+   "Hi I'm traveling to NWP this Saturday. Where do I get the Rail Replacement bus from BPW and is it direct to NWP?"
+  ]
+ },
+ "2": {
+  "label": "request_first_class_info_or_upgrade",
+  "definition": "customer wants information about first\u2011class services, availability, tickets or how to upgrade to first class",
+  "coherent": true,
+  "coherence_note": null,
+  "needs_live_data": true,
+  "needs_live_data_note": "requires current train composition, seat availability and upgrade pricing for the specific service",
+  "size": 152,
+  "share": 0.0253,
+  "top_terms": [
+   "class",
+   "1st",
+   "1st class",
+   "new",
+   "upgrade",
+   "new class",
+   "seats",
+   "ticket",
+   "paid",
+   "carriage",
+   "standard",
+   "hst"
+  ],
+  "sample": [
+   "paid for first class... train hasnt got first class WTF.",
+   "will the 14:39 London Paddington be a class 43?",
+   "hi, when are the first timetabled class 800 services due to begin?"
+  ]
+ },
+ "3": {
+  "label": "request_connection_assistance",
+  "definition": "customer wants help resolving a missed connection caused by train delays",
+  "coherent": true,
+  "coherence_note": null,
+  "needs_live_data": true,
+  "needs_live_data_note": "requires real\u2011time train status and alternative connection options for the specific journey",
+  "size": 95,
+  "share": 0.0158,
+  "top_terms": [
+   "connection",
+   "missed",
+   "miss",
+   "miss connection",
+   "missed connection",
+   "late",
+   "hold",
+   "wait",
+   "delayed",
+   "held",
+   "hot",
+   "make"
+  ],
+  "sample": [
+   "my connection leaves Westbury at 11:11. What am I meant to do? <url>",
+   "Sprinting across King\u2019s Cross, I made my connection with seconds to spare. Now to try to recover from the asthma attack courtesy of",
+   "Connection at slough now missed. Thanks <url>"
+  ]
+ },
+ "4": {
+  "label": "request_seat_reservation",
+  "definition": "Customer wants to reserve a seat or confirm that a seat reservation exists",
+  "coherent": true,
+  "coherence_note": null,
+  "needs_live_data": true,
+  "needs_live_data_note": "Requires checking real\u2011time seat availability and the customer's reservation status",
+  "size": 146,
+  "share": 0.0243,
+  "top_terms": [
+   "seat",
+   "reservations",
+   "seat reservations",
+   "reservation",
+   "reserved",
+   "booked",
+   "seat reservation",
+   "ticket",
+   "point",
+   "carriage",
+   "seats",
+   "stand"
+  ],
+  "sample": [
+   "before I stretch my leg against it, are the exposed ends of these wires on the seat opposite me live? 0822 Reading to Banbury <url>",
+   ", what\u2019s the seat protocol if you have a reservation but there\u2019s no notification on the physical seat? Asking for a friend.",
+   "Congratulations , i reserved a seat on 14:22 from Paddington to Charlbury only to find no one had bothered to put the seat reservations out. #standingroomonly"
+  ]
+ },
+ "5": {
+  "label": "request_service_status",
+  "definition": "customer wants up\u2011to\u2011date information on whether specific train services are running, delayed, cancelled or altered",
+  "coherent": true,
+  "coherence_note": null,
+  "needs_live_data": true,
+  "needs_live_data_note": "requires real\u2011time train service data (delays, cancellations, schedule changes) for the queried routes and times",
+  "size": 193,
+  "share": 0.0322,
+  "top_terms": [
+   "going",
+   "cancelled",
+   "new",
+   "morning",
+   "run",
+   "late",
+   "delayed",
+   "stuck",
+   "days",
+   "going run",
+   "need",
+   "outside"
+  ],
+  "sample": [
+   "what is going on with the trains to Cardiff?!",
+   "are you going to reintroduce the eTicket.",
+   "what\u2019s going on??!!! \ud83d\ude21\ud83d\ude21\ud83d\ude21 <url>"
+  ]
+ },
+ "6": {
+  "label": "inquire_new_train_schedule",
+  "definition": "customer wants information about which services are using the new trains and when they run",
+  "coherent": true,
+  "coherence_note": null,
+  "needs_live_data": false,
+  "needs_live_data_note": null,
+  "size": 240,
+  "share": 0.04,
+  "top_terms": [
+   "new",
+   "old",
+   "seats",
+   "intercity",
+   "hitachi",
+   "new intercity",
+   "nice",
+   "carriage",
+   "electric",
+   "quiet",
+   "gwrnewtrains",
+   "new hitachi"
+  ],
+  "sample": [
+   "New train for the first time. Very exciting.",
+   "will the 5:31am from bridgend be a new train ?",
+   "is the new trains out and about from today? And if so, will you regularly share which service they are allocated too?"
+  ]
+ },
+ "7": {
+  "label": "request_cancellation_info_and_refund",
+  "definition": "Customer wants to know why a specific train was cancelled and to receive a refund or compensation.",
+  "coherent": true,
+  "coherence_note": null,
+  "needs_live_data": true,
+  "needs_live_data_note": "Requires real\u2011time train status to confirm cancellation and account details to process a refund or compensation.",
+  "size": 245,
+  "share": 0.0408,
+  "top_terms": [
+   "cancelled",
+   "refund",
+   "week",
+   "day",
+   "late",
+   "days",
+   "home",
+   "ve",
+   "line",
+   "tell",
+   "cancelled cancelled",
+   "great"
+  ],
+  "sample": [
+   "why was the 1706 Pad to Westbury cancelled?",
+   "Why was the 0759 Maidenhead to Paddington cancelled? Thanks.",
+   "Not to mention theybl cancelled the 11.15 train!"
+  ]
+ },
+ "8": {
+  "label": "request_compensation_for_late_arrival",
+  "definition": "Customer wants compensation or remedy because train delays made them late for work.",
+  "coherent": false,
+  "coherence_note": "Cluster mixes complaints about being late for work with unrelated issues such as app login problems, toilet facilities, and password resets.",
+  "needs_live_data": true,
+  "needs_live_data_note": "Requires real\u2011time delay information and the customer's ticket/booking details to assess eligibility for compensation.",
+  "size": 137,
+  "share": 0.0228,
+  "top_terms": [
+   "work",
+   "late work",
+   "late",
+   "doesn",
+   "making",
+   "new",
+   "don",
+   "great",
+   "day",
+   "doesn work",
+   "making late",
+   "ve"
+  ],
+  "sample": [
+   "Why do your taps never work in your toilets?",
+   "you have a serious issue with your password database, i cannot log in as password unrecognised and reset password doesnt work",
+   "you have me late for work again"
+  ]
+ },
+ "9.0": {
+  "label": "multiple_intents",
+  "definition": "Customers are asking for various things such as retrieving lost items, reporting Wi\u2011Fi problems, and checking service delays or availability.",
+  "coherent": false,
+  "coherence_note": "The cluster mixes requests about lost property, Wi\u2011Fi connectivity, and train delay/status inquiries, which are distinct intents.",
+  "needs_live_data": false,
+  "needs_live_data_note": null,
+  "size": 275,
+  "share": 0.0458,
+  "top_terms": [
+   "getting",
+   "carriage",
+   "left",
+   "wifi",
+   "happening",
+   "way",
+   "night",
+   "coach",
+   "tell",
+   "poor",
+   "iet",
+   "home"
+  ],
+  "sample": [
+   "Another poor experience with your service tonight wifi unusable most of journey & train getting later & later. 17.22 to Hereford",
+   "hello, left my north face jacket on the 8.01 train from Bristol to Paddington. How do I go about getting it back please?",
+   "I left my hat on one of your trains - 17:55 Newbury to Reading... What's the chances/procedure of ever getting it back?"
+  ]
+ },
+ "9.1": {
+  "label": "demand_consistent_daily_service",
+  "definition": "Customer wants reliable, daily train service without frequent cancellations or seat shortages.",
+  "coherent": true,
+  "coherence_note": null,
+  "needs_live_data": false,
+  "needs_live_data_note": null,
+  "size": 54,
+  "share": 0.009,
+  "top_terms": [
+   "day",
+   "good",
+   "seats",
+   "start",
+   "single",
+   "travel",
+   "month",
+   "long",
+   "don",
+   "absolutely",
+   "super",
+   "need"
+  ],
+  "sample": [
+   "Another day another disaster? #everyday #samestory #sameexcuses <url>",
+   "Clickety-clack, clickety-clack \u2026 on the train to #Plymouth, from #Cornwall, for the day!! \ud83d\ude00 #trainsarefun <url>",
+   "Boarded 1836 at Charlbury feeling wonderful after day in countryside. Now have runny nose and sore throat from train's savage AC \ud83d\udca8\ud83d\ude16"
+  ]
+ },
+ "9.2": {
+  "label": "request_help",
+  "definition": "The customer wants assistance with an issue they are facing (e.g., lost property, booking error, general support).",
+  "coherent": true,
+  "coherence_note": null,
+  "needs_live_data": true,
+  "needs_live_data_note": "To resolve lost\u2011item or booking queries the agent may need to check real\u2011time property logs or the customer's reservation details.",
+  "size": 48,
+  "share": 0.008,
+  "top_terms": [
+   "help",
+   "left",
+   "able",
+   "ve",
+   "phone",
+   "lost",
+   "says",
+   "property",
+   "passenger",
+   "journey",
+   "come",
+   "stuck"
+  ],
+  "sample": [
+   "Help please!? <url>",
+   "can you help please? <url>",
+   "can you help your train drivers be on time for the trains they're supposed to be driving"
+  ]
+ },
+ "9.3": {
+  "label": "multiple_intents",
+  "definition": "The customer wants various unrelated things such as train time updates, service complaints, station information, or general comments",
+  "coherent": false,
+  "coherence_note": "The cluster mixes requests for real\u2011time departure information, complaints about food or safety, random praise, and unrelated queries about parking, making it incoherent as a single intent",
+  "needs_live_data": true,
+  "needs_live_data_note": "Real\u2011time train schedules and service status are required to answer the time\u2011of\u2011departure queries",
+  "size": 764,
+  "share": 0.1273,
+  "top_terms": [
+   "like",
+   "stuck",
+   "stop",
+   "run",
+   "seats",
+   "chance",
+   "nice",
+   "good",
+   "stopping",
+   "leaving",
+   "padd",
+   "line"
+  ],
+  "sample": [
+   "15.21 Stapleton Road to Clifton down? Where is it?!",
+   "just got my breakfast on my train and my croissant was rock solid \ud83d\ude29",
+   "any updates on the 18:01 from yate to Gloucester?"
+  ]
+ },
+ "9.4": {
+  "label": "provide_positive_feedback",
+  "definition": "Customer wants to express appreciation for a good journey or service.",
+  "coherent": true,
+  "coherence_note": null,
+  "needs_live_data": false,
+  "needs_live_data_note": null,
+  "size": 111,
+  "share": 0.0185,
+  "top_terms": [
+   "great",
+   "journey",
+   "western",
+   "hour",
+   "job",
+   "great western",
+   "really",
+   "good",
+   "railway",
+   "home",
+   "looking",
+   "manager"
+  ],
+  "sample": [
+   "Another fun journey with Farce Great Western. #farcegreatwestern",
+   "Good journey on plus check in & great view of Russell Sq",
+   "Great effort #exeter #armistice2017 <url>"
+  ]
+ },
+ "9.5": {
+  "label": "request_service_schedule",
+  "definition": "customer wants confirmation or details about train times, reservations, peak/off\u2011peak services, or cancellations",
+  "coherent": false,
+  "coherence_note": "cluster mixes schedule confirmation requests with general complaints about delays and service quality",
+  "needs_live_data": true,
+  "needs_live_data_note": "requires real\u2011time timetable, reservation availability, and cancellation information",
+  "size": 215,
+  "share": 0.0358,
+  "top_terms": [
+   "week",
+   "customer",
+   "don",
+   "really",
+   "booked",
+   "peak",
+   "idea",
+   "confirm",
+   "right",
+   "yesterday",
+   "leave",
+   "appalling"
+  ],
+  "sample": [
+   "Please can you confirm that Pullman Dining Restaurant Lunch Menu will be Week 1 on Mon 30 Oct and Week 2 on Mon 6 Nov?",
+   "Not one of my Train journeys this week CDU/FIT inbound or outbound has been on time this week this is not unusual.",
+   "Are you taking reservations for Dec 23 yet, or did you mean the end of NEXT week?"
+  ]
+ },
+ "9.6": {
+  "label": "inquire_onboard_services",
+  "definition": "customer wants information or resolution regarding onboard amenities, seating, accessibility, and related service complaints",
+  "coherent": true,
+  "coherence_note": null,
+  "needs_live_data": true,
+  "needs_live_data_note": "requires current train-specific details on catering availability, coach layout, and any service disruptions",
+  "size": 151,
+  "share": 0.0252,
+  "top_terms": [
+   "ve",
+   "board",
+   "happened",
+   "travel",
+   "sat",
+   "travelling",
+   "doesn",
+   "open",
+   "busy",
+   "coach",
+   "told",
+   "disappeared"
+  ],
+  "sample": [
+   "I've sat down on the train and there's a copy of the Daily Express on the table, can I keep it",
+   ". No catering at all on 19.48 to Gloucs and Worcs. Compares very badly with the superb service I've had today on",
+   "Correction: Should've been phrased as 'message' and yet again is not meant to sound unhappy at all."
+  ]
+ },
+ "10": {
+  "label": "inquire_advance_ticket_release",
+  "definition": "customer wants to know when advance tickets for specific dates will be released for sale",
+  "coherent": true,
+  "coherence_note": null,
+  "needs_live_data": true,
+  "needs_live_data_note": "requires current release schedule for advance tickets for the requested dates",
+  "size": 137,
+  "share": 0.0228,
+  "top_terms": [
+   "advance",
+   "advance tickets",
+   "tickets",
+   "available",
+   "fares",
+   "december",
+   "dec",
+   "sale",
+   "released",
+   "advance fares",
+   "christmas",
+   "tickets available"
+  ],
+  "sample": [
+   "Advance singles available according to your Xmas page but can not see any advance tickets from 27-31 Dec. Advances available when?",
+   "When will advance tickets for the Christmas period be on sale?",
+   "hi when do advance tickets go on sale for 28 Dec (returning 29)?"
+  ]
+ },
+ "11": {
+  "label": "inquire_delay_and_compensation",
+  "definition": "Customer wants to know the current delay length and how to claim compensation for it",
+  "coherent": false,
+  "coherence_note": "Cluster mixes pure real\u2011time delay inquiries with requests for compensation policy/details",
+  "needs_live_data": true,
+  "needs_live_data_note": "Requires up\u2011to\u2011date train service status and the passenger's ticket/eligibility information to give a delay estimate and compensation guidance",
+  "size": 112,
+  "share": 0.0187,
+  "top_terms": [
+   "delay",
+   "minute",
+   "delay repay",
+   "repay",
+   "long",
+   "day",
+   "refund",
+   "min",
+   "delayed",
+   "excuse",
+   "claim",
+   "minutes"
+  ],
+  "sample": [
+   "Another Thursday; another delay. How fabulous. Not even on the train yet #pisspoorservice",
+   "hi, why the delay today on the 07.53 TWY-PAD? What time are we due into PAD?",
+   "why the delay on the 8.10 rdg to pad?"
+  ]
+ },
+ "12": {
+  "label": "request_delay_information",
+  "definition": "Customer wants current and future information about train delays and reasons for frequent disruptions.",
+  "coherent": true,
+  "coherence_note": null,
+  "needs_live_data": true,
+  "needs_live_data_note": "Requires real\u2011time delay status for specific routes and times.",
+  "size": 123,
+  "share": 0.0205,
+  "top_terms": [
+   "delays",
+   "cancellations",
+   "delays cancellations",
+   "day",
+   "delayed",
+   "information",
+   "week",
+   "cancellations delays",
+   "journey",
+   "morning",
+   "late",
+   "weeks"
+  ],
+  "sample": [
+   "more delays <url>",
+   "delays slough to London again. <url>",
+   "Srsly what\u2019s up with all the cancellations and delays. \ud83d\ude34"
+  ]
+ },
+ "13": {
+  "label": "request_delay_info_and_compensation",
+  "definition": "Customer wants up\u2011to\u2011date information on a delayed train and seeks compensation or a refund for the inconvenience.",
+  "coherent": true,
+  "coherence_note": null,
+  "needs_live_data": true,
+  "needs_live_data_note": "Requires real\u2011time train status and the customer's ticket/compensation record to answer.",
+  "size": 89,
+  "share": 0.0148,
+  "top_terms": [
+   "waiting",
+   "delayed",
+   "refund",
+   "mins",
+   "arrive",
+   "july",
+   "compensation",
+   "weeks",
+   "sitting",
+   "room",
+   "ve",
+   "crew"
+  ],
+  "sample": [
+   "been waiting here since 7.50 for the 8.03 train to get into college.. it\u2019s 8.32 and still no sign? with lots of kids also waiting",
+   "once again useless service & waiting at BLackwater for a non-existent train.",
+   "You are incapable of making a decision, why is my Paighton train waiting at Swindon, worstgreatwestern"
+  ]
+ },
+ "14": {
+  "label": "website_booking_issue",
+  "definition": "customer wants to be able to book train tickets online and is seeking help fixing the website/app booking problem",
+  "coherent": true,
+  "coherence_note": null,
+  "needs_live_data": false,
+  "needs_live_data_note": null,
+  "size": 183,
+  "share": 0.0305,
+  "top_terms": [
+   "tickets",
+   "book",
+   "website",
+   "trying",
+   "book tickets",
+   "online",
+   "trying book",
+   "buy",
+   "booking",
+   "buy tickets",
+   "card",
+   "won"
+  ],
+  "sample": [
+   "why is your website not letting me book train tickets",
+   "why can't I book my train tickets online?No fares display for my chosen times & can't even buy through website. <url>",
+   "your website is rubbish. I login in, try to book tickets. asks me to login, says I need to do a proper email address. login again, try to book same tickets, duplicates tickets. It now thinks I'm buying 3 lots of the same journey. WHAT."
+  ]
+ },
+ "15": {
+  "label": "check_service_status",
+  "definition": "Customer wants to know if a specific train or service is currently running/on time",
+  "coherent": true,
+  "coherence_note": null,
+  "needs_live_data": true,
+  "needs_live_data_note": "Requires real\u2011time service status for the queried train or route",
+  "size": 158,
+  "share": 0.0263,
+  "top_terms": [
+   "running",
+   "late",
+   "running late",
+   "new",
+   "slow",
+   "late running",
+   "cancelled",
+   "morning",
+   "junction",
+   "normal",
+   "later",
+   "day"
+  ],
+  "sample": [
+   "is the 18:21 WMN to CDF running?",
+   "are trains to Plymouth from Exeter running?",
+   "is the 17.20 running from btm to Cardiff please?"
+  ]
+ },
+ "16": {
+  "label": "request_punctuality_explanation",
+  "definition": "Customer wants to know why their train is repeatedly late and seeks an explanation or assurance of on\u2011time service.",
+  "coherent": true,
+  "coherence_note": null,
+  "needs_live_data": true,
+  "needs_live_data_note": "Current delay status and reasons for the specific train/service at the time of the query.",
+  "size": 188,
+  "share": 0.0313,
+  "top_terms": [
+   "late",
+   "mins",
+   "mins late",
+   "day",
+   "tm",
+   "hour",
+   "running late",
+   "overcrowded",
+   "late work",
+   "journey",
+   "minutes late",
+   "hour late"
+  ],
+  "sample": [
+   "The 08.02 starts from Maidenhead and yet is so frequently late. Why?",
+   "always ffing late ...",
+   "late again. Well done!!"
+  ]
+ },
+ "17": {
+  "label": "ticket_purchase_assistance",
+  "definition": "Customer wants help buying, printing, or refunding a ticket and is concerned about ticket machine or office availability.",
+  "coherent": true,
+  "coherence_note": null,
+  "needs_live_data": false,
+  "needs_live_data_note": null,
+  "size": 279,
+  "share": 0.0465,
+  "top_terms": [
+   "ticket",
+   "machine",
+   "season",
+   "season ticket",
+   "ticket machine",
+   "buy",
+   "office",
+   "use",
+   "refund",
+   "ticket office",
+   "buy ticket",
+   "machines"
+  ],
+  "sample": [
+   "I have off saver ticket can I get the 15.22 to kingham from Paddington today thanks",
+   "hello, have an advanced ticket for the 18:16 from fratton to Plymouth, is this correct and what alternatives are there for me? <url>",
+   "As so often in so many places, ticket gates at Oxford fail to read my valid ticket... Why is the technology unfit for purpose?"
+  ]
+ },
+ "18": {
+  "label": "multiple_unrelated_requests",
+  "definition": "The customer is expressing various unrelated issues or comments and does not have a single clear request.",
+  "coherent": false,
+  "coherence_note": "The cluster mixes complaints about power sockets, lost items, price concerns, praise, missing trains, and other unrelated remarks, so it lacks a single intent.",
+  "needs_live_data": false,
+  "needs_live_data_note": null,
+  "size": 104,
+  "share": 0.0173,
+  "top_terms": [
+   "think",
+   "working",
+   "power",
+   "don",
+   "car",
+   "bit",
+   "days",
+   "carriage",
+   "coach",
+   "board",
+   "sockets",
+   "don think"
+  ],
+  "sample": [
+   ". Train late. Neither announcement speakers nor power sockets working (coach B I think). #standard \ud83d\ude24\ud83d\ude20 <url>",
+   "Hi can you RT? Found this phone on a table at Paddington station today. Think it belongs to a Kenneth Scott <url>",
+   "What do you think of these? (Thanks Jordan for the times) <url>"
+  ]
+ },
+ "19": {
+  "label": "request_more_capacity",
+  "definition": "Customer wants less crowded trains and more seats/carriages to accommodate passengers.",
+  "coherent": true,
+  "coherence_note": null,
+  "needs_live_data": false,
+  "needs_live_data_note": null,
+  "size": 132,
+  "share": 0.022,
+  "top_terms": [
+   "people",
+   "carriage",
+   "standing",
+   "packed",
+   "seats",
+   "people standing",
+   "carriages",
+   "like",
+   "awful",
+   "lot",
+   "stood",
+   "crammed"
+  ],
+  "sample": [
+   "why is your train to Bristol so overbooked the aisles are literally filled with people",
+   "why is there only three train cars on the 1742 Maidenhead to Paddington!! To many people in the train already?????",
+   "Not much different for colorblind people\u2026 <url>"
+  ]
+ },
+ "20": {
+  "label": "request_train_time_info",
+  "definition": "Customer wants to know the scheduled or expected arrival time/status of a specific train or service.",
+  "coherent": true,
+  "coherence_note": null,
+  "needs_live_data": true,
+  "needs_live_data_note": "Requires real\u2011time train schedule or service status for the requested service.",
+  "size": 102,
+  "share": 0.017,
+  "top_terms": [
+   "know",
+   "let",
+   "let know",
+   "arrive",
+   "don",
+   "don know",
+   "want",
+   "ticket",
+   "delayed",
+   "run",
+   "need",
+   "info"
+  ],
+  "sample": [
+   "Did you know we're on 21 UK TV channels with 13.3 million viewers and 32.8k Twitter followers? Worth a follow? <url>",
+   "Do you know what time the 8.45 from Paddington to Taunton will arrive?",
+   "could you let me know when the Liskeard sleeper will arrive please?"
+  ]
+ },
+ "21": {
+  "label": "request_additional_carriages",
+  "definition": "Customer wants more carriages to be provided on specific services because trains are overcrowded.",
+  "coherent": true,
+  "coherence_note": null,
+  "needs_live_data": true,
+  "needs_live_data_note": "Need current carriage allocation for the mentioned services to confirm if the request is already met or requires adjustment.",
+  "size": 158,
+  "share": 0.0263,
+  "top_terms": [
+   "carriages",
+   "packed",
+   "number",
+   "rammed",
+   "overcrowded",
+   "ridiculous",
+   "day",
+   "peak",
+   "standing",
+   "absolutely",
+   "weymouth",
+   "bri"
+  ],
+  "sample": [
+   "Hi did the depot misplace the other 2 carriages for the 0632 Didcot to Paddington? #searchpartyneeded",
+   "why is 16.52 EXC to BNP only 2 carriages 2day. It needs to be a 3 or 4 carriages minimum. It is worse than how cattle are treated",
+   "Busiest train out of Exeter city & only 2 carriages AGAIN. 3 carriages taken off at previous station. WHY. This happens too often!!"
+  ]
+ },
+ "22": {
+  "label": "demand_compensation_for_poor_service",
+  "definition": "customer wants compensation or refund because they consider the train service unacceptable and a joke",
+  "coherent": true,
+  "coherence_note": null,
+  "needs_live_data": true,
+  "needs_live_data_note": "requires the customer's ticket details and journey history to process a refund or compensation",
+  "size": 83,
+  "share": 0.0138,
+  "top_terms": [
+   "joke",
+   "absolute",
+   "absolute joke",
+   "overcrowded",
+   "hour",
+   "money",
+   "delayed",
+   "monday",
+   "having",
+   "half",
+   "toilet",
+   "fucking"
+  ],
+  "sample": [
+   "Absolute joke of service",
+   "is this a joke? <url>",
+   "as always your service is a joke \ud83d\ude24"
+  ]
+ },
+ "23": {
+  "label": "inquire_service_tomorrow",
+  "definition": "Customer wants to know if specific trains or services will run normally tomorrow.",
+  "coherent": true,
+  "coherence_note": null,
+  "needs_live_data": true,
+  "needs_live_data_note": "Requires real\u2011time schedule/strike/weather information for the requested date.",
+  "size": 96,
+  "share": 0.016,
+  "top_terms": [
+   "tomorrow",
+   "tomorrow morning",
+   "morning",
+   "affected",
+   "running",
+   "ticket",
+   "tickets",
+   "buses",
+   "iet",
+   "issues",
+   "booked",
+   "travelling"
+  ],
+  "sample": [
+   "Hi. Are you planning on striking tomorrow? I\u2019m thinking Blackwater > Reading > Paddington around 0830 ish.",
+   "should the 800 IETs be in service tomorrow? Many thanks",
+   "Hi - What\u2019s the likelihood my 6:13 GLD to RDG arrives on time tomorrow? \ud83e\udd14 I have a connecting train to catch \ud83d\ude12 <url>"
+  ]
+ },
+ "24": {
+  "label": "inquire_train_delay",
+  "definition": "customer wants to know the current delay status and expected arrival time of a specific train service",
+  "coherent": true,
+  "coherence_note": null,
+  "needs_live_data": true,
+  "needs_live_data_note": "requires real\u2011time service status and estimated arrival times for the mentioned train",
+  "size": 244,
+  "share": 0.0407,
+  "top_terms": [
+   "delayed",
+   "cancelled",
+   "getting",
+   "mins",
+   "day",
+   "week",
+   "hold",
+   "stuck",
+   "delayed cancelled",
+   "portsmouth",
+   "cancelled delayed",
+   "hour"
+  ],
+  "sample": [
+   "hi, what time will the delayed 07.53 TWY-PAD get to PAD?",
+   "hi, how delayed is the 07.53 TWY-PAD today? What time are we due into PAD?",
+   "why is 17.57 from Paddington delayed?"
+  ]
+ },
+ "25": {
+  "label": "request_more_seating_capacity",
+  "definition": "Customer wants the train to have enough seats and not be standing\u2011room\u2011only.",
+  "coherent": true,
+  "coherence_note": null,
+  "needs_live_data": false,
+  "needs_live_data_note": null,
+  "size": 69,
+  "share": 0.0115,
+  "top_terms": [
+   "standing",
+   "room",
+   "standing room",
+   "seats",
+   "trip",
+   "people standing",
+   "new",
+   "late",
+   "padd",
+   "pathetic",
+   "coach",
+   "appalling"
+  ],
+  "sample": [
+   "why have you put on a small train on from 5.58 from Newbury to paddington It's already standing room only.",
+   ", what should we do when one of your employees refuses to give us his name? We're asking about policy on standing room only trains.",
+   "obviously standing room only (claustrophobic) on the 19.15 to swansea this eve. Wouldnt mind if it wasnt for the \u00a3\u00a3\u00a3\u00a3 spent 4ticket"
+  ]
+ },
+ "26": {
+  "label": "request_platform_information",
+  "definition": "customer wants to know which platform their train will use or details about a specific platform",
+  "coherent": true,
+  "coherence_note": null,
+  "needs_live_data": true,
+  "needs_live_data_note": "requires real\u2011time platform assignments for the requested service and any current platform\u2011related notices",
+  "size": 85,
+  "share": 0.0142,
+  "top_terms": [
+   "platform",
+   "leaving",
+   "working",
+   "make",
+   "wrong",
+   "morning",
+   "told",
+   "minutes",
+   "packed",
+   "running",
+   "able",
+   "people"
+  ],
+  "sample": [
+   "Hi, what platform is the 9.37 train from Slough to Reading?",
+   "Which platform will the train go from Reading station to Gatwiick Airport at732 am",
+   "any platform for the <url> newbury"
+  ]
+ },
+ "27": {
+  "label": "request_complaint_update",
+  "definition": "Customer wants a response or status update on their complaint or compensation claim.",
+  "coherent": true,
+  "coherence_note": null,
+  "needs_live_data": false,
+  "needs_live_data_note": null,
+  "size": 147,
+  "share": 0.0245,
+  "top_terms": [
+   "compensation",
+   "email",
+   "weeks",
+   "complaint",
+   "ago",
+   "sent",
+   "claim",
+   "update",
+   "days",
+   "reply",
+   "response",
+   "address"
+  ],
+  "sample": [
+   "Still no reply to my complaint dated 21st July, you have requested & been sent details 6 times! Ref.GWRR171004BJRQ",
+   "I sent a letter to your complaints department on 20/10/17 and still haven\u2019t received a reply? Yet another wrongdoing from GWR!!",
+   "Apart from the complaint that you very kindly chased up for me, I only received a case number and acknowledgement of email sent?"
+  ]
+ },
+ "28": {
+  "label": "inquire_coach_count",
+  "definition": "customer wants to know the number of coaches on a specific train and expects the usual capacity",
+  "coherent": true,
+  "coherence_note": null,
+  "needs_live_data": true,
+  "needs_live_data_note": "real\u2011time coach composition for the requested service",
+  "size": 93,
+  "share": 0.0155,
+  "top_terms": [
+   "coaches",
+   "morning",
+   "fit",
+   "busy",
+   "cancelled",
+   "instead",
+   "day",
+   "commuter",
+   "normal",
+   "packed",
+   "weymouth",
+   "new"
+  ],
+  "sample": [
+   "will 7.33 Pang - Paddington be 3 coaches or back to 8 coaches today?!",
+   "hi how many coaches will there be for the 7.21 from Slough to Paddington?",
+   "there's one train from bath spa to London today and you only put on 3 coaches?!"
+  ]
+ },
+ "29": {
+  "label": "inquire_morning_service_status",
+  "definition": "Customer wants real\u2011time information about the status (on time, delayed, cancelled) of specific morning train services.",
+  "coherent": true,
+  "coherence_note": null,
+  "needs_live_data": true,
+  "needs_live_data_note": "Current service status, delays, cancellations, and platform information for the requested morning trains.",
+  "size": 170,
+  "share": 0.0283,
+  "top_terms": [
+   "morning",
+   "good",
+   "delayed",
+   "cancelled",
+   "new",
+   "good morning",
+   "monday",
+   "late",
+   "monday morning",
+   "day",
+   "tomorrow morning",
+   "helpful"
+  ],
+  "sample": [
+   "How are the trains from Thatcham to Paddington this morning?",
+   "Morning, 07:21 from Oxford- 4 or 5 please?",
+   "What\u2019s the story with the 0511 WOS PAD this morning? Seems to have failed around morton in marsh yet again.."
+  ]
+ },
+ "30": {
+  "label": "staff_complaint",
+  "definition": "customer wants staff to be more helpful, courteous, and adequately present on trains and stations",
+  "coherent": true,
+  "coherence_note": null,
+  "needs_live_data": false,
+  "needs_live_data_note": null,
+  "size": 150,
+  "share": 0.025,
+  "top_terms": [
+   "staff",
+   "helpful",
+   "member",
+   "member staff",
+   "great",
+   "customers",
+   "buffet",
+   "told",
+   "rude",
+   "morning",
+   "ticket",
+   "customer"
+  ],
+  "sample": [
+   "-Staff at Reading as sanctimonious as ever. Sarcastic pricks",
+   "such friendly staff on your trains",
+   "just witnessed a robbery at one of your stations, police and staff not interested"
+  ]
+ },
+ "31": {
+  "label": "request_current_delay_status",
+  "definition": "Customer wants to know the current delay time for a specific train service.",
+  "coherent": true,
+  "coherence_note": null,
+  "needs_live_data": true,
+  "needs_live_data_note": "Requires real\u2011time train location and delay information for the mentioned service.",
+  "size": 93,
+  "share": 0.0155,
+  "top_terms": [
+   "minutes",
+   "minutes late",
+   "late",
+   "delayed",
+   "delayed minutes",
+   "sat",
+   "announcement",
+   "currently",
+   "outside",
+   "passengers",
+   "stopped",
+   "news"
+  ],
+  "sample": [
+   "Only 16 minutes late today on the London to Hereford train!",
+   "why was the 1818 from Reigate 20 minutes late today",
+   "why is 14:28 Bruton GCR 27 minutes late"
+  ]
+ }
+}

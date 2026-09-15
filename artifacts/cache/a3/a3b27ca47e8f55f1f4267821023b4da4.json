@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"label\": \"inquire_onboard_services\",\n  \"definition\": \"customer wants information or resolution regarding onboard amenities, seating, accessibility, and related service complaints\",\n  \"coherent\": true,\n  \"coherence_note\": null,\n  \"needs_live_data\": true,\n  \"needs_live_data_note\": \"requires current train-specific details on catering availability, coach layout, and any service disruptions\"\n}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 697,
+ "completion_tokens": 188,
+ "tag": "taxonomy:name"
+}

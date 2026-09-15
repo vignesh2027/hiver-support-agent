@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi, to see if you qualify for the 5% discount you’ll need to check the route on your season ticket. You can view it here <url>.\",\"grounded_in\":[2],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"route of the season ticket\",\"confidence\":0.92}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 893,
+ "completion_tokens": 99,
+ "tag": "generate"
+}

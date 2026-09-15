@@ -1,0 +1,7 @@
+{
+ "text": "{\"labels\":[{\"id\":\"N000\",\"intent\":\"service_complaint\",\"handling\":\"auto\",\"handling_reason\":\"no immediate safety or money claim\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.95},{\"id\":\"N001\",\"intent\":\"live_service_status\",\"handling\":\"auto\",\"handling_reason\":\"simple status query\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.98},{\"id\":\"N002\",\"intent\":\"missed_connection\",\"handling\":\"assist\",\"handling_reason\":\"time‑critical onward travel needed\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.97},{\"id\":\"N003\",\"intent\":\"service_information\",\"handling\":\"auto\",\"handling_reason\":\"future service question\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.96},{\"id\":\"N004\",\"intent\":\"compensation_and_refunds\",\"handling\":\"assist\",\"handling_reason\":\"money claim present\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.94},{\"id\":\"N005\",\"intent\":\"compensation_and_refunds\",\"handling\":\"assist\",\"handling_reason\":\"money claim present\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.93}]}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 2765,
+ "completion_tokens": 489,
+ "tag": "prelabel:p1"
+}

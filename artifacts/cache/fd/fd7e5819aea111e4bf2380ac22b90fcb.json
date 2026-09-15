@@ -1,0 +1,7 @@
+{
+ "text": "{\"labels\":[{\"id\":\"N066\",\"intent\":\"service_information\",\"handling\":\"auto\",\"handling_reason\":\"no high risk content\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.95},{\"id\":\"N067\",\"intent\":\"onboard_facilities\",\"handling\":\"auto\",\"handling_reason\":\"facility complaint\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.92},{\"id\":\"N068\",\"intent\":\"capacity_and_overcrowding\",\"handling\":\"auto\",\"handling_reason\":\"overcrowding claim\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.93},{\"id\":\"N069\",\"intent\":\"compensation_and_refunds\",\"handling\":\"auto\",\"handling_reason\":\"money claim\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.96},{\"id\":\"N070\",\"intent\":\"live_service_status\",\"handling\":\"auto\",\"handling_reason\":\"current status query\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.90},{\"id\":\"N071\",\"intent\":\"service_complaint\",\"handling\":\"auto\",\"handling_reason\":\"complaint about delay\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.88}]}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 2704,
+ "completion_tokens": 429,
+ "tag": "prelabel:p1"
+}

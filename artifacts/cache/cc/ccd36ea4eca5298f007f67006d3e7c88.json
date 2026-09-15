@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"labels\": [\n    {\n      \"id\": \"N008\",\n      \"requires\": \"Acknowledge driver shortage incident\",\n      \"intent\": \"service_complaint\",\n      \"handling\": \"escalate\",\n      \"ambiguous\": false,\n      \"confidence\": 0.95\n    },\n    {\n      \"id\": \"N009\",\n      \"requires\": \"Confirm first class occupancy status\",\n      \"intent\": \"capacity_and_overcrowding\",\n      \"handling\": \"assist\",\n      \"ambiguous\": false,\n      \"confidence\": 0.9\n    },\n    {\n      \"id\": \"N010\",\n      \"requires\": \"Address pricing vs capacity mismatch\",\n      \"intent\": \"capacity_and_overcrowding\",\n      \"handling\": \"escalate\",\n      \"ambiguous\": false,\n      \"confidence\": 0.85\n    },\n    {\n      \"id\": \"N011\",\n      \"requires\": \"Acknowledge specific delay incident\",\n      \"intent\": \"service_complaint\",\n      \"handling\": \"assist\",\n      \"ambiguous\": false,\n      \"confidence\": 0.9\n    }\n  ]\n}",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 1026,
+ "completion_tokens": 273,
+ "tag": "prelabel:p2"
+}

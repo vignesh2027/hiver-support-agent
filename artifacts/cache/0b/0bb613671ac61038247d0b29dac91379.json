@@ -1,0 +1,7 @@
+{
+ "text": "{\"labels\":[{\"id\":\"A186\",\"intent\":\"capacity_and_overcrowding\",\"handling\":\"assist\",\"handling_reason\":\"complaint about overcrowding, requires human review\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.92},{\"id\":\"A187\",\"intent\":\"service_complaint\",\"handling\":\"assist\",\"handling_reason\":\"complaint about cost, delay and lack of seat\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.88},{\"id\":\"A188\",\"intent\":\"other\",\"handling\":\"escalate\",\"handling_reason\":\"injury reported, safety concern\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.95},{\"id\":\"A189\",\"intent\":\"service_complaint\",\"handling\":\"assist\",\"handling_reason\":\"complaint about long journey time\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.90},{\"id\":\"A190\",\"intent\":\"live_service_status\",\"handling\":\"auto\",\"handling_reason\":\"request for current status of broken train\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.93},{\"id\":\"A191\",\"intent\":\"other\",\"handling\":\"assist\",\"handling_reason\":\"vague message with image link, no clear intent\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.80}]}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 2751,
+ "completion_tokens": 473,
+ "tag": "prelabel:p1"
+}

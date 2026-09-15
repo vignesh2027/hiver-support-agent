@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"labels\": [\n    {\n      \"id\": \"N108\",\n      \"requires\": \"Confirm cancellation or delay status\",\n      \"intent\": \"live_service_status\",\n      \"handling\": \"auto\",\n      \"ambiguous\": false,\n      \"confidence\": 0.95\n    },\n    {\n      \"id\": \"N109\",\n      \"requires\": \"Relay request to driver\",\n      \"intent\": \"onboard_facilities\",\n      \"handling\": \"escalate\",\n      \"ambiguous\": false,\n      \"confidence\": 0.9\n    },\n    {\n      \"id\": \"N110\",\n      \"requires\": \"Acknowledge service failure\",\n      \"intent\": \"service_complaint\",\n      \"handling\": \"assist\",\n      \"ambiguous\": false,\n      \"confidence\": 0.9\n    },\n    {\n      \"id\": \"N111\",\n      \"requires\": \"Acknowledge misleading platform info\",\n      \"intent\": \"service_complaint\",\n      \"handling\": \"assist\",\n      \"ambiguous\": false,\n      \"confidence\": 0.9\n    }\n  ]\n}",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 1045,
+ "completion_tokens": 267,
+ "tag": "prelabel:p2"
+}

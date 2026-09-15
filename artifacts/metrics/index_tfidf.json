@@ -1,0 +1,5 @@
+{
+  "backend": "tfidf",
+  "indexed": 5632,
+  "dropped_nonsubstantive": 1185
+}

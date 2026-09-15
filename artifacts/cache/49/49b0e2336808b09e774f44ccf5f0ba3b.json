@@ -1,0 +1,7 @@
+{
+ "text": "{\"labels\":[{\"id\":\"N042\",\"intent\":\"service_complaint\",\"confidence\":0.95},{\"id\":\"N043\",\"intent\":\"lost_property\",\"confidence\":0.98},{\"id\":\"N044\",\"intent\":\"compensation_and_refunds\",\"confidence\":0.97},{\"id\":\"N045\",\"intent\":\"service_information\",\"confidence\":0.6},{\"id\":\"N046\",\"intent\":\"live_service_status\",\"confidence\":0.96},{\"id\":\"N047\",\"intent\":\"missed_connection\",\"confidence\":0.94}]}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 936,
+ "completion_tokens": 509,
+ "tag": "classify:knn0:b6"
+}

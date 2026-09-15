@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi, we can let the crew know. Please ask the on‑board staff to adjust the heating in coach E.\",\"grounded_in\":[1,2],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"coach E details are enough\",\"confidence\":0.92}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 878,
+ "completion_tokens": 108,
+ "tag": "generate"
+}

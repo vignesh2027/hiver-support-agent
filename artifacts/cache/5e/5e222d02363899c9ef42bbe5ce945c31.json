@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"label\": \"request_seat_reservation\",\n  \"definition\": \"Customer wants to reserve a seat or confirm that a seat reservation exists\",\n  \"coherent\": true,\n  \"coherence_note\": null,\n  \"needs_live_data\": true,\n  \"needs_live_data_note\": \"Requires checking real‑time seat availability and the customer's reservation status\"\n}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 664,
+ "completion_tokens": 138,
+ "tag": "taxonomy:name"
+}

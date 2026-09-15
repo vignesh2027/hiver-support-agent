@@ -1,0 +1,7 @@
+{
+ "text": "{\"labels\":[{\"id\":\"N108\",\"intent\":\"service_complaint\",\"handling\":\"assist\",\"handling_reason\":\"complaint about missing train\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.95},{\"id\":\"N109\",\"intent\":\"onboard_facilities\",\"handling\":\"assist\",\"handling_reason\":\"request for driver action\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.92},{\"id\":\"N110\",\"intent\":\"service_complaint\",\"handling\":\"assist\",\"handling_reason\":\"complaint about lack of reservations and confusion\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.93},{\"id\":\"N111\",\"intent\":\"service_complaint\",\"handling\":\"assist\",\"handling_reason\":\"complaint about misleading on-time info\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.91},{\"id\":\"N112\",\"intent\":\"service_complaint\",\"handling\":\"assist\",\"handling_reason\":\"confusion over cancellations/delays\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.90},{\"id\":\"N113\",\"intent\":\"service_complaint\",\"handling\":\"assist\",\"handling_reason\":\"daily problems and lack of information\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.92}]}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 2796,
+ "completion_tokens": 497,
+ "tag": "prelabel:p1"
+}

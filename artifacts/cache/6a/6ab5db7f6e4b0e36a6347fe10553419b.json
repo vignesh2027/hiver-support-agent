@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"label\": \"request_additional_carriages\",\n  \"definition\": \"Customer wants more carriages to be provided on specific services because trains are overcrowded.\",\n  \"coherent\": true,\n  \"coherence_note\": null,\n  \"needs_live_data\": true,\n  \"needs_live_data_note\": \"Need current carriage allocation for the mentioned services to confirm if the request is already met or requires adjustment.\"\n}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 705,
+ "completion_tokens": 176,
+ "tag": "taxonomy:name"
+}

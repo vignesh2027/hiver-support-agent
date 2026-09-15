@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"labels\": [\n    {\n      \"id\": \"A188\",\n      \"requires\": \"Medical emergency protocol activation\",\n      \"intent\": \"other\",\n      \"handling\": \"escalate\",\n      \"ambiguous\": false,\n      \"confidence\": 0.95\n    },\n    {\n      \"id\": \"A189\",\n      \"requires\": \"Acknowledgement of service failure\",\n      \"intent\": \"service_complaint\",\n      \"handling\": \"auto\",\n      \"ambiguous\": false,\n      \"confidence\": 0.9\n    },\n    {\n      \"id\": \"A190\",\n      \"requires\": \"Current departure status update\",\n      \"intent\": \"live_service_status\",\n      \"handling\": \"auto\",\n      \"ambiguous\": false,\n      \"confidence\": 0.95\n    },\n    {\n      \"id\": \"A191\",\n      \"requires\": \"Context for linked content\",\n      \"intent\": \"other\",\n      \"handling\": \"escalate\",\n      \"ambiguous\": false,\n      \"confidence\": 0.8\n    }\n  ]\n}",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 975,
+ "completion_tokens": 262,
+ "tag": "prelabel:p2"
+}

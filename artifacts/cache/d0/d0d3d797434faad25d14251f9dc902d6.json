@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi! To help you, could you tell us what type of advance ticket you have and send a photo or booking reference? Then we can advise on buying a new ticket on board.\",\"grounded_in\":[2,3],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"ticket type and booking reference or photo\",\"confidence\":0.92}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 942,
+ "completion_tokens": 106,
+ "tag": "generate"
+}

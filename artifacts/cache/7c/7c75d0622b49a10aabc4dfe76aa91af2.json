@@ -1,0 +1,7 @@
+{
+ "text": "{\"labels\":[{\"id\":\"A204\",\"intent\":\"other\",\"handling\":\"escalate\",\"handling_reason\":\"no actionable content\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.9},{\"id\":\"A205\",\"intent\":\"service_information\",\"handling\":\"auto\",\"handling_reason\":\"future service query\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.95},{\"id\":\"A206\",\"intent\":\"onboard_facilities\",\"handling\":\"auto\",\"handling_reason\":\"catering price complaint\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.92},{\"id\":\"A207\",\"intent\":\"capacity_and_overcrowding\",\"handling\":\"auto\",\"handling_reason\":\"short formation overcrowding report\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.93},{\"id\":\"A208\",\"intent\":\"service_complaint\",\"handling\":\"auto\",\"handling_reason\":\"lack of station information\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.91},{\"id\":\"A209\",\"intent\":\"missed_connection\",\"handling\":\"auto\",\"handling_reason\":\"stranded passenger needing onward travel\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.94}]}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 2748,
+ "completion_tokens": 460,
+ "tag": "prelabel:p1"
+}

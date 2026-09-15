@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"labels\": [\n    {\n      \"id\": \"N036\",\n      \"requires\": \"Reason for missing stop\",\n      \"intent\": \"service_complaint\",\n      \"handling\": \"assist\",\n      \"ambiguous\": false,\n      \"confidence\": 0.9\n    },\n    {\n      \"id\": \"N037\",\n      \"requires\": \"Acknowledge praise\",\n      \"intent\": \"feedback_positive\",\n      \"handling\": \"auto\",\n      \"ambiguous\": false,\n      \"confidence\": 0.95\n    },\n    {\n      \"id\": \"N038\",\n      \"requires\": \"Compensation for wrong orientation\",\n      \"intent\": \"compensation_and_refunds\",\n      \"handling\": \"escalate\",\n      \"ambiguous\": false,\n      \"confidence\": 0.95\n    },\n    {\n      \"id\": \"N039\",\n      \"requires\": \"Acknowledge recurring cancellation\",\n      \"intent\": \"service_complaint\",\n      \"handling\": \"assist\",\n      \"ambiguous\": false,\n      \"confidence\": 0.9\n    }\n  ]\n}",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 1015,
+ "completion_tokens": 265,
+ "tag": "prelabel:p2"
+}

@@ -1,0 +1,7 @@
+{
+ "text": "{\"labels\":[{\"id\":\"E168\",\"intent\":\"compensation_and_refunds\",\"handling\":\"assist\",\"handling_reason\":\"requires human review of claim\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.95},{\"id\":\"E169\",\"intent\":\"feedback_positive\",\"handling\":\"auto\",\"handling_reason\":\"no action required\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.99},{\"id\":\"E170\",\"intent\":\"service_complaint\",\"handling\":\"assist\",\"handling_reason\":\"needs human acknowledgement\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.92},{\"id\":\"E171\",\"intent\":\"feedback_positive\",\"handling\":\"auto\",\"handling_reason\":\"no action required\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.98},{\"id\":\"E172\",\"intent\":\"service_complaint\",\"handling\":\"assist\",\"handling_reason\":\"requires human response\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.90},{\"id\":\"E173\",\"intent\":\"capacity_and_overcrowding\",\"handling\":\"assist\",\"handling_reason\":\"needs human review\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.88}]}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 2807,
+ "completion_tokens": 367,
+ "tag": "prelabel:p1"
+}

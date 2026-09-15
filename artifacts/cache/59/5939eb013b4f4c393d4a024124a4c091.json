@@ -1,0 +1,7 @@
+{
+ "text": "{\"labels\":[{\"id\":\"E144\",\"intent\":\"live_service_status\",\"handling\":\"auto\",\"handling_reason\":\"factual ETA request\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.99},{\"id\":\"E145\",\"intent\":\"onboard_facilities\",\"handling\":\"auto\",\"handling_reason\":\"facility complaint\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.98},{\"id\":\"E146\",\"intent\":\"ticketing_and_booking\",\"handling\":\"auto\",\"handling_reason\":\"fare inclusion question\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.97},{\"id\":\"E147\",\"intent\":\"service_information\",\"handling\":\"auto\",\"handling_reason\":\"future rolling stock query\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.96},{\"id\":\"E148\",\"intent\":\"ticketing_and_booking\",\"handling\":\"auto\",\"handling_reason\":\"ticket validity/stopover question\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.95},{\"id\":\"E149\",\"intent\":\"seat_reservation\",\"handling\":\"auto\",\"handling_reason\":\"reservation availability question\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.97}]}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 2763,
+ "completion_tokens": 562,
+ "tag": "prelabel:p1"
+}

@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"label\": \"request_replacement_bus_info\",\n  \"definition\": \"customer wants information about rail replacement bus services (routes, locations, times, availability)\",\n  \"coherent\": true,\n  \"coherence_note\": null,\n  \"needs_live_data\": true,\n  \"needs_live_data_note\": \"requires up‑to‑date replacement bus schedules and locations for the specific routes the customer mentions\"\n}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 628,
+ "completion_tokens": 153,
+ "tag": "taxonomy:name"
+}

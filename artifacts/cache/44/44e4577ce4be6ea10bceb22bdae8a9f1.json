@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi, sorry to hear about the boxes in the vestibule. Could you let us know which station and train you were on?\",\"grounded_in\":[1],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"station and train details\",\"confidence\":0.85}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 862,
+ "completion_tokens": 91,
+ "tag": "generate"
+}

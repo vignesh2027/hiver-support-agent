@@ -1,0 +1,7 @@
+{
+ "text": "",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 1019,
+ "completion_tokens": 700,
+ "tag": "prelabel:p2"
+}

@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi, we’re sorry for the repeated delays on the Newport‑London route. We’ll look into what’s causing the breakdowns. Could you let us know the dates and times you experienced the issues?\",\"grounded_in\":[3],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"specific dates and times of the incidents\",\"confidence\":0.85}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 925,
+ "completion_tokens": 115,
+ "tag": "generate"
+}

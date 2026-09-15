@@ -1,0 +1,7 @@
+{
+ "text": "{\"labels\":[{\"id\":\"E132\",\"intent\":\"live_service_status\",\"handling\":\"auto\",\"handling_reason\":\"simple factual status request\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.95},{\"id\":\"E133\",\"intent\":\"lost_property\",\"handling\":\"auto\",\"handling_reason\":\"lost item on train\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.97},{\"id\":\"E134\",\"intent\":\"seat_reservation\",\"handling\":\"auto\",\"handling_reason\":\"missing seat reservation on booked journey\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.93},{\"id\":\"E135\",\"intent\":\"seat_reservation\",\"handling\":\"auto\",\"handling_reason\":\"request to find first‑class seat\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.92},{\"id\":\"E136\",\"intent\":\"other\",\"handling\":\"escalate\",\"handling_reason\":\"non‑English/irrelevant content\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.60},{\"id\":\"E137\",\"intent\":\"compensation_and_refunds\",\"handling\":\"auto\",\"handling_reason\":\"request for refund due to missing seat\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.94}]}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 2796,
+ "completion_tokens": 394,
+ "tag": "prelabel:p1"
+}

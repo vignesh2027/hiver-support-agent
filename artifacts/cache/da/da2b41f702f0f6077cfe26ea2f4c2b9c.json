@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi, sorry to hear about the missing coaches, no buffet and toilet issues on the WSM‑PAD. Could you let us know which service you were on? We’ll look into it. Thanks, Phil\",\"grounded_in\":[1,2],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"service details\",\"confidence\":0.85}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 883,
+ "completion_tokens": 115,
+ "tag": "generate"
+}

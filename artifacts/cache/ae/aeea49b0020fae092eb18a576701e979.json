@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"label\": \"website_booking_issue\",\n  \"definition\": \"customer wants to be able to book train tickets online and is seeking help fixing the website/app booking problem\",\n  \"coherent\": true,\n  \"coherence_note\": null,\n  \"needs_live_data\": false,\n  \"needs_live_data_note\": null\n}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 751,
+ "completion_tokens": 139,
+ "tag": "taxonomy:name"
+}

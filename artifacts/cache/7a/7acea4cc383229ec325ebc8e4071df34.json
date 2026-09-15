@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"label\": \"request_compensation_for_late_arrival\",\n  \"definition\": \"Customer wants compensation or remedy because train delays made them late for work.\",\n  \"coherent\": false,\n  \"coherence_note\": \"Cluster mixes complaints about being late for work with unrelated issues such as app login problems, toilet facilities, and password resets.\",\n  \"needs_live_data\": true,\n  \"needs_live_data_note\": \"Requires real‑time delay information and the customer's ticket/booking details to assess eligibility for compensation.\"\n}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 594,
+ "completion_tokens": 197,
+ "tag": "taxonomy:name"
+}

@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi, we’re sorry to hear about the overcrowding on the 17:33 to Banbury. Could you please confirm the train number or the station you boarded from? That will help us look into the situation. Thanks.\",\"grounded_in\":[1,4],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"train number or departure station\",\"confidence\":0.85}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 919,
+ "completion_tokens": 120,
+ "tag": "generate"
+}

@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi, some services are cancelled due to faults, others are delayed for different reasons. If you let us know which train you’re after, we can give you the exact reason. Thanks for your patience.\",\"grounded_in\":[1],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"specific train details\",\"confidence\":0.85}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 862,
+ "completion_tokens": 114,
+ "tag": "generate"
+}

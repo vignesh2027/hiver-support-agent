@@ -1,0 +1,7 @@
+{
+ "text": "{\"labels\":[{\"id\":\"A204\",\"intent\":\"other\",\"confidence\":0.4},{\"id\":\"A205\",\"intent\":\"service_information\",\"confidence\":0.9},{\"id\":\"A206\",\"intent\":\"service_complaint\",\"confidence\":0.8},{\"id\":\"A207\",\"intent\":\"capacity_and_overcrowding\",\"confidence\":0.9},{\"id\":\"A208\",\"intent\":\"service_complaint\",\"confidence\":0.85},{\"id\":\"A209\",\"intent\":\"live_service_status\",\"confidence\":0.9}]}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 936,
+ "completion_tokens": 219,
+ "tag": "classify:knn0:b6"
+}

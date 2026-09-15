@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi, we don’t have live running details. Please check the GWR app or call 0344 500 500 for the current status of the 0649 NBY‑PAD and the 0655 stop‑per.\",\"grounded_in\":[4],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"live running data\",\"confidence\":0.85}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 922,
+ "completion_tokens": 116,
+ "tag": "generate"
+}

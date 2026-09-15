@@ -1,0 +1,7 @@
+{
+ "text": "OK",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 45,
+ "completion_tokens": 22,
+ "tag": "smoke"
+}

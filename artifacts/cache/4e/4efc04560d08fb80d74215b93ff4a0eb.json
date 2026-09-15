@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi! To let you know which Class 800s are running, we need to know your departure and arrival stations. Could you share those details?\",\"grounded_in\":[1,2],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"departure and arrival stations\",\"confidence\":0.85}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 824,
+ "completion_tokens": 103,
+ "tag": "generate"
+}

@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi there. We’re sorry for the repeated cancellations. This service was cancelled due to a fault on the train. Could you let us know the exact service you were due to travel on?\",\"grounded_in\":[1,2],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"exact service details (date, time, origin, destination)\",\"confidence\":0.92}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 881,
+ "completion_tokens": 125,
+ "tag": "generate"
+}

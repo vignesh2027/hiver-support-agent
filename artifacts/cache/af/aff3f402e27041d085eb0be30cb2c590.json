@@ -1,0 +1,7 @@
+{
+ "text": "{\"labels\":[{\"id\":\"E174\",\"intent\":\"capacity_and_overcrowding\",\"handling\":\"auto\",\"handling_reason\":\"no urgent safety or money claim\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.95},{\"id\":\"E175\",\"intent\":\"compensation_and_refunds\",\"handling\":\"assist\",\"handling_reason\":\"money claim requires human review\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.97},{\"id\":\"E176\",\"intent\":\"service_complaint\",\"handling\":\"auto\",\"handling_reason\":\"general venting, no immediate action needed\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.92},{\"id\":\"E177\",\"intent\":\"ticketing_and_booking\",\"handling\":\"auto\",\"handling_reason\":\"website payment issue, no human escalation required\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.93},{\"id\":\"E178\",\"intent\":\"capacity_and_overcrowding\",\"handling\":\"auto\",\"handling_reason\":\"short formation complaint, no urgent action\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.94},{\"id\":\"E179\",\"intent\":\"service_complaint\",\"handling\":\"auto\",\"handling_reason\":\"delayed service with poor communication, no urgent action\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.91}]}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 2784,
+ "completion_tokens": 708,
+ "tag": "prelabel:p1"
+}

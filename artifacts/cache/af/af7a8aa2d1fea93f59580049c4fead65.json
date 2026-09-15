@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"labels\": [\n    {\n      \"id\": \"N012\",\n      \"wants\": \"Better wifi, seats, and catering on Swansea-Paddington route\",\n      \"requires\": \"Wifi improvement plans and rationale for new train layout\",\n      \"intent\": \"onboard_facilities\",\n      \"handling\": \"assist\",\n      \"handling_reason\": \"multi-faceted complaint touching several facilities; tone needs human review\",\n      \"ambiguous\": false,\n      \"runner_up\": null,\n      \"confidence\": 0.82\n    },\n    {\n      \"id\": \"N013\",\n      \"wants\": \"Current status of the 07:34 Didcot to London service\",\n      \"requires\": \"Live running status of that specific departure\",\n      \"intent\": \"live_service_status\",\n      \"handling\": \"auto\",\n      \"handling_reason\": \"straightforward factual status query with no elevated risk\",\n      \"ambiguous\": false,\n      \"runner_up\": null,\n      \"confidence\": 0.95\n    },\n    {\n      \"id\": \"N014\",\n      \"wants\": \"Explanation for why toilets are locked on their train\",\n      \"requires\": \"Reason for lockout and expected resolution timeframe\",\n      \"intent\": \"onboard_facilities\",\n      \"handling\": \"assist\",\n      \"handling_reason\": \"potential accessibility implication warrants human review before responding\",\n      \"ambiguous\": false,\n      \"runner_up\": null,\n      \"confidence\": 0.90\n    }]}",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 1169,
+ "completion_tokens": 2200,
+ "tag": "prelabel:p2"
+}

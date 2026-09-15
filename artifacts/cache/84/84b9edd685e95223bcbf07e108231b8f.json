@@ -1,0 +1,7 @@
+{
+ "text": "{\"labels\":[{\"id\":\"N078\",\"intent\":\"service_complaint\",\"handling\":\"auto\",\"handling_reason\":\"simple complaint about delay\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.95},{\"id\":\"N079\",\"intent\":\"ticketing_and_booking\",\"handling\":\"auto\",\"handling_reason\":\"ticket purchase question\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.97},{\"id\":\"N080\",\"intent\":\"service_information\",\"handling\":\"auto\",\"handling_reason\":\"future disruption inquiry\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.96},{\"id\":\"N081\",\"intent\":\"service_complaint\",\"handling\":\"auto\",\"handling_reason\":\"complaint about driver break causing delay\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.94},{\"id\":\"N082\",\"intent\":\"other\",\"handling\":\"assist\",\"handling_reason\":\"contains image link, unclear content\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.88},{\"id\":\"N083\",\"intent\":\"capacity_and_overcrowding\",\"handling\":\"auto\",\"handling_reason\":\"report of missing carriages causing overcrowding\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.93}]}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 2789,
+ "completion_tokens": 442,
+ "tag": "prelabel:p1"
+}

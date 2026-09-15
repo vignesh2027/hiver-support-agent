@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"labels\": [\n    {\n      \"id\": \"N028\",\n      \"requires\": \"Station office status and machine fix\",\n      \"intent\": \"ticketing_and_booking\",\n      \"handling\": \"escalate\",\n      \"ambiguous\": false,\n      \"confidence\": 0.95\n    },\n    {\n      \"id\": \"N029\",\n      \"requires\": \"Explanation for widespread cancellations/delays\",\n      \"intent\": \"service_complaint\",\n      \"handling\": \"assist\",\n      \"ambiguous\": false,\n      \"confidence\": 0.9\n    },\n    {\n      \"id\": \"N030\",\n      \"requires\": \"Acknowledgement of overcrowding complaint\",\n      \"intent\": \"capacity_and_overcrowding\",\n      \"handling\": \"auto\",\n      \"ambiguous\": false,\n      \"confidence\": 0.95\n    },\n    {\n      \"id\": \"N031\",\n      \"requires\": \"Acknowledgement of capacity planning failure\",\n      \"intent\": \"capacity_and_overcrowding\",\n      \"handling\": \"auto\",\n      \"ambiguous\": false,\n      \"confidence\": 0.95\n    }\n  ]\n}",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 1014,
+ "completion_tokens": 280,
+ "tag": "prelabel:p2"
+}

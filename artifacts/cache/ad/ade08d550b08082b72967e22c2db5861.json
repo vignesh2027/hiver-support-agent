@@ -1,0 +1,7 @@
+{
+ "text": "{\"labels\":[{\"id\":\"E162\",\"intent\":\"lost_property\",\"handling\":\"auto\",\"handling_reason\":\"standard lost‑property query\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.99},{\"id\":\"E163\",\"intent\":\"service_complaint\",\"handling\":\"auto\",\"handling_reason\":\"staff complaint, no money request\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.97},{\"id\":\"E164\",\"intent\":\"service_complaint\",\"handling\":\"auto\",\"handling_reason\":\"repeated lateness complaint\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.96},{\"id\":\"E165\",\"intent\":\"ticketing_and_booking\",\"handling\":\"auto\",\"handling_reason\":\"ticket booking issue\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.98},{\"id\":\"E166\",\"intent\":\"capacity_and_overcrowding\",\"handling\":\"auto\",\"handling_reason\":\"overcrowding report\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.97},{\"id\":\"E167\",\"intent\":\"live_service_status\",\"handling\":\"auto\",\"handling_reason\":\"current status request\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.99}]}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 2721,
+ "completion_tokens": 473,
+ "tag": "prelabel:p1"
+}

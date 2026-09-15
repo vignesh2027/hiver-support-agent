@@ -1,0 +1,7 @@
+{
+ "text": "{\"labels\":[{\"id\":\"N048\",\"intent\":\"feedback_positive\",\"handling\":\"auto\",\"handling_reason\":\"no actionable request\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":1.0},{\"id\":\"N049\",\"intent\":\"service_complaint\",\"handling\":\"auto\",\"handling_reason\":\"complaint about service quality\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":1.0},{\"id\":\"N050\",\"intent\":\"service_complaint\",\"handling\":\"auto\",\"handling_reason\":\"complaint about lateness\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":1.0},{\"id\":\"N051\",\"intent\":\"capacity_and_overcrowding\",\"handling\":\"auto\",\"handling_reason\":\"report of overcrowding due to coach removal\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":1.0},{\"id\":\"N052\",\"intent\":\"service_complaint\",\"handling\":\"auto\",\"handling_reason\":\"complaint about cancellation and delays\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":1.0},{\"id\":\"N053\",\"intent\":\"onboard_facilities\",\"handling\":\"auto\",\"handling_reason\":\"complaint about wifi\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":1.0}]}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 2731,
+ "completion_tokens": 361,
+ "tag": "prelabel:p1"
+}

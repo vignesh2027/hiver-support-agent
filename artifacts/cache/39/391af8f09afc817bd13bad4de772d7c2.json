@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Sorry you find the new seats uncomfortable. They were ergonomically designed with extra leg‑room. We’ll pass your feedback on to the team.\",\"grounded_in\":[1,2,3],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"none\",\"confidence\":0.92}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 869,
+ "completion_tokens": 109,
+ "tag": "generate"
+}

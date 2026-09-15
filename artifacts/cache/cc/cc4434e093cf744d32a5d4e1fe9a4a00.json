@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi, to get a refund for the single you bought, please submit the ticket to our Freepost GWR REFUNDS address with the completed online form: <url>. Let us know where you bought the season ticket so we can process it.\",\"grounded_in\":[1,2],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"Where the season ticket was purchased\",\"confidence\":0.92}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 873,
+ "completion_tokens": 127,
+ "tag": "generate"
+}

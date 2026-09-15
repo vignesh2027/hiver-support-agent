@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"label\": \"inquire_morning_service_status\",\n  \"definition\": \"Customer wants real‑time information about the status (on time, delayed, cancelled) of specific morning train services.\",\n  \"coherent\": true,\n  \"coherence_note\": null,\n  \"needs_live_data\": true,\n  \"needs_live_data_note\": \"Current service status, delays, cancellations, and platform information for the requested morning trains.\"\n}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 622,
+ "completion_tokens": 186,
+ "tag": "taxonomy:name"
+}

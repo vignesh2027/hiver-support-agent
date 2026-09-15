@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"label\": \"request_help\",\n  \"definition\": \"The customer wants assistance with an issue they are facing (e.g., lost property, booking error, general support).\",\n  \"coherent\": true,\n  \"coherence_note\": null,\n  \"needs_live_data\": true,\n  \"needs_live_data_note\": \"To resolve lost‑item or booking queries the agent may need to check real‑time property logs or the customer's reservation details.\"\n}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 611,
+ "completion_tokens": 222,
+ "tag": "taxonomy:name"
+}

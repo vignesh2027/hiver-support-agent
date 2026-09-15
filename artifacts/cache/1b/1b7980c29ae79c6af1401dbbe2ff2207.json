@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi, we’re sorry to hear you’re upset. Could you tell us the train number, date and what happened? That will help us look into the issue for you.\",\"grounded_in\":[2,3],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"train details (number, date, time) and description of the incident\",\"confidence\":0.85}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 904,
+ "completion_tokens": 117,
+ "tag": "generate"
+}

@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hello. Staff must take a break as required by law, so the train was delayed. I’m sorry for the inconvenience. Could you let us know what type of ticket you have?\",\"grounded_in\":[1],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"ticket type\",\"confidence\":0.85}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 913,
+ "completion_tokens": 105,
+ "tag": "generate"
+}

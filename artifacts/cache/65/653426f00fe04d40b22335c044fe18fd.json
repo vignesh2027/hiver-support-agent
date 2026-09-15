@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"labels\": [\n    {\n      \"id\": \"E168\",\n      \"requires\": \"Claim process for delay/missed connection\",\n      \"intent\": \"compensation_and_refunds\",\n      \"handling\": \"assist\",\n      \"ambiguous\": false,\n      \"confidence\": 0.95\n    },\n    {\n      \"id\": \"E169\",\n      \"requires\": \"Acknowledge praise for named staff\",\n      \"intent\": \"feedback_positive\",\n      \"handling\": \"auto\",\n      \"ambiguous\": false,\n      \"confidence\": 0.98\n    },\n    {\n      \"id\": \"E170\",\n      \"requires\": \"Acknowledge general service anger\",\n      \"intent\": \"service_complaint\",\n      \"handling\": \"auto\",\n      \"ambiguous\": false,\n      \"confidence\": 0.9\n    },\n    {\n      \"id\": \"E171\",\n      \"requires\": \"Acknowledge praise for staff\",\n      \"intent\": \"feedback_positive\",\n      \"handling\": \"auto\",\n      \"ambiguous\": false,\n      \"confidence\": 0.98\n    }\n  ]\n}",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 1037,
+ "completion_tokens": 272,
+ "tag": "prelabel:p2"
+}

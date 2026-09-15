@@ -1,0 +1,7 @@
+{
+ "text": "{\"labels\":[{\"id\":\"N006\",\"intent\":\"service_complaint\",\"handling\":\"auto\",\"handling_reason\":\"simple complaint\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.95},{\"id\":\"N007\",\"intent\":\"capacity_and_overcrowding\",\"handling\":\"auto\",\"handling_reason\":\"asking about coach count\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.92},{\"id\":\"N008\",\"intent\":\"service_complaint\",\"handling\":\"auto\",\"handling_reason\":\"complaint about driver absence\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.93},{\"id\":\"N009\",\"intent\":\"seat_reservation\",\"handling\":\"auto\",\"handling_reason\":\"asking about first‑class availability\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.94},{\"id\":\"N010\",\"intent\":\"service_complaint\",\"handling\":\"auto\",\"handling_reason\":\"complaint about standing ticket price\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.91},{\"id\":\"N011\",\"intent\":\"service_complaint\",\"handling\":\"auto\",\"handling_reason\":\"complaint about delay\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.90}]}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 2765,
+ "completion_tokens": 547,
+ "tag": "prelabel:p1"
+}

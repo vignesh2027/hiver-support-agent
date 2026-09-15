@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Apologies for the inconvenience – the train is running in reverse formation today. We can’t change that without causing a delay. If you can move to a forward‑facing seat, that would help.\",\"grounded_in\":[1,4],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"none\",\"confidence\":0.92}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 922,
+ "completion_tokens": 115,
+ "tag": "generate"
+}

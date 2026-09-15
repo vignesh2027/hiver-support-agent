@@ -1,0 +1,7 @@
+{
+ "text": "```json\n{\n  \"labels\": [\n    {\n      \"id\": \"N002\",\n      \"wants\": \"Current status of their train and how to reach Guildford\",\n      \"requires\": \"Verified live status of that service and alternative routing\",\n      \"intent\": \"live_service_status\",\n      \"handling\": \"assist\",\n      \"handling_reason\": \"conflicting status data and time-sensitive passenger potentially stranded\",\n      \"ambiguous\": false,\n      \"runner_up\": null,\n      \"confidence\": 0.9\n    },\n    {\n      \"id\": \"N003\",\n      \"wants\": \"Expected date new IET trains will serve the Cotswold line\",\n      \"requires\": \"Planned rolling stock deployment or timetable change schedule\",\n      \"intent\": \"service_information\",\n      \"handling\": \"auto\",\n      \"handling_reason\": \"factual question about future plans with no risk factors\",\n      \"ambiguous\": false,\n      \"runner_up\": null,\n      \"confidence\": 0.95\n    }\n  ]\n}\n```",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 1143,
+ "completion_tokens": 706,
+ "tag": "prelabel:p2:repair"
+}

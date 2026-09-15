@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"label\": \"inquire_advance_ticket_release\",\n  \"definition\": \"customer wants to know when advance tickets for specific dates will be released for sale\",\n  \"coherent\": true,\n  \"coherence_note\": null,\n  \"needs_live_data\": true,\n  \"needs_live_data_note\": \"requires current release schedule for advance tickets for the requested dates\"\n}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 628,
+ "completion_tokens": 157,
+ "tag": "taxonomy:name"
+}

@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi, we’re sorry you couldn’t board. We can’t change tickets here. Please contact GWR Customer Service or use the app to re‑book. They’ll help you get a seat on a later train.\",\"grounded_in\":[2],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"none\",\"confidence\":0.85}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 897,
+ "completion_tokens": 112,
+ "tag": "generate"
+}

@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"label\": \"request_service_status\",\n  \"definition\": \"customer wants up‑to‑date information on whether specific train services are running, delayed, cancelled or altered\",\n  \"coherent\": true,\n  \"coherence_note\": null,\n  \"needs_live_data\": true,\n  \"needs_live_data_note\": \"requires real‑time train service data (delays, cancellations, schedule changes) for the queried routes and times\"\n}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 587,
+ "completion_tokens": 171,
+ "tag": "taxonomy:name"
+}

@@ -1,0 +1,245 @@
+{
+  "intents": [
+    {
+      "name": "live_disruption_status",
+      "definition": "Customer asks for real\u2011time information about a specific train\u2019s delay, cancellation, driver absence or platform, or wants to know if a service is running now.",
+      "includes": [
+        "inquire_train_delay",
+        "request_service_status",
+        "inquire_morning_service_status",
+        "check_service_status",
+        "request_current_delay_status",
+        "driver_absence_delay",
+        "request_platform_information"
+      ],
+      "excludes": [
+        "request_compensation_for_late_arrival",
+        "inquire_delay_and_compensation",
+        "request_delay_information",
+        "request_delay_info_and_compensation"
+      ],
+      "hard_case": "\u201cThe 08:02 from Maidenhead is always late, why?\u201d \u2013 This is a punctuality explanation (historical pattern) not a live status request, so it belongs to punctuality_explanation.",
+      "needs_live_data": true,
+      "default_disposition": "assist",
+      "disposition_rationale": "Answers require up\u2011to\u2011date running data that the bot cannot guarantee; a human should verify before replying.",
+      "source_clusters": [
+        "24",
+        "5",
+        "29",
+        "15",
+        "31",
+        "0",
+        "26"
+      ],
+      "est_share": 12.5
+    },
+    {
+      "name": "punctuality_explanation",
+      "definition": "Customer seeks an explanation for recurring lateness or systematic delay of a service, not a current status.",
+      "includes": [
+        "request_punctuality_explanation"
+      ],
+      "excludes": [
+        "live_disruption_status",
+        "request_compensation_for_late_arrival"
+      ],
+      "hard_case": "\u201cHi, what time will the delayed 07:53 TWY\u2011PAD get to PAD?\u201d \u2013 This asks for the current expected arrival, so it belongs to live_disruption_status.",
+      "needs_live_data": false,
+      "default_disposition": "auto",
+      "disposition_rationale": "A standard template explaining typical causes of lateness can be safely sent.",
+      "source_clusters": [
+        "16"
+      ],
+      "est_share": 3.1
+    },
+    {
+      "name": "ticket_purchase_and_booking",
+      "definition": "Customer needs help buying, printing, refunding, or troubleshooting tickets on the website/app, including season tickets and advance releases.",
+      "includes": [
+        "ticket_purchase_assistance",
+        "website_booking_issue",
+        "inquire_advance_ticket_release"
+      ],
+      "excludes": [
+        "request_seat_reservation",
+        "request_cancellation_info_and_refund"
+      ],
+      "hard_case": "\u201cCan I reserve a seat on the 09:15 to Bristol?\u201d \u2013 This is a seat reservation request, not a purchase issue, so it belongs to seat_reservation.",
+      "needs_live_data": false,
+      "default_disposition": "assist",
+      "disposition_rationale": "May require checking account or availability; a human drafts the response.",
+      "source_clusters": [
+        "17",
+        "14",
+        "10"
+      ],
+      "est_share": 9.3
+    },
+    {
+      "name": "seat_reservation",
+      "definition": "Customer asks to reserve, confirm, change or query a seat reservation on a specific service.",
+      "includes": [
+        "request_seat_reservation"
+      ],
+      "excludes": [
+        "ticket_purchase_and_booking",
+        "request_more_seating_capacity"
+      ],
+      "hard_case": "\u201cWhy is my train so crowded today?\u201d \u2013 This is a capacity complaint, not a reservation query, so it belongs to capacity_requests.",
+      "needs_live_data": true,
+      "default_disposition": "assist",
+      "disposition_rationale": "Needs to check reservation system; human assistance required.",
+      "source_clusters": [
+        "4"
+      ],
+      "est_share": 2.4
+    },
+    {
+      "name": "capacity_and_overcrowding",
+      "definition": "Customer complains about overcrowding, lack of carriages or seats and requests additional capacity or fewer passengers.",
+      "includes": [
+        "request_additional_carriages",
+        "request_more_capacity",
+        "request_more_seating_capacity",
+        "request_more_capacity"
+      ],
+      "excludes": [
+        "seat_reservation",
+        "live_disruption_status"
+      ],
+      "hard_case": "\u201cCan you add another carriage to the 06:32 Didcot\u2011Paddington?\u201d \u2013 This is a request for extra carriages (capacity), not a seat reservation.",
+      "needs_live_data": true,
+      "default_disposition": "assist",
+      "disposition_rationale": "Operational changes need human approval.",
+      "source_clusters": [
+        "21",
+        "19",
+        "25",
+        "12"
+      ],
+      "est_share": 7.5
+    },
+    {
+      "name": "compensation_and_refunds",
+      "definition": "Customer seeks monetary compensation, refund or claim status for a past delay, cancellation or poor service.",
+      "includes": [
+        "request_compensation_for_late_arrival",
+        "inquire_delay_and_compensation",
+        "request_delay_info_and_compensation",
+        "request_cancellation_info_and_refund",
+        "request_complaint_update",
+        "demand_compensation_for_poor_service"
+      ],
+      "excludes": [
+        "live_disruption_status",
+        "punctuality_explanation"
+      ],
+      "hard_case": "\u201cWhy was the 17:06 Pad\u2011Westbury cancelled?\u201d \u2013 This asks for the reason, not compensation, so it belongs to live_disruption_status.",
+      "needs_live_data": false,
+      "default_disposition": "assist",
+      "disposition_rationale": "Compensation requires policy checks and possibly account data.",
+      "source_clusters": [
+        "7",
+        "8",
+        "11",
+        "13",
+        "27",
+        "22"
+      ],
+      "est_share": 13.5
+    },
+    {
+      "name": "service_information_general",
+      "definition": "Customer asks for static or schedule\u2011related information that does not need real\u2011time data: new train schedules, future service availability, tomorrow\u2019s service, coach count, or general service queries.",
+      "includes": [
+        "inquire_new_train_schedule",
+        "request_service_schedule",
+        "inquire_service_tomorrow",
+        "inquire_coach_count",
+        "request_train_time_info"
+      ],
+      "excludes": [
+        "live_disruption_status",
+        "ticket_purchase_and_booking"
+      ],
+      "hard_case": "\u201cHow many coaches will the 07:33 Pang\u2011Paddington have today?\u201d \u2013 If the user asks for today\u2019s count, it needs live data and belongs to live_disruption_status; only future\u2011date queries stay here.",
+      "needs_live_data": false,
+      "default_disposition": "auto",
+      "disposition_rationale": "Answers can be drawn from published timetables.",
+      "source_clusters": [
+        "6",
+        "9.5",
+        "23",
+        "28",
+        "20"
+      ],
+      "est_share": 7.0
+    },
+    {
+      "name": "onboard_service_and_facilities",
+      "definition": "Customer raises issues or asks questions about onboard amenities, seating comfort, accessibility, Wi\u2011Fi, toilets, or staff behaviour.",
+      "includes": [
+        "inquire_onboard_services",
+        "staff_complaint",
+        "request_help"
+      ],
+      "excludes": [
+        "capacity_and_overcrowding",
+        "compensation_and_refunds"
+      ],
+      "hard_case": "\u201cThe Wi\u2011Fi was unusable, and the train kept getting later.\u201d \u2013 This mixes a Wi\u2011Fi complaint with a delay; the primary intent is a live disruption status, so it belongs to live_disruption_status.",
+      "needs_live_data": false,
+      "default_disposition": "assist",
+      "disposition_rationale": "Often needs a human to acknowledge and possibly forward to operations.",
+      "source_clusters": [
+        "9.0",
+        "9.6",
+        "30",
+        "9.2"
+      ],
+      "est_share": 9.5
+    },
+    {
+      "name": "positive_feedback",
+      "definition": "Customer expresses appreciation, compliments or positive experience.",
+      "includes": [
+        "provide_positive_feedback"
+      ],
+      "excludes": [
+        "negative_complaint"
+      ],
+      "hard_case": "\u201cGreat journey, but the train was 10 minutes late.\u201d \u2013 The presence of a complaint pushes it to live_disruption_status.",
+      "needs_live_data": false,
+      "default_disposition": "auto",
+      "disposition_rationale": "Can be replied with a thank\u2011you template.",
+      "source_clusters": [
+        "9.4"
+      ],
+      "est_share": 1.8
+    },
+    {
+      "name": "other",
+      "definition": "Any message that does not fit the above intents, including spam, unrelated chatter, or ambiguous multi\u2011intent messages that cannot be cleanly classified.",
+      "includes": [
+        "multiple_intents",
+        "multiple_unrelated_requests",
+        "noise"
+      ],
+      "excludes": [],
+      "hard_case": "\u201cCan I get a replacement taxi pls?\u201d \u2013 This is a request for a replacement bus, which belongs to replacement_bus_info; if the bot cannot recognise it, it falls here.",
+      "needs_live_data": false,
+      "default_disposition": "escalate",
+      "disposition_rationale": "Human must decide the appropriate handling.",
+      "source_clusters": [
+        "9.3",
+        "9.1",
+        "9.2",
+        "18",
+        "1"
+      ],
+      "est_share": 5.0
+    }
+  ],
+  "merges_explained": "Clusters were merged based on identical handling pathways. All live\u2011status queries (delays, cancellations, driver absence, platform) became live_disruption_status. All compensation\u2011related clusters were grouped under compensation_and_refunds because they all require policy lookup and claim processing. Ticket purchase, website issues and advance\u2011ticket queries share the same support flow (guide, troubleshoot, link) and form ticket_purchase_and_booking. Capacity\u2011related complaints (extra carriages, overcrowding, standing\u2011room) were merged into capacity_and_overcrowding. Static schedule queries (new trains, future coach count, tomorrow\u2019s service) formed service_information_general. Onboard amenity complaints and staff behaviour were combined into onboard_service_and_facilities. Positive feedback stayed separate. The catch\u2011all other captures multi\u2011intent or noisy messages.",
+  "dropped": "No clusters were dropped as noise; all were assigned to an intent or the catch\u2011all."
+}

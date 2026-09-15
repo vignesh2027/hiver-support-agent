@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"labels\": [\n    {\n      \"id\": \"E120\",\n      \"requires\": \"Acknowledge recurring lateness and missed connection\",\n      \"intent\": \"service_complaint\",\n      \"handling\": \"assist\",\n      \"ambiguous\": false,\n      \"confidence\": 0.95\n    },\n    {\n      \"id\": \"E121\",\n      \"requires\": \"Explain rationale for planned weekend turnbacks\",\n      \"intent\": \"service_complaint\",\n      \"handling\": \"assist\",\n      \"ambiguous\": false,\n      \"confidence\": 0.9\n    },\n    {\n      \"id\": \"E122\",\n      \"requires\": \"Acknowledge praise and thank customer\",\n      \"intent\": \"feedback_positive\",\n      \"handling\": \"auto\",\n      \"ambiguous\": false,\n      \"confidence\": 0.98\n    },\n    {\n      \"id\": \"E123\",\n      \"requires\": \"Confirm status of specific 20:06 service\",\n      \"intent\": \"live_service_status\",\n      \"handling\": \"auto\",\n      \"ambiguous\": false,\n      \"confidence\": 0.95\n    }\n  ]\n}",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 984,
+ "completion_tokens": 280,
+ "tag": "prelabel:p2"
+}

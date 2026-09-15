@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"labels\": [\n    {\n      \"id\": \"A196\",\n      \"requires\": \"Acknowledge overcrowding, explain capacity limits\",\n      \"intent\": \"capacity_and_overcrowding\",\n      \"handling\": \"assist\",\n      \"ambiguous\": false,\n      \"confidence\": 0.95\n    },\n    {\n      \"id\": \"A197\",\n      \"requires\": \"Apologize for staff conduct, address heating\",\n      \"intent\": \"service_complaint\",\n      \"handling\": \"escalate\",\n      \"ambiguous\": false,\n      \"confidence\": 0.9\n    },\n    {\n      \"id\": \"A198\",\n      \"requires\": \"Verify external link content\",\n      \"intent\": \"other\",\n      \"handling\": \"escalate\",\n      \"ambiguous\": false,\n      \"confidence\": 0.85\n    },\n    {\n      \"id\": \"A199\",\n      \"requires\": \"Provide immediate rebooking or refund advice\",\n      \"intent\": \"missed_connection\",\n      \"handling\": \"escalate\",\n      \"ambiguous\": false,\n      \"confidence\": 0.9\n    }\n  ]\n}",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 996,
+ "completion_tokens": 278,
+ "tag": "prelabel:p2"
+}

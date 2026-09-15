@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi there. Apologies for the discomfort. The short formation is due to some carriages being in repair. If you can let us know the exact train number or time, we can check the current status for you.\",\"grounded_in\":[1],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"train number or exact departure time\",\"confidence\":0.85}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 891,
+ "completion_tokens": 119,
+ "tag": "generate"
+}

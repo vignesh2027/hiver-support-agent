@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi, we’re sorry to hear you’re uncomfortable. Could you tell us which carriage you’re in and what temperature you’re experiencing? We’ll check the facilities and get back to you. - GWR\",\"grounded_in\":[2],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"carriage number and temperature details\",\"confidence\":0.85}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 884,
+ "completion_tokens": 109,
+ "tag": "generate"
+}

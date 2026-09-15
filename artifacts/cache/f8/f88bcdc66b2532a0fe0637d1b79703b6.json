@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"label\": \"inquire_coach_count\",\n  \"definition\": \"customer wants to know the number of coaches on a specific train and expects the usual capacity\",\n  \"coherent\": true,\n  \"coherence_note\": null,\n  \"needs_live_data\": true,\n  \"needs_live_data_note\": \"real‑time coach composition for the requested service\"\n}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 708,
+ "completion_tokens": 161,
+ "tag": "taxonomy:name"
+}

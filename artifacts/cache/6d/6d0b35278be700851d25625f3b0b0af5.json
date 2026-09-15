@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"labels\": [\n    {\n      \"id\": \"N012\",\n      \"requires\": \"Wifi status and carriage config\",\n      \"intent\": \"onboard_facilities\",\n      \"handling\": \"assist\",\n      \"ambiguous\": false,\n      \"confidence\": 0.9\n    },\n    {\n      \"id\": \"N013\",\n      \"requires\": \"Current status of specific train\",\n      \"intent\": \"live_service_status\",\n      \"handling\": \"auto\",\n      \"ambiguous\": false,\n      \"confidence\": 0.95\n    },\n    {\n      \"id\": \"N014\",\n      \"requires\": \"Reason for locked toilets\",\n      \"intent\": \"onboard_facilities\",\n      \"handling\": \"assist\",\n      \"ambiguous\": false,\n      \"confidence\": 0.9\n    },\n    {\n      \"id\": \"N015\",\n      \"requires\": \"Refund eligibility for lost seats\",\n      \"intent\": \"compensation_and_refunds\",\n      \"handling\": \"escalate\",\n      \"ambiguous\": false,\n      \"confidence\": 0.85\n    }\n  ]\n}",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 1010,
+ "completion_tokens": 272,
+ "tag": "prelabel:p2"
+}

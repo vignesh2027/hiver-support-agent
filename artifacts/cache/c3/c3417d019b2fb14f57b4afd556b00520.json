@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"label\": \"request_delay_information\",\n  \"definition\": \"Customer wants current and future information about train delays and reasons for frequent disruptions.\",\n  \"coherent\": true,\n  \"coherence_note\": null,\n  \"needs_live_data\": true,\n  \"needs_live_data_note\": \"Requires real‑time delay status for specific routes and times.\"\n}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 652,
+ "completion_tokens": 150,
+ "tag": "taxonomy:name"
+}

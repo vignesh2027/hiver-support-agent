@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi there. Which service was this on? Please let us know the train number or any other details and we’ll try to locate your hat.\",\"grounded_in\":[2,4],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"train number or additional details\",\"confidence\":0.92}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 844,
+ "completion_tokens": 101,
+ "tag": "generate"
+}

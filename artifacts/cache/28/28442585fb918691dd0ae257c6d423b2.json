@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"labels\": [\n    {\n      \"id\": \"N004\",\n      \"requires\": \"Live status and refund policy\",\n      \"intent\": \"compensation_and_refunds\",\n      \"handling\": \"assist\",\n      \"ambiguous\": true,\n      \"confidence\": 0.9\n    },\n    {\n      \"id\": \"N005\",\n      \"requires\": \"Compensation for missed meeting\",\n      \"intent\": \"compensation_and_refunds\",\n      \"handling\": \"assist\",\n      \"ambiguous\": false,\n      \"confidence\": 0.95\n    },\n    {\n      \"id\": \"N006\",\n      \"requires\": \"Context for compensation complaint\",\n      \"intent\": \"service_complaint\",\n      \"handling\": \"escalate\",\n      \"ambiguous\": false,\n      \"confidence\": 0.85\n    },\n    {\n      \"id\": \"N007\",\n      \"requires\": \"Current train formation count\",\n      \"intent\": \"capacity_and_overcrowding\",\n      \"handling\": \"auto\",\n      \"ambiguous\": false,\n      \"confidence\": 0.9\n    }\n  ]\n}",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 1024,
+ "completion_tokens": 272,
+ "tag": "prelabel:p2"
+}

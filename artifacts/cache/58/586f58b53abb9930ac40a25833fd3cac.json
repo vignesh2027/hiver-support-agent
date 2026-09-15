@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"label\": \"demand_consistent_daily_service\",\n  \"definition\": \"Customer wants reliable, daily train service without frequent cancellations or seat shortages.\",\n  \"coherent\": true,\n  \"coherence_note\": null,\n  \"needs_live_data\": false,\n  \"needs_live_data_note\": null\n}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 672,
+ "completion_tokens": 151,
+ "tag": "taxonomy:name"
+}

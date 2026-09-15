@@ -1,0 +1,7 @@
+{
+ "text": "{\"labels\":[{\"id\":\"A216\",\"intent\":\"other\",\"confidence\":0.95},{\"id\":\"A217\",\"intent\":\"live_service_status\",\"confidence\":0.92},{\"id\":\"A218\",\"intent\":\"compensation_and_refunds\",\"confidence\":0.88},{\"id\":\"A219\",\"intent\":\"compensation_and_refunds\",\"confidence\":0.93}]}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 858,
+ "completion_tokens": 162,
+ "tag": "classify:knn0:b6"
+}

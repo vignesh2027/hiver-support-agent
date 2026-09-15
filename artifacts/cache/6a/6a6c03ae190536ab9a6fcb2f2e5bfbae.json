@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi! To check if the tube fare is included, I’ll need your full journey details – departure station, date and time, and the tube segment you’ll use. Please let me know and I’ll look into it for you.\",\"grounded_in\":[1],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"Full journey details (departure, date, time, tube segment)\",\"confidence\":0.92}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 884,
+ "completion_tokens": 120,
+ "tag": "generate"
+}

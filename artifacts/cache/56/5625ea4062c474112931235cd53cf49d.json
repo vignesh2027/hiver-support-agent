@@ -1,0 +1,7 @@
+{
+ "text": "{\"labels\":[{\"id\":\"N042\",\"intent\":\"compensation_and_refunds\",\"handling\":\"escalate\",\"handling_reason\":\"explicit money request\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.95},{\"id\":\"N043\",\"intent\":\"lost_property\",\"handling\":\"auto\",\"handling_reason\":\"simple lost item query\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.98},{\"id\":\"N044\",\"intent\":\"compensation_and_refunds\",\"handling\":\"escalate\",\"handling_reason\":\"request for refunds\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.96},{\"id\":\"N045\",\"intent\":\"service_complaint\",\"handling\":\"assist\",\"handling_reason\":\"request for schedule tweak\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.88},{\"id\":\"N046\",\"intent\":\"service_information\",\"handling\":\"auto\",\"handling_reason\":\"future timetable query\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.92},{\"id\":\"N047\",\"intent\":\"missed_connection\",\"handling\":\"assist\",\"handling_reason\":\"immediate onward travel issue\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.90}]}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 2748,
+ "completion_tokens": 546,
+ "tag": "prelabel:p1"
+}

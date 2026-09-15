@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi, we’re sorry about your gloves. To help us locate them, could you let us know the date and time you travelled on the 1927 from Pangbourne to Oxford?\",\"grounded_in\":[],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"date and time of travel\",\"confidence\":0.85}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 846,
+ "completion_tokens": 106,
+ "tag": "generate"
+}

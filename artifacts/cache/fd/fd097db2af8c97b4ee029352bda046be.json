@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"labels\": [\n    {\n      \"id\": \"N024\",\n      \"requires\": \"Item location and recovery process\",\n      \"intent\": \"lost_property\",\n      \"handling\": \"assist\",\n      \"ambiguous\": false,\n      \"confidence\": 0.98\n    },\n    {\n      \"id\": \"N025\",\n      \"requires\": \"Confirmation of connection hold\",\n      \"intent\": \"missed_connection\",\n      \"handling\": \"escalate\",\n      \"ambiguous\": false,\n      \"confidence\": 0.95\n    },\n    {\n      \"id\": \"N026\",\n      \"requires\": \"Explanation of seat allocation error\",\n      \"intent\": \"seat_reservation\",\n      \"handling\": \"assist\",\n      \"ambiguous\": false,\n      \"confidence\": 0.92\n    },\n    {\n      \"id\": \"N027\",\n      \"requires\": \"Acknowledgement of cancellation impact\",\n      \"intent\": \"service_complaint\",\n      \"handling\": \"assist\",\n      \"ambiguous\": false,\n      \"confidence\": 0.90\n    }\n  ]\n}",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 1046,
+ "completion_tokens": 267,
+ "tag": "prelabel:p2"
+}

@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Sorry to hear that, Alex. If your journey was delayed over 30 min you can claim compensation via our online form: <url>.\",\"grounded_in\":[1,3],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"none\",\"confidence\":0.92}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 920,
+ "completion_tokens": 103,
+ "tag": "generate"
+}

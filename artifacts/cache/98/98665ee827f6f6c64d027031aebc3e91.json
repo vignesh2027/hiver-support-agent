@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"labels\": [\n    {\n      \"id\": \"N064\",\n      \"requires\": \"Verify platform safety protocol accuracy\",\n      \"intent\": \"service_information\",\n      \"handling\": \"assist\",\n      \"ambiguous\": false,\n      \"confidence\": 0.85\n    },\n    {\n      \"id\": \"N065\",\n      \"requires\": \"Acknowledge injury risk and overcrowding\",\n      \"intent\": \"capacity_and_overcrowding\",\n      \"handling\": \"escalate\",\n      \"ambiguous\": false,\n      \"confidence\": 0.95\n    },\n    {\n      \"id\": \"N066\",\n      \"requires\": \"Confirm rolling stock retirement timeline\",\n      \"intent\": \"service_information\",\n      \"handling\": \"auto\",\n      \"ambiguous\": false,\n      \"confidence\": 0.9\n    },\n    {\n      \"id\": \"N067\",\n      \"requires\": \"Address seat comfort and amenity request\",\n      \"intent\": \"onboard_facilities\",\n      \"handling\": \"assist\",\n      \"ambiguous\": false,\n      \"confidence\": 0.9\n    }\n  ]\n}",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 1014,
+ "completion_tokens": 273,
+ "tag": "prelabel:p2"
+}

@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"labels\": [\n    {\n      \"id\": \"N044\",\n      \"requires\": \"Refund policy for stranded passengers\",\n      \"intent\": \"compensation_and_refunds\",\n      \"handling\": \"escalate\",\n      \"ambiguous\": false,\n      \"confidence\": 0.95\n    },\n    {\n      \"id\": \"N045\",\n      \"requires\": \"Timetable change request for connection\",\n      \"intent\": \"service_information\",\n      \"handling\": \"assist\",\n      \"ambiguous\": false,\n      \"confidence\": 0.9\n    },\n    {\n      \"id\": \"N046\",\n      \"requires\": \"Tomorrow's specific service running status\",\n      \"intent\": \"live_service_status\",\n      \"handling\": \"auto\",\n      \"ambiguous\": false,\n      \"confidence\": 0.9\n    },\n    {\n      \"id\": \"N047\",\n      \"requires\": \"Acknowledgement of recurring lateness complaint\",\n      \"intent\": \"service_complaint\",\n      \"handling\": \"auto\",\n      \"ambiguous\": false,\n      \"confidence\": 0.95\n    }\n  ]\n}",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 1004,
+ "completion_tokens": 274,
+ "tag": "prelabel:p2"
+}

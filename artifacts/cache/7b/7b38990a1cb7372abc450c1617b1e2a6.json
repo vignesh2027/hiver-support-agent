@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"label\": \"request_more_capacity\",\n  \"definition\": \"Customer wants less crowded trains and more seats/carriages to accommodate passengers.\",\n  \"coherent\": true,\n  \"coherence_note\": null,\n  \"needs_live_data\": false,\n  \"needs_live_data_note\": null\n}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 705,
+ "completion_tokens": 136,
+ "tag": "taxonomy:name"
+}

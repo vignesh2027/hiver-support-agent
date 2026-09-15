@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi, sorry for the inconvenience. We can’t give live details, but if you have a seat reservation we can help you find it. If not, please let us know your journey details and we’ll see what we can do.\",\"grounded_in\":[2,3],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"journey details and seat reservation status\",\"confidence\":0.85}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 935,
+ "completion_tokens": 129,
+ "tag": "generate"
+}

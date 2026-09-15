@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi, we’re sorry you’ve had another cancellation. Could you let us know the train number and your ticket type? That will help us look into what happened. Thanks – GWR\",\"grounded_in\":[2],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"train number, ticket type\",\"confidence\":\"0.92\"}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 862,
+ "completion_tokens": 103,
+ "tag": "generate"
+}

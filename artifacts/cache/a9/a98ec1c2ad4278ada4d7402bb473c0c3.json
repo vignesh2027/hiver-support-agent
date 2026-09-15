@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"labels\": [\n    {\n      \"id\": \"N060\",\n      \"requires\": \"Ticketing system data accuracy\",\n      \"intent\": \"ticketing_and_booking\",\n      \"handling\": \"assist\",\n      \"ambiguous\": false,\n      \"confidence\": 0.95\n    },\n    {\n      \"id\": \"N061\",\n      \"requires\": \"Acknowledgement of chronic lateness\",\n      \"intent\": \"service_complaint\",\n      \"handling\": \"auto\",\n      \"ambiguous\": false,\n      \"confidence\": 0.9\n    },\n    {\n      \"id\": \"N062\",\n      \"requires\": \"Acknowledgement of overcrowding\",\n      \"intent\": \"capacity_and_overcrowding\",\n      \"handling\": \"auto\",\n      \"ambiguous\": false,\n      \"confidence\": 0.95\n    },\n    {\n      \"id\": \"N063\",\n      \"requires\": \"Explanation of engineering impact\",\n      \"intent\": \"service_complaint\",\n      \"handling\": \"auto\",\n      \"ambiguous\": false,\n      \"confidence\": 0.85\n    }\n  ]\n}",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 1000,
+ "completion_tokens": 271,
+ "tag": "prelabel:p2"
+}

@@ -1,0 +1,7 @@
+{
+ "text": "{\"labels\":[{\"id\":\"E144\",\"intent\":\"live_service_status\",\"confidence\":0.95},{\"id\":\"E145\",\"intent\":\"onboard_facilities\",\"confidence\":0.92},{\"id\":\"E146\",\"intent\":\"ticketing_and_booking\",\"confidence\":0.93},{\"id\":\"E147\",\"intent\":\"service_information\",\"confidence\":0.94},{\"id\":\"E148\",\"intent\":\"ticketing_and_booking\",\"confidence\":0.91},{\"id\":\"E149\",\"intent\":\"seat_reservation\",\"confidence\":0.93}]}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 951,
+ "completion_tokens": 298,
+ "tag": "classify:knn0:b6"
+}

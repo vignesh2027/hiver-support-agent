@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"label\": \"inquire_delay_and_compensation\",\n  \"definition\": \"Customer wants to know the current delay length and how to claim compensation for it\",\n  \"coherent\": false,\n  \"coherence_note\": \"Cluster mixes pure real‑time delay inquiries with requests for compensation policy/details\",\n  \"needs_live_data\": true,\n  \"needs_live_data_note\": \"Requires up‑to‑date train service status and the passenger's ticket/eligibility information to give a delay estimate and compensation guidance\"\n}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 696,
+ "completion_tokens": 158,
+ "tag": "taxonomy:name"
+}

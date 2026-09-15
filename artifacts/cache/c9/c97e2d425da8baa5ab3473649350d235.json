@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi, you can't break an anytime return journey like that. To get off at Reading and return later you'd need a separate ticket for the return leg.\",\"grounded_in\":[1],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"none\",\"confidence\":0.92}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 895,
+ "completion_tokens": 97,
+ "tag": "generate"
+}

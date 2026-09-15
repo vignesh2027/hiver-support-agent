@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"label\": \"request_first_class_info_or_upgrade\",\n  \"definition\": \"customer wants information about first‑class services, availability, tickets or how to upgrade to first class\",\n  \"coherent\": true,\n  \"coherence_note\": null,\n  \"needs_live_data\": true,\n  \"needs_live_data_note\": \"requires current train composition, seat availability and upgrade pricing for the specific service\"\n}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 662,
+ "completion_tokens": 156,
+ "tag": "taxonomy:name"
+}

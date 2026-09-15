@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"labels\": [\n    {\n      \"id\": \"E136\",\n      \"requires\": \"Clarify vague technical complaint\",\n      \"intent\": \"other\",\n      \"handling\": \"escalate\",\n      \"ambiguous\": false,\n      \"confidence\": 0.9\n    },\n    {\n      \"id\": \"E137\",\n      \"requires\": \"Verify ticket and cancellation status\",\n      \"intent\": \"compensation_and_refunds\",\n      \"handling\": \"escalate\",\n      \"ambiguous\": false,\n      \"confidence\": 0.95\n    },\n    {\n      \"id\": \"E138\",\n      \"requires\": \"Acknowledge heating complaint\",\n      \"intent\": \"onboard_facilities\",\n      \"handling\": \"auto\",\n      \"ambiguous\": false,\n      \"confidence\": 0.9\n    },\n    {\n      \"id\": \"E139\",\n      \"requires\": \"Investigate stalled compensation claim\",\n      \"intent\": \"compensation_and_refunds\",\n      \"handling\": \"escalate\",\n      \"ambiguous\": false,\n      \"confidence\": 0.95\n    }\n  ]\n}",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 1006,
+ "completion_tokens": 272,
+ "tag": "prelabel:p2"
+}

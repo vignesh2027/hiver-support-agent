@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi, we’re sorry to hear you’re being treated poorly. Please let a member of staff know right away or contact our customer service team. We’ll look into this.\",\"grounded_in\":[4],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"details of the incident and any staff names\",\"confidence\":0.85}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 890,
+ "completion_tokens": 116,
+ "tag": "generate"
+}

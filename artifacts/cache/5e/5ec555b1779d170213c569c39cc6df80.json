@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"label\": \"provide_positive_feedback\",\n  \"definition\": \"Customer wants to express appreciation for a good journey or service.\",\n  \"coherent\": true,\n  \"coherence_note\": null,\n  \"needs_live_data\": false,\n  \"needs_live_data_note\": null\n}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 629,
+ "completion_tokens": 116,
+ "tag": "taxonomy:name"
+}

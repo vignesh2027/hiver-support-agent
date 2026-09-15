@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"label\": \"request_cancellation_info_and_refund\",\n  \"definition\": \"Customer wants to know why a specific train was cancelled and to receive a refund or compensation.\",\n  \"coherent\": true,\n  \"coherence_note\": null,\n  \"needs_live_data\": true,\n  \"needs_live_data_note\": \"Requires real‑time train status to confirm cancellation and account details to process a refund or compensation.\"\n}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 577,
+ "completion_tokens": 170,
+ "tag": "taxonomy:name"
+}

@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"labels\": [\n    {\n      \"id\": \"N116\",\n      \"requires\": \"Acknowledge safety breach and short train\",\n      \"intent\": \"capacity_and_overcrowding\",\n      \"handling\": \"escalate\",\n      \"ambiguous\": false,\n      \"confidence\": 0.95\n    },\n    {\n      \"id\": \"N117\",\n      \"requires\": \"Fix login and password reset\",\n      \"intent\": \"ticketing_and_booking\",\n      \"handling\": \"assist\",\n      \"ambiguous\": false,\n      \"confidence\": 0.98\n    },\n    {\n      \"id\": \"N118\",\n      \"requires\": \"Current departure time for specific train\",\n      \"intent\": \"live_service_status\",\n      \"handling\": \"auto\",\n      \"ambiguous\": false,\n      \"confidence\": 0.99\n    },\n    {\n      \"id\": \"N119\",\n      \"requires\": \"Alternative route to Heathrow with ticket\",\n      \"intent\": \"service_information\",\n      \"handling\": \"assist\",\n      \"ambiguous\": false,\n      \"confidence\": 0.9\n    }\n  ]\n}",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 1022,
+ "completion_tokens": 276,
+ "tag": "prelabel:p2"
+}

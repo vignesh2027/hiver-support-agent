@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"label\": \"inquire_service_tomorrow\",\n  \"definition\": \"Customer wants to know if specific trains or services will run normally tomorrow.\",\n  \"coherent\": true,\n  \"coherence_note\": null,\n  \"needs_live_data\": true,\n  \"needs_live_data_note\": \"Requires real‑time schedule/strike/weather information for the requested date.\"\n}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 647,
+ "completion_tokens": 154,
+ "tag": "taxonomy:name"
+}

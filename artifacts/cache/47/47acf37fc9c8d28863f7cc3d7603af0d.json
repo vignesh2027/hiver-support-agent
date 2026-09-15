@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi, we’re sorry you’re stuck and missing your connection. We can’t reimburse show tickets directly. Please submit a Delay Repay claim via our website or email us at __email__ with your journey details and we’ll review it.\",\"grounded_in\":[1,4],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"journey details and claim submission\",\"confidence\":0.92}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 886,
+ "completion_tokens": 133,
+ "tag": "generate"
+}

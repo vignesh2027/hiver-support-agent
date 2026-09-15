@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi! Glad you enjoyed the #nightriviera and Stuart’s hospitality. Thanks for sharing your experience!\",\"grounded_in\":[2,4],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"none\",\"confidence\":0.92}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 870,
+ "completion_tokens": 94,
+ "tag": "generate"
+}

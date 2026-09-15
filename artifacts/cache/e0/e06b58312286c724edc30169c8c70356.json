@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"labels\": [\n    {\n      \"id\": \"A216\",\n      \"requires\": \"Acknowledge frustration, no specific ask\",\n      \"intent\": \"service_complaint\",\n      \"handling\": \"auto\",\n      \"ambiguous\": false,\n      \"confidence\": 0.9\n    },\n    {\n      \"id\": \"A217\",\n      \"requires\": \"Current delay and ETA for specific train\",\n      \"intent\": \"live_service_status\",\n      \"handling\": \"auto\",\n      \"ambiguous\": false,\n      \"confidence\": 0.95\n    },\n    {\n      \"id\": \"A218\",\n      \"requires\": \"Explain delay cause, acknowledge missed connection\",\n      \"intent\": \"service_complaint\",\n      \"handling\": \"assist\",\n      \"ambiguous\": true,\n      \"confidence\": 0.8\n    },\n    {\n      \"id\": \"A219\",\n      \"requires\": \"Medical emergency response, refund eligibility\",\n      \"intent\": \"other\",\n      \"handling\": \"escalate\",\n      \"ambiguous\": false,\n      \"confidence\": 0.95\n    }\n  ]\n}",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 989,
+ "completion_tokens": 274,
+ "tag": "prelabel:p2"
+}

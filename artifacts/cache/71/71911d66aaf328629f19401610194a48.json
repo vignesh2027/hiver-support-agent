@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"labels\": [\n    {\n      \"id\": \"N052\",\n      \"requires\": \"Acknowledge cancellation and delay\",\n      \"intent\": \"service_complaint\",\n      \"handling\": \"auto\",\n      \"ambiguous\": false,\n      \"confidence\": 0.95\n    },\n    {\n      \"id\": \"N053\",\n      \"requires\": \"Explain wifi status or fix\",\n      \"intent\": \"onboard_facilities\",\n      \"handling\": \"assist\",\n      \"ambiguous\": false,\n      \"confidence\": 0.9\n    },\n    {\n      \"id\": \"N054\",\n      \"requires\": \"Explain delay and fare validity\",\n      \"intent\": \"service_complaint\",\n      \"handling\": \"assist\",\n      \"ambiguous\": true,\n      \"confidence\": 0.85\n    },\n    {\n      \"id\": \"N055\",\n      \"requires\": \"Explain removal of service notice\",\n      \"intent\": \"service_information\",\n      \"handling\": \"assist\",\n      \"ambiguous\": false,\n      \"confidence\": 0.8\n    }\n  ]\n}",
+ "model": "qwen/qwen3.8-27b",
+ "prompt_tokens": 990,
+ "completion_tokens": 270,
+ "tag": "prelabel:p2"
+}

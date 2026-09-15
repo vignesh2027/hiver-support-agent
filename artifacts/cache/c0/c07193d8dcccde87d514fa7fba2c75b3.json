@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi there – sorry to hear about the facilities on your journey. Could you let us know the train number and departure time so we can look into this?\",\"grounded_in\":[1],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"train number and departure time\",\"confidence\":0.85}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 926,
+ "completion_tokens": 98,
+ "tag": "generate"
+}

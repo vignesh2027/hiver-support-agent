@@ -1,0 +1,7 @@
+{
+ "text": "{\"labels\":[{\"id\":\"E138\",\"intent\":\"service_complaint\",\"handling\":\"assist\",\"handling_reason\":\"complaint about service quality\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.95},{\"id\":\"E139\",\"intent\":\"compensation_and_refunds\",\"handling\":\"escalate\",\"handling_reason\":\"compensation claim\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.97},{\"id\":\"E140\",\"intent\":\"service_complaint\",\"handling\":\"assist\",\"handling_reason\":\"complaint about staff behaviour\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.93},{\"id\":\"E141\",\"intent\":\"ticketing_and_booking\",\"handling\":\"auto\",\"handling_reason\":\"information request about ticket sales\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.96},{\"id\":\"E142\",\"intent\":\"capacity_and_overcrowding\",\"handling\":\"assist\",\"handling_reason\":\"complaint about overcrowding\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.94},{\"id\":\"E143\",\"intent\":\"seat_reservation\",\"handling\":\"assist\",\"handling_reason\":\"issue with seat reservations\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.92}]}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 2784,
+ "completion_tokens": 515,
+ "tag": "prelabel:p1"
+}

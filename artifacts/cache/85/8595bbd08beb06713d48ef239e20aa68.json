@@ -1,0 +1,7 @@
+{
+ "text": "{\"labels\":[{\"id\":\"N072\",\"intent\":\"ticketing_and_booking\",\"handling\":\"auto\",\"handling_reason\":\"simple booking availability query\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.95},{\"id\":\"N073\",\"intent\":\"compensation_and_refunds\",\"handling\":\"auto\",\"handling_reason\":\"refund request\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.92},{\"id\":\"N074\",\"intent\":\"onboard_facilities\",\"handling\":\"auto\",\"handling_reason\":\"facility complaint\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.93},{\"id\":\"N075\",\"intent\":\"missed_connection\",\"handling\":\"auto\",\"handling_reason\":\"needs onward travel options\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.94},{\"id\":\"N076\",\"intent\":\"service_complaint\",\"handling\":\"auto\",\"handling_reason\":\"complaint about cancellations and overcrowding\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.91},{\"id\":\"N077\",\"intent\":\"service_complaint\",\"handling\":\"auto\",\"handling_reason\":\"complaint about delay and lack of announcements\",\"ambiguous\":false,\"runner_up\":null,\"confidence\":0.90}]}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 2788,
+ "completion_tokens": 535,
+ "tag": "prelabel:p1"
+}

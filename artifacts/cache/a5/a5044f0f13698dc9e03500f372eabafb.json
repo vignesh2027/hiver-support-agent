@@ -1,0 +1,7 @@
+{
+ "text": "{\n  \"label\": \"request_complaint_update\",\n  \"definition\": \"Customer wants a response or status update on their complaint or compensation claim.\",\n  \"coherent\": true,\n  \"coherence_note\": null,\n  \"needs_live_data\": false,\n  \"needs_live_data_note\": null\n}",
+ "model": "openai/gpt-oss-120b",
+ "prompt_tokens": 686,
+ "completion_tokens": 124,
+ "tag": "taxonomy:name"
+}
