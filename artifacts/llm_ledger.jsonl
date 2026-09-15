@@ -590,3 +590,6 @@
 {"ts": 1789481532.5925162, "tag": "generate", "model": "openai/gpt-oss-20b", "prompt_tokens": 850, "completion_tokens": 103, "latency_s": 3.265, "throttle_wait_s": 0.0, "key": "12ce7a49a5aa6ed5ede3c08b3900dfda"}
 {"ts": 1789481786.9081159, "tag": "classify:knn0:b6", "model": "openai/gpt-oss-20b", "prompt_tokens": 951, "completion_tokens": 501, "latency_s": 1.52, "throttle_wait_s": 0.0, "key": "f16c747184d732d8d0a10f993197e0b1"}
 {"ts": 1789482224.876981, "tag": "judge", "model": "qwen/qwen3.8-27b", "prompt_tokens": 1137, "completion_tokens": 104, "latency_s": 5.418, "throttle_wait_s": 0.0, "key": "4a2dc30b577be84970d0cd049f821334"}
+{"ts": 1789482300.78785, "tag": "generate", "model": "openai/gpt-oss-20b", "prompt_tokens": 907, "completion_tokens": 115, "latency_s": 1.075, "throttle_wait_s": 0.0, "key": "19db920e526916433b4315289a0d28f6"}
+{"ts": 1789482619.383934, "tag": "judge", "model": "qwen/qwen3.8-27b", "prompt_tokens": 1145, "completion_tokens": 104, "latency_s": 6.703, "throttle_wait_s": 0.0, "key": "b3b0ce5880ca27c0ff8e63df01c157af"}
+{"ts": 1789482754.7691982, "tag": "generate", "model": "openai/gpt-oss-20b", "prompt_tokens": 879, "completion_tokens": 94, "latency_s": 1.521, "throttle_wait_s": 0.0, "key": "d9a82d8b4c7bc618d458dc379c79e2c4"}

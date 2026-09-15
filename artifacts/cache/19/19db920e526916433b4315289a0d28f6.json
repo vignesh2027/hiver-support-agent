@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi, sorry to hear that. When seat reservations aren’t displayed they’re usually moved to the unreserved carriage. Could you let us know the train number and time?\",\"grounded_in\":[1],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"train number and time\",\"confidence\":0.85}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 907,
+ "completion_tokens": 115,
+ "tag": "generate"
+}

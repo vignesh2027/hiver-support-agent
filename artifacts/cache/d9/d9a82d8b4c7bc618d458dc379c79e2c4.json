@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi. I'm very sorry for the delay to your journey. If you have a daily/weekly ticket, please check: <url>\",\"grounded_in\":[1],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"ticket type\",\"confidence\":0.85}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 879,
+ "completion_tokens": 94,
+ "tag": "generate"
+}
