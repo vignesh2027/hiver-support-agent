@@ -9,7 +9,7 @@ The brief says the proof matters more than the system, so I'll lead with the
 thing the evaluation actually turned up:
 
 > About **71% of this brand's inbound messages ask for something the agent
-> cannot know** — is the 18:03 running, how late is it, which platform. There
+> cannot know** - is the 18:03 running, how late is it, which platform. There
 > is no live data feed here. An agent that answers anyway will sound completely
 > confident and be wrong most of the time.
 
