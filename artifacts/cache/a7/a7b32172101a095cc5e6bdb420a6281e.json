@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi! To check for any planned work or changes, could you let us know your departure station, destination and the date you plan to travel?\",\"grounded_in\":[4],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"departure station, destination, travel date\",\"confidence\":0.85}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 867,
+ "completion_tokens": 102,
+ "tag": "generate"
+}

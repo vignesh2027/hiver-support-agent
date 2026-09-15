@@ -157,6 +157,36 @@ would the answer be a fact about right now?"). Predicting your own model's
 dominant error and still not fixing it is a useful thing to know: the rule
 helps a human annotator and does not survive contact with a batched prompt.
 
+**Reply quality**, judged blind on the natural stratum. The judge is
+`qwen3.8-27b`, a different family from the generator, shown the same retrieved
+precedents for every arm and never shown what GWR actually replied. Scales are
+0–2.
+
+| arm | factual safety | addresses need | actionability | acceptable to send | catastrophic |
+| --- | --- | --- | --- | --- | --- |
+| canned apology (trivial) | **2.00** | 0.83 | 1.00 | 70.4% | **0.0%** |
+| nearest-neighbour (simple) | 0.96 | 0.62 | 0.51 | 26.4% | **35.8%** |
+| **grounded generator** | 1.83 | **1.17** | **1.55** | **84.9%** | 1.9% |
+
+Two rows here are worth more than the win.
+
+**The nearest-neighbour baseline is catastrophic 36% of the time.** It replays
+a real GWR reply verbatim, which means it replays a real arrival time, platform
+number or delay length *belonging to a different journey*. It is the most
+obvious way to build this system and it is the most dangerous thing I tested.
+Precedents transfer tone and process; they do not transfer facts, and a system
+that copies them cannot tell the difference.
+
+**The canned apology scores perfect factual safety and 70% acceptable.** It
+says nothing, so it cannot be wrong. If I had reported a single blended quality
+score, a system that refuses to engage would have looked competitive with one
+that actually helps. That is a property of the rubric, not of the system, and
+it is why factual safety and actionability are reported separately rather than
+averaged.
+
+The judge overrode its own verdict for inconsistency **0 times in 160**, and
+returned no parse failures.
+
 **Router behaviour** over 180 messages (grounded arm):
 
 | action | share |
@@ -232,13 +262,27 @@ coverage at 70% quality is one nobody can trust. I report them as a pair and
 sweep the thresholds so the operating point is visible rather than chosen for
 me. Any single-number version of this result is misleading by construction.
 
-**2. The judge and the thing it judges are not independent enough.**
-I used different model families (gpt-oss generates, qwen judges), kept the
-judge blind to the arm, and never showed it GWR's real reply. That reduces
-self-preference bias. It does not remove shared blind spots: both models were
-trained on overlapping internet text and may find the same wrong answer
-plausible. The human-agreement study is there to bound this, and it's a sample
-of 60, not a proof.
+**2. I did not measure judge-versus-human agreement, and the brief asked for
+it.**
+This is a missing deliverable and I would rather name it than let it be
+discovered. The harness for it is built and committed:
+`data/golden/replies_for_grading.jsonl` holds 60 replies, 20 per arm, shuffled
+and stripped of any indication of which system wrote them, and `make grade`
+walks a person through two questions each (would you send this, would sending
+it cause harm) and computes Cohen's kappa with a bootstrap interval against the
+judge's verdicts. It takes about fifteen minutes. It has not been run.
+
+So everything the judge says in this report is unanchored. I used different
+model families (gpt-oss generates, qwen judges), kept the judge blind to the
+arm, and never showed it GWR's real reply, which reduces self-preference bias.
+It does not remove shared blind spots: both models were trained on overlapping
+text and can find the same wrong answer plausible. The only checks I actually
+have are weaker ones — the judge never contradicted its own dimension scores
+(0 overrides in 160 verdicts), and its factual-safety scores agree with an
+independent regex for concrete claims. Neither is a substitute for a person.
+
+If you read one caveat in this report, read this one. The quality numbers are
+comparisons between models, not measurements against human judgement.
 
 **3. My confidence signal barely works.**
 Mean self-reported classifier confidence is **0.914**, and only 1 of 220

@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi. Sorry for the lack of information at Hayes & Harlington. The station is experiencing network issues that are affecting the information displays. We’re looking into it and will update you as soon as we can.\",\"grounded_in\":[1,4],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"specific service details or current status\",\"confidence\":0.85}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 871,
+ "completion_tokens": 121,
+ "tag": "generate"
+}
