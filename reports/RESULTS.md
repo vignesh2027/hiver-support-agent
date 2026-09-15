@@ -45,13 +45,17 @@ numbers describe traffic the system would actually see. 95% bootstrap CIs.
 
 | system | n | accuracy | macro-F1 | weighted-F1 |
 | --- | --- | --- | --- | --- |
-| majority class (trivial baseline) | 120 | 15.0% [9.2–21.7] | 0.022 [1.4–3.0] | 0.039 |
-| TF-IDF + logreg on weak labels (simple baseline) | 120 | 38.3% [30.0–46.7] | 0.343 [25.6–40.5] | 0.375 |
-| LLM classifier (system) | 120 | 75.0% [67.5–82.5] | 0.755 [60.5–82.6] | 0.754 |
+| majority class (trivial baseline) | 120 | 15.0% [9.2–21.7] | 0.022 [0.014–0.030] | 0.039 |
+| TF-IDF + logreg on weak labels (simple baseline) | 120 | 38.3% [30.0–46.7] | 0.343 [0.256–0.405] | 0.375 |
+| LLM classifier (system) | 120 | 75.0% [67.5–82.5] | 0.755 [0.605–0.826] | 0.754 |
 
-> The gap between accuracy and macro-F1 for the majority baseline is the
-> reason accuracy is not the headline metric: predicting the largest intent
-> for everything scores respectably on accuracy while being useless.
+> The majority baseline scores 15.0% accuracy and
+> 0.022 macro-F1. It predicts the intent that dominates the
+> *cluster-derived* prior, which turns out not to dominate the adjudicated
+> labels at all, so it does badly on both. That mismatch is itself a result:
+> see the note on `prior_share` in REPORT.md. Macro-F1 is reported alongside
+> accuracy throughout because on a skewed label set accuracy alone can hide
+> a model that has collapsed onto one class.
 
 Most frequent confusions (LLM classifier, natural stratum):
 
@@ -118,40 +122,47 @@ always be quoted together.
 
 ### Router ablations
 
-Each row removes exactly one guard. If removing a guard does not worsen
-anything, the guard is not earning its place.
+Each row removes exactly one guard, scored on identical drafts.
+
+Read this table with two caveats. First, it measures each guard's effect
+**on the auto-handled subset only**, so a guard that works by escalating a
+message before it ever reaches the auto branch (safety, money, legal,
+intent policy) correctly shows no effect here even though it is doing its
+job -- its effect is on the escalate rate, not on auto quality. Second,
+the auto subset is small, so these differences are directional rather
+than significant.
 
 | config | auto coverage | quality on auto | catastrophic escapes |
 | --- | --- | --- | --- |
 | `ablate_all_guards` | 8.3% | 80.0% | 0 |
-| `ablate_intent_policy` | 6.7% | 75.0% | 0 |
-| `ablate_live_claim` | 6.7% | 75.0% | 0 |
-| `ablate_money` | 6.7% | 75.0% | 0 |
-| `ablate_none` | 6.7% | 75.0% | 0 |
-| `ablate_safety` | 6.7% | 75.0% | 0 |
+| `ablate_intent_policy` | 3.3% | 100.0% | 0 |
+| `ablate_live_claim` | 3.3% | 100.0% | 0 |
+| `ablate_money` | 3.3% | 100.0% | 0 |
+| `ablate_none` | 3.3% | 100.0% | 0 |
+| `ablate_safety` | 3.3% | 100.0% | 0 |
 | `ablate_unresponsive` | 6.7% | 75.0% | 0 |
 
 Threshold sweep (the risk–coverage trade-off):
 
 | config | auto coverage | quality on auto |
 | --- | --- | --- |
-| `conf0.35_ret0.20` | 8.3% | 80.0% |
-| `conf0.35_ret0.28` | 5.0% | 66.7% |
+| `conf0.35_ret0.20` | 5.0% | 100.0% |
+| `conf0.35_ret0.28` | 1.7% | 100.0% |
 | `conf0.35_ret0.36` | 1.7% | 100.0% |
-| `conf0.45_ret0.20` | 8.3% | 80.0% |
-| `conf0.45_ret0.28` | 5.0% | 66.7% |
+| `conf0.45_ret0.20` | 5.0% | 100.0% |
+| `conf0.45_ret0.28` | 1.7% | 100.0% |
 | `conf0.45_ret0.36` | 1.7% | 100.0% |
-| `conf0.55_ret0.20` | 8.3% | 80.0% |
-| `conf0.55_ret0.28` | 5.0% | 66.7% |
+| `conf0.55_ret0.20` | 5.0% | 100.0% |
+| `conf0.55_ret0.28` | 1.7% | 100.0% |
 | `conf0.55_ret0.36` | 1.7% | 100.0% |
-| `conf0.65_ret0.20` | 8.3% | 80.0% |
-| `conf0.65_ret0.28` | 5.0% | 66.7% |
+| `conf0.65_ret0.20` | 5.0% | 100.0% |
+| `conf0.65_ret0.28` | 1.7% | 100.0% |
 | `conf0.65_ret0.36` | 1.7% | 100.0% |
-| `conf0.75_ret0.20` | 8.3% | 80.0% |
-| `conf0.75_ret0.28` | 5.0% | 66.7% |
+| `conf0.75_ret0.20` | 5.0% | 100.0% |
+| `conf0.75_ret0.28` | 1.7% | 100.0% |
 | `conf0.75_ret0.36` | 1.7% | 100.0% |
-| `conf0.85_ret0.20` | 8.3% | 80.0% |
-| `conf0.85_ret0.28` | 5.0% | 66.7% |
+| `conf0.85_ret0.20` | 5.0% | 100.0% |
+| `conf0.85_ret0.28` | 1.7% | 100.0% |
 | `conf0.85_ret0.36` | 1.7% | 100.0% |
 
 ## Which rule decided each message

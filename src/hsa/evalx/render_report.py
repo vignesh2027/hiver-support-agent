@@ -8,8 +8,6 @@ figure a human copied by hand; that is how stale numbers survive edits.
 from __future__ import annotations
 
 import json
-from pathlib import Path
-
 from ..config import METRICS, REPORTS
 
 RESULTS = METRICS / "results.json"
@@ -23,12 +21,28 @@ def _pct(x, nd=1) -> str:
 
 
 def _ci(pair) -> str:
+    """Interval for a quantity rendered as a percentage."""
     if not pair or any(v is None for v in pair):
         return ""
     lo, hi = pair
     if lo != lo or hi != hi:
         return ""
     return f" [{100*float(lo):.1f}–{100*float(hi):.1f}]"
+
+
+def _ci_raw(pair, nd: int = 3) -> str:
+    """Interval for a quantity rendered as a decimal, such as macro-F1.
+
+    Separate from `_ci` because reusing the percentage formatter and stripping
+    the '%' produced "0.022 [1.4-3.0]": a point estimate on one scale and its
+    own interval on another, which is worse than printing no interval at all.
+    """
+    if not pair or any(v is None for v in pair):
+        return ""
+    lo, hi = pair
+    if lo != lo or hi != hi:
+        return ""
+    return f" [{float(lo):.{nd}f}–{float(hi):.{nd}f}]"
 
 
 def render(r: dict) -> str:
@@ -98,12 +112,18 @@ def render(r: dict) -> str:
                 continue
             add(
                 f"| {pretty.get(arm, arm)} | {a['n']} | {_pct(a['accuracy'])}{_ci(a.get('accuracy_ci'))} "
-                f"| {a['macro_f1']:.3f}{_ci(a.get('macro_f1_ci')).replace('%','')} | {a['weighted_f1']:.3f} |"
+                f"| {a['macro_f1']:.3f}{_ci_raw(a.get('macro_f1_ci'))} | {a['weighted_f1']:.3f} |"
             )
         add("")
-        add("> The gap between accuracy and macro-F1 for the majority baseline is the")
-        add("> reason accuracy is not the headline metric: predicting the largest intent")
-        add("> for everything scores respectably on accuracy while being useless.")
+        maj = nat.get("majority", {})
+        if maj:
+            add(f"> The majority baseline scores {_pct(maj.get('accuracy'))} accuracy and")
+            add(f"> {maj.get('macro_f1', 0):.3f} macro-F1. It predicts the intent that dominates the")
+            add("> *cluster-derived* prior, which turns out not to dominate the adjudicated")
+            add("> labels at all, so it does badly on both. That mismatch is itself a result:")
+            add("> see the note on `prior_share` in REPORT.md. Macro-F1 is reported alongside")
+            add("> accuracy throughout because on a skewed label set accuracy alone can hide")
+            add("> a model that has collapsed onto one class.")
         add("")
 
         conf = nat.get("llm", {}).get("top_confusions") or []
@@ -202,8 +222,15 @@ def render(r: dict) -> str:
     if sweep:
         add("### Router ablations")
         add("")
-        add("Each row removes exactly one guard. If removing a guard does not worsen")
-        add("anything, the guard is not earning its place.")
+        add("Each row removes exactly one guard, scored on identical drafts.")
+        add("")
+        add("Read this table with two caveats. First, it measures each guard's effect")
+        add("**on the auto-handled subset only**, so a guard that works by escalating a")
+        add("message before it ever reaches the auto branch (safety, money, legal,")
+        add("intent policy) correctly shows no effect here even though it is doing its")
+        add("job -- its effect is on the escalate rate, not on auto quality. Second,")
+        add("the auto subset is small, so these differences are directional rather")
+        add("than significant.")
         add("")
         add("| config | auto coverage | quality on auto | catastrophic escapes |")
         add("| --- | --- | --- | --- |")

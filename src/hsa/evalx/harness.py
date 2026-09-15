@@ -585,8 +585,16 @@ def _selective_tables(gen: pd.DataFrame, judg: pd.DataFrame, system_arm: str) ->
             from ..reply.generate import Draft
             from ..retrieve.index import Precedent
 
+            # customer_msg is load-bearing, not decoration: both the
+            # novel-live-claim check and the unresponsiveness check compare
+            # the draft against the message it answers. Rebuilding a Draft
+            # without it silently disables two guards, which made
+            # `ablate_unresponsive` identical to `ablate_none` and made
+            # `ablate_none` disagree with the operating point computed
+            # elsewhere. The two disagreeing was what exposed it.
             d = Draft(
                 reply=r.reply,
+                customer_msg=str(r.customer_msg),
                 precedents=[
                     Precedent(0, "", "", float(r.precedent_score), "", False)
                 ],
