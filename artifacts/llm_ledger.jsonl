@@ -611,3 +611,4 @@
 {"ts": 1789486804.501655, "tag": "judge", "model": "qwen/qwen3.8-27b", "prompt_tokens": 1131, "completion_tokens": 106, "latency_s": 0.579, "throttle_wait_s": 3.4, "key": "a7d5edfdff3f90d21de6b6d51a84e1c2"}
 {"ts": 1789486810.086161, "tag": "judge", "model": "qwen/qwen3.8-27b", "prompt_tokens": 1138, "completion_tokens": 134, "latency_s": 2.206, "throttle_wait_s": 3.33, "key": "2cb6cdacf98b19f1a9781747081afff6"}
 {"ts": 1789487043.014106, "tag": "generate", "model": "openai/gpt-oss-20b", "prompt_tokens": 846, "completion_tokens": 96, "latency_s": 1.116, "throttle_wait_s": 0.0, "key": "b6f567a3f9feeb6c5ab65810588b8c4b"}
+{"ts": 1789487438.3771799, "tag": "judge", "model": "qwen/qwen3.8-27b", "prompt_tokens": 1158, "completion_tokens": 123, "latency_s": 0.632, "throttle_wait_s": 0.0, "key": "9392eed36874626d791d7e20a68a8dfb"}

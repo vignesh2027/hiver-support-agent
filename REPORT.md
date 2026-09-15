@@ -157,16 +157,21 @@ would the answer be a fact about right now?"). Predicting your own model's
 dominant error and still not fixing it is a useful thing to know: the rule
 helps a human annotator and does not survive contact with a batched prompt.
 
-**Reply quality**, judged blind on the natural stratum. The judge is
-`qwen3.8-27b`, a different family from the generator, shown the same retrieved
-precedents for every arm and never shown what GWR actually replied. Scales are
-0–2.
+**Reply quality**, judged blind on 60 messages from the natural stratum
+(n=60 per arm, 180 verdicts). The judge is `qwen3.8-27b`, a different family
+from the generator, shown the same retrieved precedents for every arm and never
+shown what GWR actually replied. Scales are 0–2; 95% Wilson intervals.
 
 | arm | factual safety | addresses need | actionability | acceptable to send | catastrophic |
 | --- | --- | --- | --- | --- | --- |
-| canned apology (trivial) | **2.00** | 0.83 | 1.00 | 70.4% | **0.0%** |
-| nearest-neighbour (simple) | 0.96 | 0.62 | 0.51 | 26.4% | **35.8%** |
-| **grounded generator** | 1.83 | **1.17** | **1.55** | **84.9%** | 1.9% |
+| canned apology (trivial) | **2.00** | 0.82 | 1.00 | 70.0% [57.5–80.1] | **0.0%** [0.0–6.0] |
+| nearest-neighbour (simple) | 0.98 | 0.57 | 0.47 | 25.0% [15.8–37.2] | **35.0%** [24.2–47.6] |
+| **grounded generator** | 1.85 | **1.17** | **1.55** | **86.7%** [75.8–93.1] | 1.7% [0.3–8.9] |
+
+n=60 per arm rather than the full 120, because the free tier's daily token
+budget ran out mid-run. The intervals reflect that. The gaps between arms are
+several times wider than the intervals, so the ordering is safe even if the
+exact values are not.
 
 Two rows here are worth more than the win.
 
@@ -187,21 +192,30 @@ averaged.
 The judge overrode its own verdict for inconsistency **0 times in 160**, and
 returned no parse failures.
 
-**Router behaviour** over 180 messages (grounded arm):
+**Router behaviour** over 210 messages (grounded arm):
 
 | action | share |
 | --- | --- |
-| assist (drafted for a human) | 72.2% |
-| escalate | 23.3% |
-| auto-send | 4.4% |
+| assist (drafted for a human) | 65.7% |
+| escalate | 31.4% |
+| auto-send | 2.9% |
 
-and the rule that decided each: `R13-default-assist` 93, `R10-weak-grounding`
-37, `R6-intent-policy` 32, `R12-auto-eligible` 8, `R3-money` 4,
-`R5-unreadable` 3, `R9-live-claim` 2, `R1-safety` 1.
+and the rule that bound each decision: `R13-default-assist` 78,
+`R6-intent-policy` 35, `R9b-unresponsive` 31, `R10-weak-grounding` 29,
+`R3-money` 9, `R5-unreadable` 7, `R1-safety` 6, `R12-auto-eligible` 6,
+`R4-existing-case` 5, `R9-live-claim` 2, `R2-legal` 2.
 
-A 4.4% auto rate is a small number and I'm reporting it as the headline anyway,
-because it's the true one. The alternative — auto-sending confident guesses
-about train times — is the thing this whole design exists to prevent.
+**The headline, which has to be quoted as a pair:** at **3.3% auto-handled
+coverage**, **100% of auto-sent replies were judged acceptable** — but that
+interval is [34.2–100.0], because it is 2 replies out of 60. The honest reading
+is "no failures observed in a sample far too small to bound the failure rate",
+not "perfect". If every draft were sent unfiltered the acceptable rate would be
+86.7%, so the router is buying roughly 13 points of quality by declining to
+send 97% of them.
+
+A ~3% auto rate is a small number and it is the headline anyway, because it is
+the true one. The alternative, auto-sending confident guesses about train
+times, is the thing this entire design exists to prevent.
 
 ---
 
@@ -303,6 +317,14 @@ router is rules rather than a classifier.
 
 Six things, roughly in order of how much they'd bother me if I were reading
 this.
+
+**0. "100% acceptable on auto-handled" is two replies.**
+It is the most flattering number in this report and it is nearly content-free.
+The Wilson interval is [34.2%, 100%]. Two successes cannot distinguish a system
+that is right 99% of the time from one that is right 40% of the time. I am
+leading the misleading-numbers section with my own best number because that is
+where a reader's attention goes, and because the correct response to it is not
+"impressive" but "show me a thousand".
 
 **1. The auto-handled rate and the quality on it are meaningless apart.**
 "4.4% auto-handled" and "quality on auto-handled replies" only mean something
