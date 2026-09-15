@@ -164,3 +164,38 @@ def test_ledger_summary_shape():
     s = ledger_summary()
     assert {"calls", "total_tokens", "by_tag"} <= set(s)
     json.dumps(s)  # must be serialisable for the report
+
+
+# ------------------------------------------------ offline-mode correctness
+
+def test_judge_does_not_turn_a_cache_miss_into_a_failing_verdict(monkeypatch):
+    """Regression: a missing measurement is not a bad measurement.
+
+    Swallowing CacheMiss into a default Verdict silently rewrote 272 unjudged
+    replies as unacceptable and moved the reported acceptable rate from 86.7%
+    to 24.2% without raising anything.
+    """
+    import pytest
+
+    from hsa.evalx import judge as judge_mod
+    from hsa.llm import CacheMiss
+
+    def boom(*a, **k):
+        raise CacheMiss("no cached response")
+
+    monkeypatch.setattr(judge_mod, "chat_json", boom)
+    with pytest.raises(CacheMiss):
+        judge_mod.ReplyJudge().judge("customer message", "a reply", [])
+
+
+def test_judge_still_absorbs_genuine_failures(monkeypatch):
+    """A real API error must not kill a long run; it is recorded as an error."""
+    from hsa.evalx import judge as judge_mod
+
+    def boom(*a, **k):
+        raise RuntimeError("HTTP 500")
+
+    monkeypatch.setattr(judge_mod, "chat_json", boom)
+    v = judge_mod.ReplyJudge().judge("customer message", "a reply", [])
+    assert v.error is not None
+    assert "RuntimeError" in v.error

@@ -32,7 +32,7 @@ import re
 from dataclasses import asdict, dataclass, field
 
 from ..config import JUDGE_MODEL
-from ..llm import chat_json
+from ..llm import CacheMiss, chat_json
 from ..retrieve.index import Precedent
 
 RUBRIC = """Score the reply on four dimensions. Use the anchors literally.
@@ -197,7 +197,14 @@ class ReplyJudge:
                 tag="judge",
                 max_tokens=900,
             )
-        except Exception as e:  # noqa: BLE001 - a failed judge must not kill a run
+        except CacheMiss:
+            # Never convert "no cached verdict" into "this reply is
+            # unacceptable". Doing so silently rewrote 272 unjudged replies as
+            # failures and moved the headline acceptable rate from 86.7% to
+            # 24.2% without raising anything. A missing measurement is not a
+            # bad measurement; the caller must skip it, not record it.
+            raise
+        except Exception as e:  # noqa: BLE001 - a genuine judge failure must not kill a run
             return Verdict(error=f"{type(e).__name__}: {e}", one_line_verdict="judge failed")
 
         v = Verdict(

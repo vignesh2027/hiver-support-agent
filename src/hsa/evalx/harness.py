@@ -35,6 +35,7 @@ from ..classify.llm_classifier import LLMClassifier
 from ..reply.generate import CannedBaseline, GroundedGenerator, NearestNeighbourBaseline
 from ..retrieve.index import PrecedentIndex, build as build_index
 from ..route.policy import RouterConfig, route, sweep_configs
+from ..llm import CacheMiss
 from ..taxonomy.schema import load as load_taxonomy
 from .judge import ReplyJudge, automated_flags
 from .metrics import (
@@ -196,6 +197,7 @@ def stage_generate(backend: str = "tfidf", arm_intent: str = "llm") -> pd.DataFr
     # restartable, which on a free tier is not optional.
     rows: list[dict] = []
     done_ids: set[str] = set()
+    skipped: set[str] = set()
     if GEN_RUN.exists():
         for line in GEN_RUN.read_text().splitlines():
             if line.strip():
@@ -211,10 +213,23 @@ def stage_generate(backend: str = "tfidf", arm_intent: str = "llm") -> pd.DataFr
             continue
         intent = getattr(r, f"{arm_intent}_intent")
         conf = float(getattr(r, f"{arm_intent}_conf"))
+
+        # Build every arm for this message before committing any of them. If
+        # one arm has no cached generation, the message is skipped entirely
+        # rather than landing in the run log with two arms out of three, which
+        # would quietly change per-arm denominators and make the arms
+        # non-comparable.
+        arm_rows: list[dict] = []
+        ok = True
         for arm, gen in gens.items():
-            d = gen.draft(r.customer_msg, intent)
+            try:
+                d = gen.draft(r.customer_msg, intent)
+            except CacheMiss:
+                skipped.add(r.example_id)
+                ok = False
+                break
             dec = route(r.customer_msg, intent, conf, d, RouterConfig())
-            rows.append(
+            arm_rows.append(
                 {
                     "example_id": r.example_id,
                     "stratum": r.stratum,
@@ -230,6 +245,7 @@ def stage_generate(backend: str = "tfidf", arm_intent: str = "llm") -> pd.DataFr
                     "asserts_live_fact": d.asserts_live_fact,
                     "regex_live_claim": d.regex_flags_live_claim,
                     "self_report_disagrees": d.self_report_disagrees,
+                    "unresponsive": d.repeats_a_question_already_answered,
                     "missing_information": d.missing_information,
                     "action": dec.action,
                     "action_reason": dec.reason,
@@ -237,12 +253,22 @@ def stage_generate(backend: str = "tfidf", arm_intent: str = "llm") -> pd.DataFr
                     **{f"auto_{k}": v for k, v in automated_flags(d.reply, r.customer_msg).items()},
                 }
             )
+        if ok:
+            rows.extend(arm_rows)
+
         if i % 10 == 0:
             _write_jsonl(GEN_RUN, rows)
             print(f"  generated {i}/{n} (checkpointed)", flush=True)
 
     _write_jsonl(GEN_RUN, rows)
     print(f"wrote {GEN_RUN} ({len(rows)} rows)")
+    if skipped:
+        print(
+            f"! {len(skipped)} messages had no cached generation and were skipped: "
+            f"{', '.join(sorted(skipped)[:8])}{' ...' if len(skipped) > 8 else ''}\n"
+            "  Every reported number is computed over the messages that ARE present, "
+            "and reports/RESULTS.md states the n it used."
+        )
     return pd.DataFrame(rows)
 
 
@@ -269,9 +295,14 @@ def stage_judge(head_to_head_stratum: str = "natural", system_arm: str = "ground
     todo = todo[~todo.apply(lambda r: (r.example_id, r.arm) in done, axis=1)]
     print(f"judging {len(todo)} replies ({len(done)} already cached)")
 
+    missing = 0
     for i, r in enumerate(todo.itertuples(), 1):
         precedents = ix.search(r.customer_msg, k=4)
-        v = judge.judge(r.customer_msg, r.reply, precedents)
+        try:
+            v = judge.judge(r.customer_msg, r.reply, precedents)
+        except CacheMiss:
+            missing += 1
+            continue
         rows.append(
             {
                 "example_id": r.example_id,
@@ -288,6 +319,9 @@ def stage_judge(head_to_head_stratum: str = "natural", system_arm: str = "ground
 
     _write_jsonl(JUDGE_RUN, rows)
     print(f"wrote {JUDGE_RUN} ({len(rows)} rows)")
+    if missing:
+        print(f"! {missing} replies had no cached verdict and were left unjudged, "
+              "not recorded as failures.")
     return pd.DataFrame(rows)
 
 

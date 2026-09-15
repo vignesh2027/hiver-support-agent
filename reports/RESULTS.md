@@ -97,11 +97,11 @@ Scales are 0–2 per dimension.
 
 | system | n | acceptable to send | catastrophic | factual safety | addresses need | actionability | tone |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| fixed apology (trivial baseline) | 60 | 70.0% [57.5–80.1] | 0.0% [0.0–6.0] | 2.00 | 0.82 | 1.00 | 1.05 |
-| replay nearest historical reply (simple baseline) | 60 | 25.0% [15.8–37.2] | 35.0% [24.2–47.6] | 0.98 | 0.57 | 0.47 | 1.00 |
-| grounded generator (system) | 60 | 86.7% [75.8–93.1] | 1.7% [0.3–8.9] | 1.85 | 1.17 | 1.55 | 1.53 |
+| fixed apology (trivial baseline) | 61 | 70.5% [58.1–80.5] | 0.0% [0.0–5.9] | 2.00 | 0.82 | 1.00 | 1.05 |
+| replay nearest historical reply (simple baseline) | 61 | 24.6% [15.5–36.7] | 36.1% [25.2–48.6] | 0.97 | 0.56 | 0.47 | 1.00 |
+| grounded generator (system) | 61 | 85.2% [74.3–92.0] | 1.6% [0.3–8.7] | 1.84 | 1.16 | 1.54 | 1.52 |
 
-Judge self-consistency: 0/180 verdicts (0.0%) contradicted the judge's own dimension scores and were corrected in code. A high rate here is a reason to discount the judge, not a reason to celebrate the correction.
+Judge self-consistency: 0/183 verdicts (0.0%) contradicted the judge's own dimension scores and were corrected in code. A high rate here is a reason to discount the judge, not a reason to celebrate the correction.
 
 ## The headline: quality at a stated coverage
 
@@ -111,14 +111,14 @@ always be quoted together.
 - **Auto-handled coverage: 3.3%** of messages
 - **Acceptable-reply rate on auto-handled: 100.0%** [34.2–100.0]
 - Catastrophic replies among auto-sent: 0.0% [0.0–65.8] (0 escapes)
-- Drafted for a human: 60.0%; escalated: 36.7%
-- If every reply were sent unfiltered, acceptable rate would be 86.7% — the gap is what the router buys.
+- Drafted for a human: 60.7%; escalated: 36.1%
+- If every reply were sent unfiltered, acceptable rate would be 85.2% — the gap is what the router buys.
 
 ### By stratum
 
 | stratum | auto coverage | quality on auto | escalate rate | catastrophic on auto |
 | --- | --- | --- | --- | --- |
-| `natural` | 3.3% | 100.0% | 36.7% | 0.0% |
+| `natural` | 3.3% | 100.0% | 36.1% | 0.0% |
 
 ### Router ablations
 
@@ -134,48 +134,48 @@ than significant.
 
 | config | auto coverage | quality on auto | catastrophic escapes |
 | --- | --- | --- | --- |
-| `ablate_all_guards` | 8.3% | 80.0% | 0 |
+| `ablate_all_guards` | 8.2% | 80.0% | 0 |
 | `ablate_intent_policy` | 3.3% | 100.0% | 0 |
 | `ablate_live_claim` | 3.3% | 100.0% | 0 |
 | `ablate_money` | 3.3% | 100.0% | 0 |
 | `ablate_none` | 3.3% | 100.0% | 0 |
 | `ablate_safety` | 3.3% | 100.0% | 0 |
-| `ablate_unresponsive` | 6.7% | 75.0% | 0 |
+| `ablate_unresponsive` | 6.6% | 75.0% | 0 |
 
 Threshold sweep (the risk–coverage trade-off):
 
 | config | auto coverage | quality on auto |
 | --- | --- | --- |
-| `conf0.35_ret0.20` | 5.0% | 100.0% |
-| `conf0.35_ret0.28` | 1.7% | 100.0% |
-| `conf0.35_ret0.36` | 1.7% | 100.0% |
-| `conf0.45_ret0.20` | 5.0% | 100.0% |
-| `conf0.45_ret0.28` | 1.7% | 100.0% |
-| `conf0.45_ret0.36` | 1.7% | 100.0% |
-| `conf0.55_ret0.20` | 5.0% | 100.0% |
-| `conf0.55_ret0.28` | 1.7% | 100.0% |
-| `conf0.55_ret0.36` | 1.7% | 100.0% |
-| `conf0.65_ret0.20` | 5.0% | 100.0% |
-| `conf0.65_ret0.28` | 1.7% | 100.0% |
-| `conf0.65_ret0.36` | 1.7% | 100.0% |
-| `conf0.75_ret0.20` | 5.0% | 100.0% |
-| `conf0.75_ret0.28` | 1.7% | 100.0% |
-| `conf0.75_ret0.36` | 1.7% | 100.0% |
-| `conf0.85_ret0.20` | 5.0% | 100.0% |
-| `conf0.85_ret0.28` | 1.7% | 100.0% |
-| `conf0.85_ret0.36` | 1.7% | 100.0% |
+| `conf0.35_ret0.20` | 4.9% | 100.0% |
+| `conf0.35_ret0.28` | 1.6% | 100.0% |
+| `conf0.35_ret0.36` | 1.6% | 100.0% |
+| `conf0.45_ret0.20` | 4.9% | 100.0% |
+| `conf0.45_ret0.28` | 1.6% | 100.0% |
+| `conf0.45_ret0.36` | 1.6% | 100.0% |
+| `conf0.55_ret0.20` | 4.9% | 100.0% |
+| `conf0.55_ret0.28` | 1.6% | 100.0% |
+| `conf0.55_ret0.36` | 1.6% | 100.0% |
+| `conf0.65_ret0.20` | 4.9% | 100.0% |
+| `conf0.65_ret0.28` | 1.6% | 100.0% |
+| `conf0.65_ret0.36` | 1.6% | 100.0% |
+| `conf0.75_ret0.20` | 4.9% | 100.0% |
+| `conf0.75_ret0.28` | 1.6% | 100.0% |
+| `conf0.75_ret0.36` | 1.6% | 100.0% |
+| `conf0.85_ret0.20` | 4.9% | 100.0% |
+| `conf0.85_ret0.28` | 1.6% | 100.0% |
+| `conf0.85_ret0.36` | 1.6% | 100.0% |
 
 ## Which rule decided each message
 
 | rule | count |
 | --- | --- |
 | `R13-default-assist` | 78 |
-| `R6-intent-policy` | 35 |
+| `R6-intent-policy` | 36 |
 | `R9b-unresponsive` | 31 |
 | `R10-weak-grounding` | 29 |
-| `R3-money` | 9 |
-| `R5-unreadable` | 7 |
-| `R1-safety` | 6 |
+| `R3-money` | 11 |
+| `R5-unreadable` | 8 |
+| `R1-safety` | 7 |
 | `R12-auto-eligible` | 6 |
 | `R4-existing-case` | 5 |
 | `R9-live-claim` | 2 |
@@ -185,11 +185,11 @@ The generator's self-report disagreed with the independent regex check on **1.4%
 
 ## What this cost to produce
 
-613 LLM calls, 794,475 tokens, 94 minutes spent waiting on the free-tier rate limit.
+614 LLM calls, 795,756 tokens, 94 minutes spent waiting on the free-tier rate limit.
 
 | stage | calls | tokens |
 | --- | --- | --- |
-| `judge` | 181 | 222,960 |
+| `judge` | 182 | 224,241 |
 | `prelabel` | 103 | 217,180 |
 | `generate` | 215 | 213,873 |
 | `adjudicate` | 35 | 53,987 |
