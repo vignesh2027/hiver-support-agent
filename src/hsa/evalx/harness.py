@@ -91,9 +91,20 @@ def load_golden(require_labels: bool = True) -> pd.DataFrame:
 
 
 def _write_jsonl(path: Path, rows: list[dict]) -> None:
-    with path.open("w") as fh:
+    """Write atomically: full file to a temp path, then rename over the target.
+
+    Stages checkpoint by rewriting the whole file, so a plain open("w")
+    truncates it for as long as the write takes. Any concurrent reader -- the
+    judge stage, or just a `wc -l` while a long run is going -- can see an
+    empty or half-written file and silently treat it as the real result.
+    rename(2) is atomic within a filesystem, so a reader sees either the old
+    file or the new one, never a partial one.
+    """
+    tmp = path.with_suffix(path.suffix + ".tmp")
+    with tmp.open("w") as fh:
         for r in rows:
             fh.write(json.dumps(r, ensure_ascii=False, default=str) + "\n")
+    tmp.replace(path)
 
 
 def _index(backend: str = "tfidf") -> PrecedentIndex:

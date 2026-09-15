@@ -1,0 +1,7 @@
+{
+ "text": "{\"reply\":\"Hi there. All available carriages are currently in use and a few are out for maintenance, so the train is shorter than usual. We’re sorry for the inconvenience.\",\"grounded_in\":[1,2],\"asserts_time_sensitive_fact\":false,\"asserts_time_sensitive_fact_note\":null,\"missing_information\":\"none\",\"confidence\":0.85}",
+ "model": "openai/gpt-oss-20b",
+ "prompt_tokens": 912,
+ "completion_tokens": 109,
+ "tag": "generate"
+}

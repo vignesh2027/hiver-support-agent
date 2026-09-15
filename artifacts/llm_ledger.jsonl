@@ -365,3 +365,5 @@
 {"ts": 1789475327.67693, "tag": "generate", "model": "openai/gpt-oss-20b", "prompt_tokens": 909, "completion_tokens": 105, "latency_s": 0.672, "throttle_wait_s": 8.56, "key": "d70a22eb3b3821524a462cc4a9965678"}
 {"ts": 1789475336.755101, "tag": "generate", "model": "openai/gpt-oss-20b", "prompt_tokens": 834, "completion_tokens": 95, "latency_s": 1.788, "throttle_wait_s": 7.25, "key": "f086e47bbf91a7f7fda720a96a29620d"}
 {"ts": 1789475343.9695208, "tag": "generate", "model": "openai/gpt-oss-20b", "prompt_tokens": 848, "completion_tokens": 97, "latency_s": 0.73, "throttle_wait_s": 6.44, "key": "68384bbabffa007e08a84e97135e9909"}
+{"ts": 1789475863.659345, "tag": "generate", "model": "openai/gpt-oss-20b", "prompt_tokens": 912, "completion_tokens": 109, "latency_s": 0.73, "throttle_wait_s": 0.0, "key": "6ceb018b62d0e2af7c778516e55006a9"}
+{"ts": 1789476181.5524611, "tag": "generate", "model": "openai/gpt-oss-20b", "prompt_tokens": 904, "completion_tokens": 109, "latency_s": 1.353, "throttle_wait_s": 0.0, "key": "d5b1e447ec8debbec4dc9437fa20e874"}

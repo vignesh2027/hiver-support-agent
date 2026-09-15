@@ -1,0 +1,150 @@
+{
+  "modes": [
+    {
+      "key": "invented_concrete_fact",
+      "title": "Draft states a time, platform or amount the customer never mentioned",
+      "hypothesis": "Precedents are full of concrete operational facts about other journeys. A model asked to imitate them will carry a number across even when told not to. This is the failure that makes an auto-reply dangerous rather than merely unhelpful.",
+      "n": 3,
+      "denominator": 180,
+      "rate": 0.0167,
+      "examples": [
+        {
+          "example_id": "N026",
+          "stratum": "natural",
+          "customer_msg": "Every time I travel to London I reserve a forward-facing seat. Every time I board to find I\u2019ve been allocated a rear-facing seat... it\u2019s not even as if all the seats are reserved! #sortitout #costsenough",
+          "reply": "Hi, we\u2019re sorry you\u2019re getting a rear\u2011facing seat. If the train is running in reverse formation the seat you booked will face the back of the carriage. Preferences are matched where possible but not guaranteed. Please check your reservation slip for the seat n",
+          "pred_intent": "seat_reservation",
+          "action": "escalate",
+          "action_rule": "R9-live-claim",
+          "novel_claims": []
+        },
+        {
+          "example_id": "N038",
+          "stratum": "natural",
+          "customer_msg": "- why is our 11:06 to Plymouth backwards? Everyone who paid for a seat facing direction of travel is not happy!! Please advise Re: compensation",
+          "reply": "Apologies for the inconvenience \u2013 the train is running in reverse formation today. We can\u2019t change that without causing a delay. If you can move to a forward\u2011facing seat, that would help.",
+          "pred_intent": "compensation_and_refunds",
+          "action": "escalate",
+          "action_rule": "R9-live-claim",
+          "novel_claims": []
+        },
+        {
+          "example_id": "N075",
+          "stratum": "natural",
+          "customer_msg": "I\u2019ve been stuck in West Drayton on a train that was supposed to arrived at London Paddington at 15:30! I need to get to Hammersmith urgently what are my options???",
+          "reply": "Hi there! Can you tell us which train you\u2019re on and the time you were due to arrive at Paddington? That will help us find the best next steps for you.",
+          "pred_intent": "missed_connection",
+          "action": "escalate",
+          "action_rule": "R6-intent-policy",
+          "novel_claims": []
+        }
+      ]
+    },
+    {
+      "key": "model_misreports_itself",
+      "title": "Model declares it asserted no time-sensitive fact, but it did",
+      "hypothesis": "The generator is asked to self-declare whether its draft contains an unverifiable claim. A model that hallucinates a fact is not a reliable witness to having hallucinated it, so any safety design that trusts the self-report alone inherits the same blind spot.",
+      "n": 3,
+      "denominator": 180,
+      "rate": 0.0167,
+      "examples": [
+        {
+          "example_id": "N026",
+          "stratum": "natural",
+          "customer_msg": "Every time I travel to London I reserve a forward-facing seat. Every time I board to find I\u2019ve been allocated a rear-facing seat... it\u2019s not even as if all the seats are reserved! #sortitout #costsenough",
+          "reply": "Hi, we\u2019re sorry you\u2019re getting a rear\u2011facing seat. If the train is running in reverse formation the seat you booked will face the back of the carriage. Preferences are matched where possible but not guaranteed. Please check your reservation slip for the seat n",
+          "pred_intent": "seat_reservation",
+          "action": "escalate",
+          "action_rule": "R9-live-claim"
+        },
+        {
+          "example_id": "N038",
+          "stratum": "natural",
+          "customer_msg": "- why is our 11:06 to Plymouth backwards? Everyone who paid for a seat facing direction of travel is not happy!! Please advise Re: compensation",
+          "reply": "Apologies for the inconvenience \u2013 the train is running in reverse formation today. We can\u2019t change that without causing a delay. If you can move to a forward\u2011facing seat, that would help.",
+          "pred_intent": "compensation_and_refunds",
+          "action": "escalate",
+          "action_rule": "R9-live-claim"
+        },
+        {
+          "example_id": "N075",
+          "stratum": "natural",
+          "customer_msg": "I\u2019ve been stuck in West Drayton on a train that was supposed to arrived at London Paddington at 15:30! I need to get to Hammersmith urgently what are my options???",
+          "reply": "Hi there! Can you tell us which train you\u2019re on and the time you were due to arrive at Paddington? That will help us find the best next steps for you.",
+          "pred_intent": "missed_connection",
+          "action": "escalate",
+          "action_rule": "R6-intent-policy"
+        }
+      ]
+    },
+    {
+      "key": "no_usable_precedent",
+      "title": "Nothing similar enough in the archive to ground a reply",
+      "hypothesis": "Retrieval-grounded generation silently degrades to unguided generation when the index has no close match. Without an explicit grounding floor the system keeps answering confidently on exactly the messages it knows least about.",
+      "n": 43,
+      "denominator": 180,
+      "rate": 0.2389,
+      "examples": [
+        {
+          "example_id": "N006",
+          "stratum": "natural",
+          "customer_msg": "A) I can see why have halved the compensation B) I don't know why I bother setting the alarm C) this is how people lose their jobs <url>",
+          "reply": "Hi, we\u2019re sorry to hear you\u2019re upset. Could you tell us the train number, date and what happened? That will help us look into the issue for you.",
+          "pred_intent": "service_complaint",
+          "action": "assist",
+          "action_rule": "R10-weak-grounding",
+          "precedent_score": 0.18610000000000002
+        },
+        {
+          "example_id": "N008",
+          "stratum": "natural",
+          "customer_msg": "\u201cUnfortunately, this train has no driver - Next available @ 12.34.\u201d , embarrassing, incompetent, not fit to run a transport service are you?",
+          "reply": "Hi, we\u2019re sorry to hear about the issue. Could you let us know which service you\u2019re referring to? We\u2019ll look into it for you.",
+          "pred_intent": "service_complaint",
+          "action": "assist",
+          "action_rule": "R10-weak-grounding",
+          "precedent_score": 0.20120000000000002
+        },
+        {
+          "example_id": "N009",
+          "stratum": "natural",
+          "customer_msg": "Hey can people not sit in first class on the bath to paddington train? It\u2019s really overcrowded? Train that just left bath...",
+          "reply": "Hi. Only if First Class is declassified. Sorry for the crowded conditions.",
+          "pred_intent": "capacity_and_overcrowding",
+          "action": "assist",
+          "action_rule": "R10-weak-grounding",
+          "precedent_score": 0.2081
+        }
+      ]
+    },
+    {
+      "key": "learned_to_deflect",
+      "title": "Reply is a hand-off rather than an answer",
+      "hypothesis": "Even with deflections filtered out of the index, the register of the corpus pulls the generator toward 'send us a DM'. When it does this it scores well on tone and badly on usefulness, which is precisely the combination a tone-weighted rubric would miss.",
+      "n": 0,
+      "denominator": 180,
+      "rate": 0.0,
+      "examples": []
+    },
+    {
+      "key": "over_length",
+      "title": "Reply exceeds the 280-character limit of the channel",
+      "hypothesis": "A constraint stated in the prompt is not a constraint. Length is the cheapest possible thing to verify in code, and any reply over the limit is unusable regardless of how good it is.",
+      "n": 1,
+      "denominator": 180,
+      "rate": 0.0056,
+      "examples": [
+        {
+          "example_id": "N026",
+          "stratum": "natural",
+          "customer_msg": "Every time I travel to London I reserve a forward-facing seat. Every time I board to find I\u2019ve been allocated a rear-facing seat... it\u2019s not even as if all the seats are reserved! #sortitout #costsenough",
+          "reply": "Hi, we\u2019re sorry you\u2019re getting a rear\u2011facing seat. If the train is running in reverse formation the seat you booked will face the back of the carriage. Preferences are matched where possible but not guaranteed. Please check your reservation slip for the seat n",
+          "pred_intent": "seat_reservation",
+          "action": "escalate",
+          "action_rule": "R9-live-claim",
+          "chars": 331
+        }
+      ]
+    }
+  ]
+}
